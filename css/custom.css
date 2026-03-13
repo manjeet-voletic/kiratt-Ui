@@ -102,7 +102,27 @@ img::-moz-selection {
 }
 
 /*Design Of Index Page*/
+.mobile3{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:10px;
+}
 
+
+
+/* Google default style remove */
+.goog-te-gadget{
+    font-size:14px !important;
+}
+
+.goog-te-gadget select{
+    border:none;
+    outline:none;
+    background:transparent;
+    font-size:14px;
+    cursor:pointer;
+}
 /* loader */
 /* LOADER */
 
@@ -224,7 +244,7 @@ text-shadow:0 0 20px #02a002;
 }
 
 .logo img {
-    width: 170px;
+    width: 57%;
 }
 
 .locationIndex {
@@ -263,7 +283,7 @@ text-shadow:0 0 20px #02a002;
     overflow: hidden;
     background: #4728E9;
     background: linear-gradient(319deg, rgb(255 255 255) 0%, rgb(186 166 48) 35%, rgb(31 111 8) 89%);
-    padding: 10px 0px 10px 20px;
+    padding: 10px 23px 10px 20px;
 }
 
 .codeIndex a {

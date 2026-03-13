@@ -30,20 +30,20 @@
 <body>
     <div id="loader">
 
-<div class="logoLoader">
-<span>K</span>
-<span>I</span>
-<span>R</span>
-<span>A</span>
-<span>A</span>
-<span>T</span>
-</div>
+        <div class="logoLoader">
+            <span>K</span>
+            <span>I</span>
+            <span>R</span>
+            <span>A</span>
+            <span>A</span>
+            <span>T</span>
+        </div>
 
-<div class="slogan">
-Make It Happen
-</div>
+        <div class="slogan">
+            Make It Happen
+        </div>
 
-</div>
+    </div>
     <!-- Login Modal -->
     <div class="loginindex">
         <div class="modal fade" id="loginModal">
@@ -103,39 +103,38 @@ Make It Happen
         </div>
     </div>
     <!--TopPannel-->
+    <div class="discountTop">
+        <div class="row">
+            <div class="col-md-8 infoIndexTop">
+                <a href=""><i class="bi bi-envelope-fill"></i> @InfoKiratt.com</a>
+                <a href=""><i class="bi bi-telephone-fill"></i> +919041342552</a>
+            </div>
+            <div class="col-md-4 codeIndex">
+                <a href="">🎉 Get 15% OFF your first order with code: WELCOME15</a>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid">
         <div class="topBar">
-            <div class="row">
-                <div class="col-md-1">
+            <div class="row     align-items-baseline">
+                <div class="col-md-2">
                     <div class="logo">
                         <img src="images/logo.png" alt="logo" class="img-fluid">
                     </div>
                 </div>
-                <div class="col-md-11">
-                    <div class="discountTop">
-                        <div class="row">
-                            <div class="col-md-6 infoIndexTop">
-                                <a href=""><i class="bi bi-envelope-fill"></i> @InfoKiratt.com</a>
-                                <a href=""><i class="bi bi-telephone-fill"></i> +919041342552</a>
-                            </div>
-                            <div class="col-md-6 codeIndex">
-                                <a href="">🎉 Get 15% OFF your first order with code: WELCOME15</a>
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="col-md-10">
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-lg-7 col-md-6">
                             <div class="topRight">
-                                <div class="locationIndex">
+                                <!-- <div class="locationIndex">
                                     <div>
                                         <p><i class="bi bi-geo-alt-fill"></i></p>
                                     </div>
                                     <div>
-                                        <span>Uttam Nagar, Dawarka Mor</span>
                                         <span>New Delhi</span>
+                                         <span>New Delhi</span> 
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="search-container">
                                     <div class="search-bar">
                                         <!-- Category Dropdown -->
@@ -171,7 +170,7 @@ Make It Happen
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-lg-5 col-md-6">
                             <div class="TopLeft">
                                 <div class="signInIndex" data-bs-toggle="modal" data-bs-target="#loginModal">
                                     <div>
@@ -179,22 +178,26 @@ Make It Happen
                                     </div>
                                     <div>
                                         <span>Log in</span>
-                                        <span>Account & Lists</span>
+                                        <!-- <span>Account & Lists</span> -->
                                     </div>
                                 </div>
                                 <div class="mobile3">
-                                    <div id="google_translate_element"></div>
-                                    <script type="text/javascript">
-                                        function googleTranslateElementInit() {
-                                            new google.translate.TranslateElement(
-                                                { pageLanguage: 'en' },
-                                                'google_translate_element'
-                                            );
-                                        }
-                                    </script>
-                                    <script type="text/javascript"
-                                        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                                    <div class="translateBox">
+                                        <div id="google_translate_element"></div>
+                                    </div>
                                 </div>
+
+                                <script>
+                                    function googleTranslateElementInit() {
+                                        new google.translate.TranslateElement(
+                                            { pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+                                            'google_translate_element'
+                                        );
+                                    }
+                                </script>
+
+                                <script
+                                    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
                                 <div class="signInIndex">
                                     <div>
                                         <p><i class="bi bi-basket2-fill"></i></p>
@@ -203,7 +206,7 @@ Make It Happen
                                         <span>
                                             Returns
                                         </span>
-                                        <span>& Orders</span>
+                                        <!-- <span>& Orders</span> -->
                                     </div>
                                 </div>
                                 <div class="Cart">
@@ -225,7 +228,7 @@ Make It Happen
                 <i class="bi bi-x-lg" id="menuClose"></i>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-8">
                     <div class="menuRight">
                         <ul>
                             <li class="megaParent">
@@ -354,7 +357,7 @@ Make It Happen
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="menuLeft">
                         <ul>
                             <li><a href="about.html">About</a></li>
@@ -1045,14 +1048,14 @@ Make It Happen
     </script>
     <script>
 
-setTimeout(function(){
+        setTimeout(function () {
 
-document.getElementById("loader").style.display="none";
-document.getElementById("mainContent").style.display="block";
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("mainContent").style.display = "block";
 
-},5000);
+        }, 5000);
 
-</script>
+    </script>
 
 </body>
 
