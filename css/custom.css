@@ -624,7 +624,7 @@ header ul li {
 .megaMenu {
     position: absolute;
     left: 0;
-    top: 41px;
+      top: 35px;
     width: 800px;
     background: #ffffff;
     padding: 15px 20px;
@@ -735,7 +735,7 @@ header ul li {
 .subMegaMenu {
     position: absolute;
     top: 0;
-    left: 106%;
+    left: 100%;
     width: 800px;
     background: #fff;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
@@ -1872,10 +1872,10 @@ footer {
 }
 
 .servicesPro img {
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
     border-radius: 5px;
-    height: 359px;
+    /* height: 359px; */
 }
 
 /*ShortPannel*/
