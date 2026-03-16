@@ -28,22 +28,7 @@
 </head>
 
 <body>
-    <!-- <div id="loader">
 
-        <div class="logoLoader">
-            <span>K</span>
-            <span>I</span>
-            <span>R</span>
-            <span>A</span>
-            <span>T</span>
-            <span>T</span>
-        </div>
-
-        <div class="slogan">
-            Make It Happen
-        </div>
-
-    </div> -->
     <!-- Login Modal -->
     <div class="loginindex">
         <div class="modal fade" id="loginModal">
@@ -102,7 +87,7 @@
 
         </div>
     </div>
-      <!--TopPannel-->
+    <!--TopPannel-->
     <div class="discountTop">
         <div class="row">
             <div class="col-md-8 infoIndexTop">
@@ -374,348 +359,398 @@
             </div>
         </div>
     </div>
-
-    <section class="product-gallery">
-
-        <div class="container">
+    <!--collection Pannel-->
+    <section class="collectionPannel">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-7">
-                    <div class="row align-items-center">
+                <div class="col-md-3">
+                    <div class="filterSidebar">
+                        <div class="filterTitle">
+                            Filters
+                        </div>
+                        <!-- CATEGORY -->
+                        <div class="filterBlock">
+                            <div class="filterHead" data-bs-toggle="collapse" data-bs-target="#categoryFilter">
+                                <span>CATEGORIES</span>
+                                <i class="bi bi-chevron-up arrow"></i>
+                            </div>
 
-                        <!-- LEFT THUMBNAILS -->
-                        <div class="col-md-2">
+                            <div class="collapse show filterBody" id="categoryFilter">
 
-                            <div class="nav flex-column nav-pills thumbnail-list">
+                                <ul class="categoryList">
 
-                                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#img1">
-                                    <img src="images/HomeAppliances.jfif">
-                                </button>
+                                    <li><i class="bi bi-chevron-left"></i> Clothing and Accessories</li>
+                                    <li><i class="bi bi-chevron-left"></i> Bottomwear</li>
 
-                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#img2">
-                                    <img src="images/Ac.jfif">
-                                </button>
-
-                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#img3">
-                                    <img src="images/cloth.jfif">
-                                </button>
-
-                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#img4">
-                                    <img src="images/Electrician.jfif">
-                                </button>
+                                </ul>
 
                             </div>
 
                         </div>
 
 
-                        <!-- RIGHT BIG IMAGE -->
-                        <div class="col-md-10">
+                        <!-- BRAND -->
 
-                            <div class="tab-content">
+                        <div class="filterBlock">
 
-                                <div class="tab-pane fade show active product-preview" id="img1">
-                                    <img src="images/HomeAppliances.jfif">
+                            <div class="filterHead collapsed" data-bs-toggle="collapse" data-bs-target="#brandFilter">
+                                <span>BRAND</span>
+                                <i class="bi bi-chevron-up arrow"></i>
+                            </div>
+
+                            <div class="collapse filterBody" id="brandFilter">
+
+                                <input type="text" class="brandSearch" placeholder="Search Brand">
+
+                                <div class="brandList">
+
+                                    <label class="checkItem">
+                                        <input type="checkbox"> AAKARTI FASHION
+                                    </label>
+
+                                    <label class="checkItem">
+                                        <input type="checkbox"> AARAV FASHION
+                                    </label>
+
+                                    <label class="checkItem">
+                                        <input type="checkbox"> AJCreations
+                                    </label>
+
+                                    <label class="checkItem">
+                                        <input type="checkbox"> AKKI
+                                    </label>
+
+                                    <label class="checkItem">
+                                        <input type="checkbox"> ALISHAH
+                                    </label>
+
+                                    <label class="checkItem">
+                                        <input type="checkbox"> AMKIDSFASHION
+                                    </label>
+
                                 </div>
 
-                                <div class="tab-pane fade product-preview" id="img2">
-                                    <img src="images/Ac.jfif">
-                                </div>
-
-                                <div class="tab-pane fade product-preview" id="img3">
-                                    <img src="images/cloth.jfif">
-                                </div>
-
-                                <div class="tab-pane fade product-preview" id="img4">
-                                    <img src="images/Electrician.jfif">
+                                <div class="moreBrand">
+                                    806 MORE
                                 </div>
 
                             </div>
 
                         </div>
 
+
+                        <!-- GENDER -->
+
+                        <div class="filterBlock">
+
+                            <div class="filterHead collapsed" data-bs-toggle="collapse" data-bs-target="#genderFilter">
+                                <span>GENDER</span>
+                                <i class="bi bi-chevron-up arrow"></i>
+                            </div>
+
+                            <div class="collapse filterBody" id="genderFilter">
+
+                                <label class="checkItem">
+                                    <input type="checkbox"> Men
+                                </label>
+
+                                <label class="checkItem">
+                                    <input type="checkbox"> Women
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="priceFilter">
+
+                            <div class="priceTitle">
+                                PRICE
+                            </div>
+
+                            <div class="priceGraph">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <input type="range" class="priceSlider" min="0" max="5000">
+
+                            <div class="priceInputs">
+
+                                <select class="priceSelect">
+                                    <option>Min</option>
+                                    <option>₹100</option>
+                                    <option>₹500</option>
+                                    <option>₹1000</option>
+                                </select>
+
+                                <span class="priceText">to</span>
+
+                                <select class="priceSelect">
+                                    <option>₹1500+</option>
+                                    <option>₹2000</option>
+                                    <option>₹3000</option>
+                                    <option>₹5000+</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+                        <!-- SIZE -->
+
+                        <div class="filterBlock">
+
+                            <div class="filterHead collapsed" data-bs-toggle="collapse" data-bs-target="#sizeFilter">
+                                <span>SIZE</span>
+                                <i class="bi bi-chevron-up arrow"></i>
+                            </div>
+
+                            <div class="collapse filterBody" id="sizeFilter">
+
+                                <label class="checkItem">
+                                    <input type="checkbox"> S
+                                </label>
+
+                                <label class="checkItem">
+                                    <input type="checkbox"> M
+                                </label>
+
+                                <label class="checkItem">
+                                    <input type="checkbox"> L
+                                </label>
+
+                            </div>
+
+                        </div>
+                        <!-- COLOR -->
+                        <div class="filterBlock">
+                            <div class="filterHead collapsed" data-bs-toggle="collapse" data-bs-target="#colorFilter">
+                                <span>COLOR</span>
+                                <i class="bi bi-chevron-up arrow"></i>
+                            </div>
+
+                            <div class="collapse filterBody" id="colorFilter">
+
+                                <label class="checkItem">
+                                    <input type="checkbox"> Black
+                                </label>
+
+                                <label class="checkItem">
+                                    <input type="checkbox"> Blue
+                                </label>
+
+                                <label class="checkItem">
+                                    <input type="checkbox"> Red
+                                </label>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="postBanner">
+                        <img src="images/banner-sidebar.png" alt="">
                     </div>
 
-                    <div class="productDetailsTabs">
-
-
-                        <ul class="nav productTabsNav" role="tablist">
-
-                            <li class="nav-item">
-                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#desc">
-                                    Description
-                                </button>
-                            </li>
-
-                            <li class="nav-item">
-                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#shipping">
-                                    Shipping & return
-                                </button>
-                            </li>
-
-                            <li class="nav-item">
-                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#reviews">
-                                    Customer reviews
-                                </button>
-                            </li>
-
-                        </ul>
-
-
-
-                        <div class="tab-content productTabContent">
-
-                            <!-- DESCRIPTION -->
-
-                            <div class="tab-pane fade show active" id="desc">
-
-                                <div class="row align-items-center">
-
-                                    <div class="col-lg-7">
-
-                                        <p class="productTabText">
-                                            Temporibus unde ut exercitationem sit nostrum consectetur est.
-                                            Voluptatem fugit nisi et minima vel. Adipisci iure ut corrupti hic
-                                            consectetur. Atque mollitia modi suscipit ut necessitatibus.
-                                        </p>
-
-
-                                        <div class="featureTitle">
-                                            Outstanding Features
-                                        </div>
-
-                                        <p class="productTabText">
-                                            Blanditiis dolorem voluptatem consequuntur explicabo accusamus
-                                            fugiat maxime. Eum vel fugit voluptatibus ex dolorum dolorem cupiditate.
-                                        </p>
-
-                                        <p class="productTabText">
-                                            Product warranty pro 2 years. Impact resistant design.
-                                            High quality material and premium finishing.
-                                        </p>
-
-                                    </div>
-
-
-                                    <div class="col-lg-5">
-
-                                        <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=1200"
-                                            class="productTabImage">
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-
-
-                            <!-- SHIPPING -->
-
-                            <div class="tab-pane fade" id="shipping">
-
-                                <div class="productTabText">
-
-                                    <h5>Shipping Information</h5>
-
-                                    <p>
-                                        Orders are processed within 24 hours. Delivery time usually takes
-                                        3-5 business days depending on your location.
-                                    </p>
-
-                                    <h5>Return Policy</h5>
-
-                                    <p>
-                                        You can return products within 7 days if unused and in original
-                                        packaging.
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-
-
-                            <!-- REVIEWS -->
-
-                            <div class="tab-pane fade" id="reviews">
-
-                                <div class="productTabText">
-
-                                    <h5>Customer Reviews</h5>
-
-                                    <p>⭐ ⭐ ⭐ ⭐ ⭐</p>
-
-                                    <p>
-                                        Great quality product. Very comfortable and stylish.
-                                        Highly recommended.
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-
-                        </div>
-
-                    </div>
-                    
                 </div>
-                <div class="col-md-5">
-                    <div class="productDetailsView">
-                        <div class="productTitle">
-                            <p>Kiratt</p>
-                            <h3> ProMax Super Bass Headphones</h3>
-                        </div>
-                        <div class="productRating">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <span class="ms-2">1 review</span>
-                            <span class="productSold">
-                                15 sold in last 20 hours
-                            </span>
-                        </div>
-                        <div class="productPrice">
-                            <h3>$120.00</h3>
-                            <p> The cotton long-sleeved striped t-shirt features a classic crew neckline,
-                                easy short sleeves, a slightly cropped length and a relaxed fit for a
-                                truly timeless look.</p>
-                        </div>
-                        <div class="productInfoBox">
-                            <div class="productInfoItem">
-                                <i class="bi bi-truck"></i>
-                                <div>
-                                    Estimate delivery times:
-                                    <b>3-5 days International.</b>
-                                </div>
-                            </div>
-                            <div class="productInfoItem">
-                                <i class="bi bi-tag"></i>
-                                <div>
-                                    Use code "<b>WELCOME15</b>" for discount 15% on your first order.
-                                </div>
-                            </div>
-                            <div class="productInfoItem">
-                                <i class="bi bi-box"></i>
-                                <div>
-                                    Free shipping & returns:
-                                    <b>On all orders over $150.</b>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="productViewing">
-                            <i class="bi bi-eye"></i>
-                            26 peoples are viewing this right now
-                        </div>
-                        <div class="productActions">
-                            <div>
-                                <i class="bi bi-question-circle"></i>
-                                Ask a question
-                            </div>
-                            <div>
-                                <i class="bi bi-share"></i>
-                                Share
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="productCartSection">
-                            <div class="productQty">
-                                <button>-</button>
-                                <span>1</span>
-                                <button>+</button>
-                            </div>
-                            <button class="productAddCart">
-                                Add To Cart
-                            </button>
-                            <div class="productIconBtn">
-                                <i class="bi bi-heart"></i>
-                            </div>
-                            <div class="productIconBtn">
-                                <i class="bi bi-layers"></i>
-                            </div>
-                        </div>
-                        <div class="productTerms">
-                            <input type="checkbox">
-                            <div>
-                                I agree with <b>Terms & Conditions</b>
-                            </div>
-                        </div>
-                        <button class="buyNowBtn">
-                            Buy It Now
-                        </button>
-                        <div class="productMeta">
-                            <div class="metaRow">
-                                <div class="metaLabel">Sku:</div>
-                                <div class="metaValue">MKT_01</div>
-                            </div>
-                            <div class="metaRow">
-                                <div class="metaLabel">Available:</div>
-                                <div class="metaValue">Instock</div>
-                            </div>
-                            <div class="metaRow">
-                                <div class="metaLabel">Collections:</div>
-
-                                <div class="metaValue">
-                                    Bags, Electronics, Fashion, Foot Wear, Furniture,
-                                    Health & Beauty, Home & Garden, Jewelry,
-                                    Pet Supplies, Sports & Entertainment,
-                                    Tools & Industrial, Toys & Games
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 relatedBox">
-                    <h1><i class="bi bi-box2-heart-fill"></i> Related Products</h1>
+                <div class="col-md-9">
                     <div class="row">
-                        <div class="col-md-3">
-                            <div class="boxRelated">
-                                <img src="images/Automotive.jpg" alt="" title="">
-                                <h3>Automotive</h3>
-                                  <p>
-                            <span class="old">$690</span>
-                            <span class="new">$600</span>
-                        </p>
+                        <div class="col-md-6">
+                            <div class="collectionrightTop">
+                                <h3>Featured Electronics</h3>
+                                <p>22 items</p>
                             </div>
                         </div>
-                          <div class="col-md-3">
-                            <div class="boxRelated">
-                                <img src="images/Automotive.jpg" alt="" title="">
-                                <h3>Automotive</h3>
-                                  <p>
-                            <span class="old">$690</span>
-                            <span class="new">$600</span>
-                        </p>
+                        <div class="col-md-6">
+                            <div class="featuresFilter">
+                                <label for="sort">Sort By:</label>
+                                <select id="sort" name="features">
+                                    <option value="Bestselling">Bestselling</option>
+                                    <option value="PriceLow">Price: Low to High</option>
+                                    <option value="PriceHigh">Price: High to Low</option>
+                                    <option value="Avg">Avg. Customer Review</option>
+                                    <option value="Newest">Newest Arrivals</option>
+                                    <option value="Sellers">Best Sellers</option>
+                                </select>
                             </div>
                         </div>
-                          <div class="col-md-3">
-                            <div class="boxRelated">
-                                <img src="images/Automotive.jpg" alt="" title="">
-                                <h3>Automotive</h3>
-                                  <p>
-                            <span class="old">$690</span>
-                            <span class="new">$600</span>
-                        </p>
+                    </div>
+                    <div class="productFile">
+                        <div class="row">
+                            <!-- Product 1 -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-card">
+                                    <div class="product-card-image">
+                                        <span>-50%</span>
+                                        <img src="images/shoes.jpg">
+                                    </div>
+                                    <div class="product-actions">
+                                        <a href=""><i
+                                                class="bi bi-heart"></i></a>
+                                        <a href=""> <i class="bi bi-cart"></i></a>
+                                        <a href="" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="bi bi-eye"></i></a>
+                                    </div>
+                                    <div class="product-price">
+                                        <h4>Xbox Series Wireless Controller</h4>
+                                        <span class="price-old">Rs. 56,400</span>
+                                        <span class="price-new">Rs. 28,200</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                          <div class="col-md-3">
-                            <div class="boxRelated">
-                                <img src="images/Automotive.jpg" alt="" title="">
-                                <h3>Automotive</h3>
-                                  <p>
-                            <span class="old">$690</span>
-                            <span class="new">$600</span>
-                        </p>
+                            <!-- Product 2 -->
+
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-card">
+
+                                    <div class="product-card-image">
+                                        <span>-50%</span>
+                                        <img src="images/shoes.jpg">
+                                    </div>
+                                    <div class="product-actions">
+                                        <i class="bi bi-heart"></i>
+                                        <i class="bi bi-cart"></i>
+                                        <i class="bi bi-eye"></i>
+                                    </div>
+                                    <div class="product-price">
+                                        <h4>Xbox Series Wireless Controller</h4>
+                                        <span class="price-old">Rs. 56,400</span>
+                                        <span class="price-new">Rs. 28,200</span>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- Product 3 -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-card">
+
+                                    <div class="product-card-image">
+                                        <span>-50%</span>
+                                        <img src="images/shoes.jpg">
+                                    </div>
+                                    <div class="product-actions">
+                                        <i class="bi bi-heart"></i>
+                                        <i class="bi bi-cart"></i>
+                                        <i class="bi bi-eye"></i>
+                                    </div>
+                                    <div class="product-price">
+                                        <h4>Xbox Series Wireless Controller</h4>
+                                        <span class="price-old">Rs. 56,400</span>
+                                        <span class="price-new">Rs. 28,200</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 4 -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-card">
+
+                                    <div class="product-card-image">
+                                        <span>-50%</span>
+                                        <img src="images/shoes.jpg">
+                                    </div>
+                                    <div class="product-actions">
+                                        <i class="bi bi-heart"></i>
+                                        <i class="bi bi-cart"></i>
+                                        <i class="bi bi-eye"></i>
+                                    </div>
+                                    <div class="product-price">
+                                        <h4>Xbox Series Wireless Controller</h4>
+                                        <span class="price-old">Rs. 56,400</span>
+                                        <span class="price-new">Rs. 28,200</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 1 -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-card">
+                                    <div class="product-card-image">
+                                        <span>-50%</span>
+                                        <img src="images/shoes.jpg">
+                                    </div>
+                                    <div class="product-actions">
+                                        <i class="bi bi-heart"></i>
+                                        <i class="bi bi-cart"></i>
+                                        <i class="bi bi-eye"></i>
+                                    </div>
+                                    <div class="product-price">
+                                        <h4>Xbox Series Wireless Controller</h4>
+                                        <span class="price-old">Rs. 56,400</span>
+                                        <span class="price-new">Rs. 28,200</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 2 -->
+
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-card">
+
+                                    <div class="product-card-image">
+                                        <span>-50%</span>
+                                        <img src="images/shoes.jpg">
+                                    </div>
+                                    <div class="product-actions">
+                                        <i class="bi bi-heart"></i>
+                                        <i class="bi bi-cart"></i>
+                                        <i class="bi bi-eye"></i>
+                                    </div>
+                                    <div class="product-price">
+                                        <h4>Xbox Series Wireless Controller</h4>
+                                        <span class="price-old">Rs. 56,400</span>
+                                        <span class="price-new">Rs. 28,200</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 3 -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-card">
+
+                                    <div class="product-card-image">
+                                        <span>-50%</span>
+                                        <img src="images/shoes.jpg">
+                                    </div>
+                                    <div class="product-actions">
+                                        <i class="bi bi-heart"></i>
+                                        <i class="bi bi-cart"></i>
+                                        <i class="bi bi-eye"></i>
+                                    </div>
+                                    <div class="product-price">
+                                        <h4>Xbox Series Wireless Controller</h4>
+                                        <span class="price-old">Rs. 56,400</span>
+                                        <span class="price-new">Rs. 28,200</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 4 -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-card">
+
+                                    <div class="product-card-image">
+                                        <span>-50%</span>
+                                        <img src="images/shoes.jpg">
+                                    </div>
+                                    <div class="product-actions">
+                                        <i class="bi bi-heart"></i>
+                                        <i class="bi bi-cart"></i>
+                                        <i class="bi bi-eye"></i>
+                                    </div>
+                                    <div class="product-price">
+                                        <h4>Xbox Series Wireless Controller</h4>
+                                        <span class="price-old">Rs. 56,400</span>
+                                        <span class="price-new">Rs. 28,200</span>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
+    <!--collection Pannel-->
     <!--footer-->
     <footer>
         <div class="container">
@@ -767,6 +802,58 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="quickViewModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content p-4">
+                <button class="btn-close position-absolute end-0 top-0 m-3" data-bs-dismiss="modal"></button>
+                <div class="row">
+                    <!-- Image -->
+                    <div class="col-md-6">
+                        <img src="images/CarpenterService.jfif" class="quickProductImg">
+                    </div>
+                    <!-- Product Details -->
+                    <div class="col-md-6">
+                        <div class="quickBrandmodal">
+                            <p>ArmaLitv</p>
+                            <h3>5287 Semi-Auto Pistol</h3>
+                            <p>Rs. 75,100.00</p>
+                         <p>
+                            A long gun is a category of firearms with long barrels.
+                            In small arms, a long gun is generally designed to be
+                            held by both hands and braced.
+                        </p>
+                        </div>
+                        <!-- Quantity -->
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="qtyBox">
+                                <button class="qtyBtn">-</button>
+                                <input type="text" value="1" class="qtyInput">
+                                <button class="qtyBtn">+</button>
+                            </div>
+                            <div class="wishlist">
+                                <i class="bi bi-heart"></i> Add to Wishlist
+                            </div>
+
+                        </div>
+                        <button class="addCartBtn">
+                            ADD TO CART
+                        </button>
+                        <a href="servicePage.html" class="viewDetails">
+                            View More Details →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
     <!--footer-->
     <!--  JavaScript -->
     <script src="js/jQueryv3.6.0.min.js"></script>
@@ -775,29 +862,6 @@
     <!-- Owl -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
-
-
-    <script>
-
-        const menuOpen = document.getElementById("menuOpen");
-        const menuClose = document.getElementById("menuClose");
-        const menu = document.querySelector(".menuRight");
-
-        menuOpen.onclick = () => {
-            menu.classList.add("active");
-            menuOpen.style.display = "none";
-            menuClose.style.display = "block";
-        }
-
-        menuClose.onclick = () => {
-            menu.classList.remove("active");
-            menuOpen.style.display = "block";
-            menuClose.style.display = "none";
-        }
-
-    </script>
-
-
 </body>
 
 </html>
