@@ -436,348 +436,83 @@
             </div>
         </div>
     </div>
-
-    <section class="product-gallery">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="row align-items-center">
-
-                        <!-- LEFT THUMBNAILS -->
-                        <div class="col-md-2">
-
-                            <div class="nav flex-column nav-pills thumbnail-list">
-
-                                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#img1">
-                                    <img src="images/HomeAppliances.jfif">
-                                </button>
-
-                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#img2">
-                                    <img src="images/Ac.jfif">
-                                </button>
-
-                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#img3">
-                                    <img src="images/cloth.jfif">
-                                </button>
-
-                                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#img4">
-                                    <img src="images/Electrician.jfif">
-                                </button>
-
-                            </div>
-
+    <!-- Login pannel -->
+    <div class="loginDash container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6 changeImage">
+                        <div class="longinleft">
+                            <img src="images/register.png" alt="">
                         </div>
-
-
-                        <!-- RIGHT BIG IMAGE -->
-                        <div class="col-md-10">
-
-                            <div class="tab-content">
-
-                                <div class="tab-pane fade show active product-preview" id="img1">
-                                    <img src="images/HomeAppliances.jfif">
-                                </div>
-
-                                <div class="tab-pane fade product-preview" id="img2">
-                                    <img src="images/Ac.jfif">
-                                </div>
-
-                                <div class="tab-pane fade product-preview" id="img3">
-                                    <img src="images/cloth.jfif">
-                                </div>
-
-                                <div class="tab-pane fade product-preview" id="img4">
-                                    <img src="images/Electrician.jfif">
-                                </div>
-
-                            </div>
-
-                        </div>
-
                     </div>
+                    <div class="col-md-6">
+                        <div class="loginBox">
+                            <h3>Register</h3>
+                            <p>Insert your account information:</p>
+                            <form>
+                                <div class="formGroup">
+                                    <label>Name</label>
+                                    <input type="text" placeholder="Enter Your name">
+                                </div>
+                                <div class="formGroup">
+                                    <label>Phone /Email </label>
+                                    <input type="text" placeholder="Enter Phone Number">
+                                </div>
+                                <div class="formGroup">
+                                    <label>Password</label>
+                                    <input type="password" id="password" placeholder="Password">
+                                    <span onclick="togglePassword('password', this)">
+                                        <i class="bi bi-eye"></i>
+                                    </span>
+                                </div>
 
-                    <div class="productDetailsTabs">
-
-
-                        <ul class="nav productTabsNav" role="tablist">
-
-                            <li class="nav-item">
-                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#desc">
-                                    Description
-                                </button>
-                            </li>
-
-                            <li class="nav-item">
-                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#shipping">
-                                    Shipping & return
-                                </button>
-                            </li>
-
-                            <li class="nav-item">
-                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#reviews">
-                                    Customer reviews
-                                </button>
-                            </li>
-
-                        </ul>
-
-
-
-                        <div class="tab-content productTabContent">
-
-                            <!-- DESCRIPTION -->
-
-                            <div class="tab-pane fade show active" id="desc">
-
-                                <div class="row align-items-center">
-
-                                    <div class="col-lg-7">
-
-                                        <p class="productTabText">
-                                            Temporibus unde ut exercitationem sit nostrum consectetur est.
-                                            Voluptatem fugit nisi et minima vel. Adipisci iure ut corrupti hic
-                                            consectetur. Atque mollitia modi suscipit ut necessitatibus.
-                                        </p>
-
-
-                                        <div class="featureTitle">
-                                            Outstanding Features
+                                <div class="formGroup">
+                                    <label>Confirm Password</label>
+                                    <input type="password" id="confirmPassword" placeholder="confirm Password">
+                                    <span onclick="togglePassword('confirmPassword', this)">
+                                        <i class="bi bi-eye"></i>
+                                    </span>
+                                </div>
+                                <!-- <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="formGroup">
+                                            <label>Name</label>
+                                            <input type="text" placeholder="Enter Your name">
                                         </div>
-
-                                        <p class="productTabText">
-                                            Blanditiis dolorem voluptatem consequuntur explicabo accusamus
-                                            fugiat maxime. Eum vel fugit voluptatibus ex dolorum dolorem cupiditate.
-                                        </p>
-
-                                        <p class="productTabText">
-                                            Product warranty pro 2 years. Impact resistant design.
-                                            High quality material and premium finishing.
-                                        </p>
-
                                     </div>
-
-
-                                    <div class="col-lg-5">
-
-                                        <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=1200"
-                                            class="productTabImage">
-
+                                    <div class="col-md-6">
+                                       <div class="formGroup">
+                                            <label>Phone /Email </label>
+                                            <input type="text" placeholder="Enter Phone Number">
+                                        </div>
                                     </div>
-
                                 </div>
+                                 <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="formGroup">
+                                            <label>Password</label>
+                                            <input type="password" placeholder="Enter Password">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="formGroup">
+                                            <label>Confirm password</label>
+                                            <input type="password" placeholder="Enter Confirm Password">
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <button type="submit" class="loginBtn" data-bs-toggle="modal" data-bs-target="#verifyModal"> OTP verification </button>
 
-                            </div>
-
-
-
-                            <!-- SHIPPING -->
-
-                            <div class="tab-pane fade" id="shipping">
-
-                                <div class="productTabText">
-
-                                    <h5>Shipping Information</h5>
-
-                                    <p>
-                                        Orders are processed within 24 hours. Delivery time usually takes
-                                        3-5 business days depending on your location.
-                                    </p>
-
-                                    <h5>Return Policy</h5>
-
-                                    <p>
-                                        You can return products within 7 days if unused and in original
-                                        packaging.
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-
-
-                            <!-- REVIEWS -->
-
-                            <div class="tab-pane fade" id="reviews">
-
-                                <div class="productTabText">
-
-                                    <h5>Customer Reviews</h5>
-
-                                    <p>⭐ ⭐ ⭐ ⭐ ⭐</p>
-
-                                    <p>
-                                        Great quality product. Very comfortable and stylish.
-                                        Highly recommended.
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-
-                        </div>
-
-                    </div>
-                    
-                </div>
-                <div class="col-md-5">
-                    <div class="productDetailsView">
-                        <div class="productTitle">
-                            <p>Kiratt</p>
-                            <h3> ProMax Super Bass Headphones</h3>
-                        </div>
-                        <div class="productRating">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <span class="ms-2">1 review</span>
-                            <span class="productSold">
-                                15 sold in last 20 hours
-                            </span>
-                        </div>
-                        <div class="productPrice">
-                            <h3>$120.00</h3>
-                            <p> The cotton long-sleeved striped t-shirt features a classic crew neckline,
-                                easy short sleeves, a slightly cropped length and a relaxed fit for a
-                                truly timeless look.</p>
-                        </div>
-                        <div class="productInfoBox">
-                            <div class="productInfoItem">
-                                <i class="bi bi-truck"></i>
-                                <div>
-                                    Estimate delivery times:
-                                    <b>3-5 days International.</b>
-                                </div>
-                            </div>
-                            <div class="productInfoItem">
-                                <i class="bi bi-tag"></i>
-                                <div>
-                                    Use code "<b>WELCOME15</b>" for discount 15% on your first order.
-                                </div>
-                            </div>
-                            <div class="productInfoItem">
-                                <i class="bi bi-box"></i>
-                                <div>
-                                    Free shipping & returns:
-                                    <b>On all orders over $150.</b>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="productViewing">
-                            <i class="bi bi-eye"></i>
-                            26 peoples are viewing this right now
-                        </div>
-                        <div class="productActions">
-                            <div>
-                                <i class="bi bi-question-circle"></i>
-                                Ask a question
-                            </div>
-                            <div>
-                                <i class="bi bi-share"></i>
-                                Share
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="productCartSection">
-                            <div class="productQty">
-                                <button>-</button>
-                                <span>1</span>
-                                <button>+</button>
-                            </div>
-                            <button class="productAddCart">
-                                Add To Cart
-                            </button>
-                            <div class="productIconBtn">
-                                <i class="bi bi-heart"></i>
-                            </div>
-                            <div class="productIconBtn">
-                                <i class="bi bi-layers"></i>
-                            </div>
-                        </div>
-                        <div class="productTerms">
-                            <input type="checkbox">
-                            <div>
-                                I agree with <b>Terms & Conditions</b>
-                            </div>
-                        </div>
-                        <button class="buyNowBtn">
-                            Buy It Now
-                        </button>
-                        <div class="productMeta">
-                            <div class="metaRow">
-                                <div class="metaLabel">Sku:</div>
-                                <div class="metaValue">MKT_01</div>
-                            </div>
-                            <div class="metaRow">
-                                <div class="metaLabel">Available:</div>
-                                <div class="metaValue">Instock</div>
-                            </div>
-                            <div class="metaRow">
-                                <div class="metaLabel">Collections:</div>
-
-                                <div class="metaValue">
-                                    Bags, Electronics, Fashion, Foot Wear, Furniture,
-                                    Health & Beauty, Home & Garden, Jewelry,
-                                    Pet Supplies, Sports & Entertainment,
-                                    Tools & Industrial, Toys & Games
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 relatedBox">
-                    <h1><i class="bi bi-box2-heart-fill"></i> Related Products</h1>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="boxRelated">
-                                <img src="images/Automotive.jpg" alt="" title="">
-                                <h3>Automotive</h3>
-                                  <p>
-                            <span class="old">$690</span>
-                            <span class="new">$600</span>
-                        </p>
-                            </div>
-                        </div>
-                          <div class="col-md-3">
-                            <div class="boxRelated">
-                                <img src="images/Automotive.jpg" alt="" title="">
-                                <h3>Automotive</h3>
-                                  <p>
-                            <span class="old">$690</span>
-                            <span class="new">$600</span>
-                        </p>
-                            </div>
-                        </div>
-                          <div class="col-md-3">
-                            <div class="boxRelated">
-                                <img src="images/Automotive.jpg" alt="" title="">
-                                <h3>Automotive</h3>
-                                  <p>
-                            <span class="old">$690</span>
-                            <span class="new">$600</span>
-                        </p>
-                            </div>
-                        </div>
-                          <div class="col-md-3">
-                            <div class="boxRelated">
-                                <img src="images/Automotive.jpg" alt="" title="">
-                                <h3>Automotive</h3>
-                                  <p>
-                            <span class="old">$690</span>
-                            <span class="new">$600</span>
-                        </p>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-    </section>
+        </div>
+    </div>
+    <!-- Login pannel -->
     <!--footer-->
     <footer>
         <div class="container">
@@ -830,16 +565,86 @@
         </div>
     </footer>
     <!--footer-->
+    <div class="modal fade show" id="verifyModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4">
+
+                <!-- Header -->
+                <div class="modal-header verifyPannel">
+                    <h5 class="modal-title">Verify Your Account</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body text-center">
+
+                    <p class="text-muted small mb-3">
+                        Enter the 6 digit OTP sent to your registered mobile/email
+                    </p>
+
+                    <!-- OTP Inputs -->
+                    <div class="d-flex justify-content-between mb-3">
+                        <input type="text" maxlength="1" class="form-control otp-input">
+                        <input type="text" maxlength="1" class="form-control otp-input">
+                        <input type="text" maxlength="1" class="form-control otp-input">
+                        <input type="text" maxlength="1" class="form-control otp-input">
+                        <input type="text" maxlength="1" class="form-control otp-input">
+                        <input type="text" maxlength="1" class="form-control otp-input">
+                    </div>
+
+                    <!-- Timer -->
+                    <div class="mb-3">
+                        <small class="text-muted ">
+                            Resend OTP in <span id="timer">6</span>s
+                        </small>
+                    </div>
+
+                    <!-- Verify Button -->
+                    <div class="d-grid">
+                        <button class="btn btn-success" onclick="showSuccess()">Verify</button>
+                    </div>
+
+                    <!-- Resend -->
+                    <div class="mt-3">
+                        <small>
+                            Didn't receive OTP?
+                            <span class="text-primary fw-semibold resend-link" onclick="resendOTP()">Resend</span>
+                        </small>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+       <!-- SUCCESS MODAL -->
+    <div class="modal fade" id="successModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center p-5 rounded-4 border-0 shadow-lg">
+
+                <!-- Animated Check Icon -->
+                <div class="success-icon mb-4">
+                    <svg viewBox="0 0 52 52">
+                        <circle class="circle" cx="26" cy="26" r="25" fill="none" />
+                        <path class="check" fill="none" d="M14 27l7 7 16-16" />
+                    </svg>
+                </div>
+
+                <h4 class="fw-bold text-success">Verification Successful!</h4>
+                <p class="text-muted">Your account has been verified successfully.</p>
+
+                <a href="BusinessProfile.html" class="Continue">Continue</a>
+            </div>
+        </div>
+    </div>
     <!--  JavaScript -->
     <script src="js/jQueryv3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <!-- Owl -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="js/custom.js"></script>
-
-
 </body>
 
 </html>

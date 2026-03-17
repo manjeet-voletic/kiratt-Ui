@@ -28,77 +28,44 @@
 </head>
 
 <body>
-
-    <!-- Login Modal -->
-    <div class="loginindex">
-        <div class="modal fade" id="loginModal">
-
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content p-3">
-
-                    <div class="modal-header border-0">
-                        <h5 class="fw-bold">Login to your account</h5>
-                        <button class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <hr>
-                    <div class="modal-body">
-
-                        <!-- Email -->
-                        <div class="mb-3 inputBox">
-                            <i class="bi bi-envelope"></i>
-                            <input type="email" class="form-control customInput" placeholder="Enter your email">
-                        </div>
-
-                        <!-- Password -->
-                        <div class="mb-2 inputBox">
-                            <i class="bi bi-lock"></i>
-                            <input type="password" class="form-control customInput" placeholder="Enter your password">
-                        </div>
-
-                        <div class="forgotSign mb-3">
-                            <a href="#" class="signUP">Sign Up</a>
-                            <a href="#" class="forgotLink">Forgot Password?</a>
-                        </div>
-
-                        <button class="loginBtn w-100 mb-3">
-                            <i class="bi bi-box-arrow-in-right"></i> Login
-                        </button>
-
-                        <div class="divider my-3">OR</div>
-
-                        <div class="row g-2">
-                            <div class="col-6">
-                                <button class="altLogin growthLogin w-100">
-                                    <i class="bi bi-graph-up-arrow"></i> Growth
-                                </button>
-                            </div>
-
-                            <div class="col-6">
-                                <button class="altLogin vendorLogin w-100">
-                                    <i class="bi bi-shop"></i> Vendor
-                                </button>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </div>
     <!--TopPannel-->
     <div class="discountTop">
-        <div class="row">
-            <div class="col-md-8 infoIndexTop">
+        <div class="row align-items-center">
+            <div class="col-md-4 infoIndexTop">
                 <a href=""><i class="bi bi-envelope-fill"></i> @InfoKiratt.com</a>
                 <a href=""><i class="bi bi-telephone-fill"></i> +919041342552</a>
             </div>
             <div class="col-md-4 codeIndex">
                 <a href="">🎉 Get 15% OFF your first order with code: WELCOME15</a>
             </div>
+            <div class="col-md-4">
+                <!-- Language Dropdown -->
+                <div class="language-wrapper">
+                    <div class="selected-lang" onclick="toggleLang()">
+                        <span id="currentLang"><i class="bi bi-translate"></i> Your Language</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+
+                    <ul class="lang-dropdown" id="langDropdown">
+                        <li onclick="changeLang('en','English')">English</li>
+                        <li onclick="changeLang('hi','हिन्दी')">हिन्दी</li>
+                        <li onclick="changeLang('bn','বাংলা')">বাংলা</li>
+                        <li onclick="changeLang('ta','தமிழ்')">தமிழ்</li>
+                        <li onclick="changeLang('te','తెలుగు')">తెలుగు</li>
+                        <li onclick="changeLang('mr','मराठी')">मराठी</li>
+                        <li onclick="changeLang('gu','ગુજરાતી')">ગુજરાતી</li>
+                        <li onclick="changeLang('kn','ಕನ್ನಡ')">ಕನ್ನಡ</li>
+                        <li onclick="changeLang('ml','മലയാളം')">മലയാളം</li>
+                        <li onclick="changeLang('pa','ਪੰਜਾਬੀ')">ਪੰਜਾਬੀ</li>
+                        <li onclick="changeLang('ur','اردو')">اردو</li>
+                    </ul>
+                </div>
+                <!-- Google Translate Hidden -->
+                <div id="google_translate_element" style="display:none;"></div>
+            </div>
         </div>
     </div>
+
     <div class="container">
         <div class="topBar">
             <div class="row align-items-center">
@@ -108,16 +75,16 @@
                     </div>
                 </div>
                 <div class="col-md-10">
-                    <div class="row">
-                        <div class="col-lg-7 col-md-6">
+                    <div class="row align-items-center">
+                        <div class="col-lg-10 col-md-7">
                             <div class="topRight">
-                                <div class="locationIndex">
+                                <div class="locationIndex" data-bs-toggle="modal" data-bs-target="#locationModal">
                                     <div>
                                         <i class="bi bi-geo-alt-fill"></i>
                                     </div>
                                     <div>
                                         <p> Deliver to Manjeet</p>
-                                        <p>Bettiah 845438‌</p>
+                                        <p id="userAddress">Bettiah 845438</p>
                                     </div>
                                 </div>
                                 <!-- Mobile Search Icon -->
@@ -160,48 +127,158 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-5 col-md-6">
+                        <div class="col-lg-2 col-md-5">
                             <div class="TopLeft">
-                                <div class="signInIndex" data-bs-toggle="modal" data-bs-target="#loginModal">
-                                    <div>
-                                        <i class="bi bi-person-fill"></i>
-                                    </div>
-                                    <div>
-                                        <span>Log in</span>
-                                        <!-- <span>Account & Lists</span> -->
+                                <!-- TRIGGER -->
+                                <div class="signInIndex" data-bs-toggle="collapse" data-bs-target="#signInBox">
+                                    <i class="bi bi-person-circle"></i>
+                                    <span>Login</span>
+                                    <!-- PANEL -->
+                                    <div class="collapse signInIndex-panel" id="signInBox">
+
+                                        <!-- Header -->
+                                        <div class="signInIndex-header">
+                                            <span>New customer?</span>
+                                            <a href="#">Sign Up</a>
+                                        </div>
+
+                                        <div class="signInIndex-divider"></div>
+
+                                        <!-- MENU -->
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-person"></i>
+                                            <span>My Profile</span>
+                                        </div>
+
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-box"></i>
+                                            <span>Orders</span>
+                                        </div>
+
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-heart"></i>
+                                            <span>Wishlist</span>
+                                        </div>
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-basket2-fill"></i>
+                                            <span>Returns</span>
+                                        </div>
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-shop"></i>
+                                            <span>Become a Vendor</span>
+                                        </div>
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-shop"></i>
+                                            <span>Become a Growth Leader</span>
+                                        </div>
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-gift"></i>
+                                            <span>Rewards</span>
+                                        </div>
+
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-gift"></i>
+                                            <span>Gift Cards</span>
+                                        </div>
+
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-bell"></i>
+                                            <span>Notification Preferences</span>
+                                        </div>
+
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-headphones"></i>
+                                            <span>24x7 Customer Care</span>
+                                        </div>
+
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-megaphone"></i>
+                                            <span>Advertise</span>
+                                        </div>
+
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-download"></i>
+                                            <span>Download App</span>
+                                        </div>
+
                                     </div>
                                 </div>
-                                <div class="mobile3">
-                                    <div class="translateBox">
-                                        <div id="google_translate_element"></div>
-                                    </div>
+                                <div class="wishlistIndex">
+                                    <a href=""><i class="bi bi-heart"></i></a>
                                 </div>
+                                <!-- CART ICON -->
+                                <div class="myCart-wrapper">
+                                    <i class="bi bi-cart-check" data-bs-toggle="collapse"
+                                        data-bs-target="#myCartBox"></i>
+                                    <span class="myCart-count" data-bs-toggle="collapse"
+                                        data-bs-target="#myCartBox">3</span>
+                                    <!-- CART PANEL -->
+                                    <div class="collapse myCart-panel" id="myCartBox">
+                                        <div class="myCart-header">My Cart</div>
+                                        <!-- Tabs -->
+                                        <ul class="nav nav-tabs myCart-tabs mb-3">
+                                            <li class="nav-item">
+                                                <button class="nav-link active" data-bs-toggle="tab"
+                                                    data-bs-target="#myCart-products">Products</button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button class="nav-link" data-bs-toggle="tab"
+                                                    data-bs-target="#myCart-services">Services</button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button class="nav-link" data-bs-toggle="tab"
+                                                    data-bs-target="#myCart-Food">Food</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
 
-                                <script>
-                                    function googleTranslateElementInit() {
-                                        new google.translate.TranslateElement(
-                                            { pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
-                                            'google_translate_element'
-                                        );
-                                    }
-                                </script>
+                                            <!-- PRODUCTS -->
+                                            <div class="tab-pane fade show active" id="myCart-products">
+                                                <div class="myCart-item">
+                                                    <img src="images/bag.jpg" class="myCart-img">
+                                                    <div>
+                                                        <div class="myCart-title">iPhone 14</div>
+                                                        <div class="myCart-price">₹80,000</div>
+                                                    </div>
+                                                    <i class="bi bi-x myCart-remove"></i>
+                                                </div>
+                                            </div>
 
-                                <script
-                                    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                                <div class="signInIndex">
-                                    <div>
-                                        <p><i class="bi bi-basket2-fill"></i></p>
+                                            <!-- SERVICES -->
+                                            <div class="tab-pane fade" id="myCart-services">
+
+                                                <div class="myCart-item">
+                                                    <img src="images/Ac.jfif" class="myCart-img">
+                                                    <div>
+                                                        <div class="myCart-title">AC Repair</div>
+                                                        <div class="myCart-price">₹599</div>
+                                                    </div>
+                                                    <i class="bi bi-x myCart-remove"></i>
+                                                </div>
+
+                                            </div>
+                                            <!-- FOOD -->
+                                            <div class="tab-pane fade" id="myCart-Food">
+
+                                                <div class="myCart-item">
+                                                    <img src="images/fast.png" class="myCart-img">
+                                                    <div>
+                                                        <div class="myCart-title">burger</div>
+                                                        <div class="myCart-price">₹599</div>
+                                                    </div>
+                                                    <i class="bi bi-x myCart-remove"></i>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <!-- FOOTER -->
+                                        <div class="myCart-footer mt-2">
+                                            <button class="btn myCart-btn w-100">Checkout</button>
+                                        </div>
+
                                     </div>
-                                    <div>
-                                        <span>
-                                            Returns
-                                        </span>
-                                        <!-- <span>& Orders</span> -->
-                                    </div>
-                                </div>
-                                <div class="Cart">
-                                    <i class="bi bi-cart-check"></i>
-
                                 </div>
                             </div>
                         </div>
@@ -590,10 +667,10 @@
                                         <img src="images/shoes.jpg">
                                     </div>
                                     <div class="product-actions">
-                                        <a href=""><i
-                                                class="bi bi-heart"></i></a>
+                                        <a href=""><i class="bi bi-heart"></i></a>
                                         <a href=""> <i class="bi bi-cart"></i></a>
-                                        <a href="" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="bi bi-eye"></i></a>
+                                        <a href="" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                                                class="bi bi-eye"></i></a>
                                     </div>
                                     <div class="product-price">
                                         <h4>Xbox Series Wireless Controller</h4>
@@ -820,11 +897,11 @@
                             <p>ArmaLitv</p>
                             <h3>5287 Semi-Auto Pistol</h3>
                             <p>Rs. 75,100.00</p>
-                         <p>
-                            A long gun is a category of firearms with long barrels.
-                            In small arms, a long gun is generally designed to be
-                            held by both hands and braced.
-                        </p>
+                            <p>
+                                A long gun is a category of firearms with long barrels.
+                                In small arms, a long gun is generally designed to be
+                                held by both hands and braced.
+                            </p>
                         </div>
                         <!-- Quantity -->
                         <div class="d-flex align-items-center gap-3">
@@ -861,6 +938,7 @@
     <script src="js/owl.carousel.min.js"></script>
     <!-- Owl -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="js/custom.js"></script>
 </body>
 
