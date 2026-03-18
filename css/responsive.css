@@ -21,11 +21,21 @@
 .locationIndex {
 display: none !important;
 }
-.signInIndex  span {
-    display: none !important;
-}
+
 .mobile3{
     display:none !important;
+}
+.logo {
+     display: none !important;
+}
+.TopLeft {
+    position: absolute;
+    right: 20px;
+    margin-top: 14px;
+    color: #fff;
+}
+.wishlistIndex i {
+    color: #ffffff !important;
 }
 }
 

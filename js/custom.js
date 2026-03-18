@@ -23,14 +23,14 @@ suggestionItems.forEach(item => {
     });
 });
 
-$(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-    if (scroll >= 200) {
-        $(".header-menu").addClass("darkHeader");
-    } else {
-        $(".header-menu").removeClass("darkHeader");
-    }
-});
+// $(window).scroll(function () {
+//     var scroll = $(window).scrollTop();
+//     if (scroll >= 200) {
+//         $(".topBar").addClass("darkHeader");
+//     } else {
+//         $(".topBar").removeClass("darkHeader");
+//     }
+// });
 // search bar Function //
 // menu bar
 const menuOpen = document.getElementById("menuOpen");

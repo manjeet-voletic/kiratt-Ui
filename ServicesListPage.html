@@ -87,11 +87,6 @@
                                         <p id="userAddress">Bettiah 845438</p>
                                     </div>
                                 </div>
-                                <!-- Mobile Search Icon -->
-                                <button class="mobile-search-icon" id="mobileSearchBtn">
-                                    <i class="bi bi-search"></i>
-                                </button>
-
                                 <div class="search-container" id="searchContainer">
                                     <div class="search-bar">
                                         <!-- Category Dropdown -->
@@ -123,27 +118,27 @@
                                             <span class="close-suggestions">&times;</span>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-5">
                             <div class="TopLeft">
+                                <!-- Mobile Search Icon -->
+                                <button class="mobile-search-icon" id="mobileSearchBtn">
+                                    <i class="bi bi-search"></i>
+                                </button>
                                 <!-- TRIGGER -->
                                 <div class="signInIndex" data-bs-toggle="collapse" data-bs-target="#signInBox">
                                     <i class="bi bi-person-circle"></i>
                                     <span>Login</span>
                                     <!-- PANEL -->
                                     <div class="collapse signInIndex-panel" id="signInBox">
-
                                         <!-- Header -->
                                         <div class="signInIndex-header">
                                             <span>New customer?</span>
                                             <a href="#">Sign Up</a>
                                         </div>
-
                                         <div class="signInIndex-divider"></div>
-
                                         <!-- MENU -->
                                         <div class="signInIndex-item">
                                             <i class="bi bi-person"></i>
@@ -295,6 +290,7 @@
                 <i class="bi bi-x-lg" id="menuClose"></i>
             </div>
             <div class="row">
+
                 <div class="col-md-8">
                     <div class="menuRight">
                         <ul>
@@ -424,6 +420,7 @@
                         </ul>
                     </div>
                 </div>
+
                 <div class="col-md-4">
                     <div class="menuLeft">
                         <ul>
@@ -432,214 +429,136 @@
                         </ul>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
-    <!--collection Pannel-->
-    <section class="collectionPannel">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="filterSidebar">
-                        <div class="filterTitle">
-                            Filters
-                        </div>
-                        <!-- CATEGORY -->
-                        <div class="filterBlock">
-                            <div class="filterHead" data-bs-toggle="collapse" data-bs-target="#categoryFilter">
-                                <span>CATEGORIES</span>
-                                <i class="bi bi-chevron-up arrow"></i>
-                            </div>
-
-                            <div class="collapse show filterBody" id="categoryFilter">
-
-                                <ul class="categoryList">
-
-                                    <li><i class="bi bi-chevron-left"></i> Clothing and Accessories</li>
-                                    <li><i class="bi bi-chevron-left"></i> Bottomwear</li>
-
-                                </ul>
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- BRAND -->
-
-                        <div class="filterBlock">
-
-                            <div class="filterHead collapsed" data-bs-toggle="collapse" data-bs-target="#brandFilter">
-                                <span>BRAND</span>
-                                <i class="bi bi-chevron-up arrow"></i>
-                            </div>
-
-                            <div class="collapse filterBody" id="brandFilter">
-
-                                <input type="text" class="brandSearch" placeholder="Search Brand">
-
-                                <div class="brandList">
-
-                                    <label class="checkItem">
-                                        <input type="checkbox"> AAKARTI FASHION
-                                    </label>
-
-                                    <label class="checkItem">
-                                        <input type="checkbox"> AARAV FASHION
-                                    </label>
-
-                                    <label class="checkItem">
-                                        <input type="checkbox"> AJCreations
-                                    </label>
-
-                                    <label class="checkItem">
-                                        <input type="checkbox"> AKKI
-                                    </label>
-
-                                    <label class="checkItem">
-                                        <input type="checkbox"> ALISHAH
-                                    </label>
-
-                                    <label class="checkItem">
-                                        <input type="checkbox"> AMKIDSFASHION
-                                    </label>
-
-                                </div>
-
-                                <div class="moreBrand">
-                                    806 MORE
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- GENDER -->
-
-                        <div class="filterBlock">
-
-                            <div class="filterHead collapsed" data-bs-toggle="collapse" data-bs-target="#genderFilter">
-                                <span>GENDER</span>
-                                <i class="bi bi-chevron-up arrow"></i>
-                            </div>
-
-                            <div class="collapse filterBody" id="genderFilter">
-
-                                <label class="checkItem">
-                                    <input type="checkbox"> Men
-                                </label>
-
-                                <label class="checkItem">
-                                    <input type="checkbox"> Women
-                                </label>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="priceFilter">
-
-                            <div class="priceTitle">
-                                PRICE
-                            </div>
-
-                            <div class="priceGraph">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-
-                            <input type="range" class="priceSlider" min="0" max="5000">
-
-                            <div class="priceInputs">
-
-                                <select class="priceSelect">
-                                    <option>Min</option>
-                                    <option>₹100</option>
-                                    <option>₹500</option>
-                                    <option>₹1000</option>
-                                </select>
-
-                                <span class="priceText">to</span>
-
-                                <select class="priceSelect">
-                                    <option>₹1500+</option>
-                                    <option>₹2000</option>
-                                    <option>₹3000</option>
-                                    <option>₹5000+</option>
-                                </select>
-
-                            </div>
-
-                        </div>
-                        <!-- SIZE -->
-
-                        <div class="filterBlock">
-
-                            <div class="filterHead collapsed" data-bs-toggle="collapse" data-bs-target="#sizeFilter">
-                                <span>SIZE</span>
-                                <i class="bi bi-chevron-up arrow"></i>
-                            </div>
-
-                            <div class="collapse filterBody" id="sizeFilter">
-
-                                <label class="checkItem">
-                                    <input type="checkbox"> S
-                                </label>
-
-                                <label class="checkItem">
-                                    <input type="checkbox"> M
-                                </label>
-
-                                <label class="checkItem">
-                                    <input type="checkbox"> L
-                                </label>
-
-                            </div>
-
-                        </div>
-                        <!-- COLOR -->
-                        <div class="filterBlock">
-                            <div class="filterHead collapsed" data-bs-toggle="collapse" data-bs-target="#colorFilter">
-                                <span>COLOR</span>
-                                <i class="bi bi-chevron-up arrow"></i>
-                            </div>
-
-                            <div class="collapse filterBody" id="colorFilter">
-
-                                <label class="checkItem">
-                                    <input type="checkbox"> Black
-                                </label>
-
-                                <label class="checkItem">
-                                    <input type="checkbox"> Blue
-                                </label>
-
-                                <label class="checkItem">
-                                    <input type="checkbox"> Red
-                                </label>
-
-                            </div>
-
-                        </div>
+    <!-- services pages -->
+     <section class="servicepannelall">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="filterSidebar">
+                    <div class="filterTitle">
+                        Filters
                     </div>
-                    <div class="postBanner">
-                        <img src="images/banner-sidebar.png" alt="">
+                    <!-- CATEGORY -->
+                    <div class="filterBlock">
+                        <div class="filterHead" data-bs-toggle="collapse" data-bs-target="#categoryFilter">
+                            <span>ALL CATEGORIES</span>
+                            <i class="bi bi-chevron-up arrow"></i>
+                        </div>
+
+                        <div class="collapse show filterBody" id="categoryFilter">
+
+                            <ul class="categoryList">
+
+                                <li><i class="bi bi-chevron-left"></i> AC Repair</li>
+                                <li><i class="bi bi-chevron-left"></i> Plumbing</li>
+                                 <li><i class="bi bi-chevron-left"></i> Electrician</li>
+                                  <li><i class="bi bi-chevron-left"></i> Cleaning</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <!-- BRAND -->   
+                    <div class="filterBlock">
+
+                        <div class="filterHead collapsed" data-bs-toggle="collapse" data-bs-target="#brandFilter">
+                            <span>Services Type</span>
+                            <i class="bi bi-chevron-up arrow"></i>
+                        </div>
+
+                        <div class="collapse filterBody" id="brandFilter">
+
+                            <input type="text" class="brandSearch" placeholder="Search services Type">
+
+                            <div class="brandList">
+
+                                <label class="checkItem">
+                                    <input type="checkbox"> Home Services
+                                </label>
+
+                                <label class="checkItem">
+                                    <input type="checkbox"> Vehicle Services
+                                </label>
+
+                                <label class="checkItem">
+                                    <input type="checkbox"> AJCreations
+                                </label>
+
+                                <label class="checkItem">
+                                    <input type="checkbox"> Business Support Services
+                                </label>
+
+                                <label class="checkItem">
+                                    <input type="checkbox"> Event Services
+                                </label>
+
+                                <label class="checkItem">
+                                    <input type="checkbox"> Education
+                                </label>
+
+                            </div>
+
+                            <div class="moreBrand">
+                                806 MORE
+                            </div>
+
+                        </div>
+
                     </div>
 
+                    <div class="priceFilter">
+
+                        <div class="priceTitle">
+                            PRICE
+                        </div>
+
+                        <div class="priceGraph">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <input type="range" class="priceSlider" min="0" max="5000">
+
+                        <div class="priceInputs">
+
+                            <select class="priceSelect">
+                                <option>Min</option>
+                                <option>₹100</option>
+                                <option>₹500</option>
+                                <option>₹1000</option>
+                            </select>
+
+                            <span class="priceText">to</span>
+
+                            <select class="priceSelect">
+                                <option>₹1500+</option>
+                                <option>₹2000</option>
+                                <option>₹3000</option>
+                                <option>₹5000+</option>
+                            </select>
+
+                        </div>
+
+                    </div>
                 </div>
-                <div class="col-md-9">
-                    <div class="row">
+                <div class="postBanner">
+                    <img src="images/banner-sidebar.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-9">
+                  <div class="row">
                         <div class="col-md-6">
                             <div class="collectionrightTop">
-                                <h3>Featured Electronics</h3>
+                                <h3>Featured Services</h3>
                                 <p>22 items</p>
                             </div>
                         </div>
@@ -647,7 +566,7 @@
                             <div class="featuresFilter">
                                 <label for="sort">Sort By:</label>
                                 <select id="sort" name="features">
-                                    <option value="Bestselling">Bestselling</option>
+                                    <option value="Bestselling">Best Services</option>
                                     <option value="PriceLow">Price: Low to High</option>
                                     <option value="PriceHigh">Price: High to Low</option>
                                     <option value="Avg">Avg. Customer Review</option>
@@ -657,177 +576,90 @@
                             </div>
                         </div>
                     </div>
-                    <div class="productFile">
-                        <div class="row">
-                            <!-- Product 1 -->
-                            <div class="col-lg-3 col-md-6">
-                                <div class="product-card">
-                                    <div class="product-card-image">
-                                        <span>-50%</span>
-                                        <img src="images/shoes.jpg">
-                                    </div>
-                                    <div class="product-actions">
-                                        <a href=""><i class="bi bi-heart"></i></a>
-                                        <a href=""> <i class="bi bi-cart"></i></a>
-                                        <a href="" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
-                                                class="bi bi-eye"></i></a>
-                                    </div>
-                                    <div class="product-price">
-                                        <h4>Xbox Series Wireless Controller</h4>
-                                        <span class="price-old">Rs. 56,400</span>
-                                        <span class="price-new">Rs. 28,200</span>
-                                    </div>
-                                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="services-card">
+                            <div class="services-card-image">
+                                <span>-50%</span>
+                                <img src="images/CarpenterService.jfif">
                             </div>
-                            <!-- Product 2 -->
-
-                            <div class="col-lg-3 col-md-6">
-                                <div class="product-card">
-
-                                    <div class="product-card-image">
-                                        <span>-50%</span>
-                                        <img src="images/shoes.jpg">
-                                    </div>
-                                    <div class="product-actions">
-                                        <i class="bi bi-heart"></i>
-                                        <i class="bi bi-cart"></i>
-                                        <i class="bi bi-eye"></i>
-                                    </div>
-                                    <div class="product-price">
-                                        <h4>Xbox Series Wireless Controller</h4>
-                                        <span class="price-old">Rs. 56,400</span>
-                                        <span class="price-new">Rs. 28,200</span>
-                                    </div>
-                                </div>
+                            <div class="services-actions">
+                                <a href=""><i class="bi bi-heart"></i></a>
+                                <a href=""> <i class="bi bi-cart"></i></a>
+                                <a href="" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                                        class="bi bi-eye"></i></a>
                             </div>
-                            <!-- Product 3 -->
-                            <div class="col-lg-3 col-md-6">
-                                <div class="product-card">
-
-                                    <div class="product-card-image">
-                                        <span>-50%</span>
-                                        <img src="images/shoes.jpg">
-                                    </div>
-                                    <div class="product-actions">
-                                        <i class="bi bi-heart"></i>
-                                        <i class="bi bi-cart"></i>
-                                        <i class="bi bi-eye"></i>
-                                    </div>
-                                    <div class="product-price">
-                                        <h4>Xbox Series Wireless Controller</h4>
-                                        <span class="price-old">Rs. 56,400</span>
-                                        <span class="price-new">Rs. 28,200</span>
-                                    </div>
-                                </div>
+                            <div class="services-price">
+                                <h4>Carpenter Service</h4>
+                                <span class="servicesprice-old">Rs. 56,400</span>
+                                <span class="servicesprice-new">Rs. 28,200</span>
                             </div>
-                            <!-- Product 4 -->
-                            <div class="col-lg-3 col-md-6">
-                                <div class="product-card">
-
-                                    <div class="product-card-image">
-                                        <span>-50%</span>
-                                        <img src="images/shoes.jpg">
-                                    </div>
-                                    <div class="product-actions">
-                                        <i class="bi bi-heart"></i>
-                                        <i class="bi bi-cart"></i>
-                                        <i class="bi bi-eye"></i>
-                                    </div>
-                                    <div class="product-price">
-                                        <h4>Xbox Series Wireless Controller</h4>
-                                        <span class="price-old">Rs. 56,400</span>
-                                        <span class="price-new">Rs. 28,200</span>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6">
+                        <div class="services-card">
+                            <div class="services-card-image">
+                                <span>-50%</span>
+                                <img src="images/Ac.jfif">
                             </div>
-                            <!-- Product 1 -->
-                            <div class="col-lg-3 col-md-6">
-                                <div class="product-card">
-                                    <div class="product-card-image">
-                                        <span>-50%</span>
-                                        <img src="images/shoes.jpg">
-                                    </div>
-                                    <div class="product-actions">
-                                        <i class="bi bi-heart"></i>
-                                        <i class="bi bi-cart"></i>
-                                        <i class="bi bi-eye"></i>
-                                    </div>
-                                    <div class="product-price">
-                                        <h4>Xbox Series Wireless Controller</h4>
-                                        <span class="price-old">Rs. 56,400</span>
-                                        <span class="price-new">Rs. 28,200</span>
-                                    </div>
-                                </div>
+                            <div class="services-actions">
+                                <a href=""><i class="bi bi-heart"></i></a>
+                                <a href=""> <i class="bi bi-cart"></i></a>
+                                <a href="" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                                        class="bi bi-eye"></i></a>
                             </div>
-                            <!-- Product 2 -->
-
-                            <div class="col-lg-3 col-md-6">
-                                <div class="product-card">
-
-                                    <div class="product-card-image">
-                                        <span>-50%</span>
-                                        <img src="images/shoes.jpg">
-                                    </div>
-                                    <div class="product-actions">
-                                        <i class="bi bi-heart"></i>
-                                        <i class="bi bi-cart"></i>
-                                        <i class="bi bi-eye"></i>
-                                    </div>
-                                    <div class="product-price">
-                                        <h4>Xbox Series Wireless Controller</h4>
-                                        <span class="price-old">Rs. 56,400</span>
-                                        <span class="price-new">Rs. 28,200</span>
-                                    </div>
-                                </div>
+                            <div class="services-price">
+                                <h4>Ac Repair Service</h4>
+                                <span class="servicesprice-old">Rs. 56,400</span>
+                                <span class="servicesprice-new">Rs. 28,200</span>
                             </div>
-                            <!-- Product 3 -->
-                            <div class="col-lg-3 col-md-6">
-                                <div class="product-card">
-
-                                    <div class="product-card-image">
-                                        <span>-50%</span>
-                                        <img src="images/shoes.jpg">
-                                    </div>
-                                    <div class="product-actions">
-                                        <i class="bi bi-heart"></i>
-                                        <i class="bi bi-cart"></i>
-                                        <i class="bi bi-eye"></i>
-                                    </div>
-                                    <div class="product-price">
-                                        <h4>Xbox Series Wireless Controller</h4>
-                                        <span class="price-old">Rs. 56,400</span>
-                                        <span class="price-new">Rs. 28,200</span>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                       <div class="col-lg-3 col-md-6">
+                        <div class="services-card">
+                            <div class="services-card-image">
+                                <span>-50%</span>
+                                <img src="images/Plumbing.jfif">
                             </div>
-                            <!-- Product 4 -->
-                            <div class="col-lg-3 col-md-6">
-                                <div class="product-card">
-
-                                    <div class="product-card-image">
-                                        <span>-50%</span>
-                                        <img src="images/shoes.jpg">
-                                    </div>
-                                    <div class="product-actions">
-                                        <i class="bi bi-heart"></i>
-                                        <i class="bi bi-cart"></i>
-                                        <i class="bi bi-eye"></i>
-                                    </div>
-                                    <div class="product-price">
-                                        <h4>Xbox Series Wireless Controller</h4>
-                                        <span class="price-old">Rs. 56,400</span>
-                                        <span class="price-new">Rs. 28,200</span>
-                                    </div>
-                                </div>
+                            <div class="services-actions">
+                                <a href=""><i class="bi bi-heart"></i></a>
+                                <a href=""> <i class="bi bi-cart"></i></a>
+                                <a href="" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                                        class="bi bi-eye"></i></a>
                             </div>
-
+                            <div class="services-price">
+                                <h4>Plumbing Service</h4>
+                                <span class="servicesprice-old">Rs. 56,400</span>
+                                <span class="servicesprice-new">Rs. 28,200</span>
+                            </div>
+                        </div>
+                    </div>
+                       <div class="col-lg-3 col-md-6">
+                        <div class="services-card">
+                            <div class="services-card-image">
+                                <span>-50%</span>
+                                <img src="images/Beauty.jfif">
+                            </div>
+                            <div class="services-actions">
+                                <a href=""><i class="bi bi-heart"></i></a>
+                                <a href=""> <i class="bi bi-cart"></i></a>
+                                <a href="" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i
+                                        class="bi bi-eye"></i></a>
+                            </div>
+                            <div class="services-price">
+                                <h4>MakeUp Service</h4>
+                                <span class="servicesprice-old">Rs. 56,400</span>
+                                <span class="servicesprice-new">Rs. 28,200</span>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
+    </div>
     </section>
-    <!--collection Pannel-->
+    <!-- services pages -->
     <!--footer-->
     <footer>
         <div class="container">
@@ -879,7 +711,8 @@
             </div>
         </div>
     </footer>
-
+    <!--footer-->
+    
     <!-- Modal -->
 
     <div class="modal fade" id="quickViewModal">
@@ -931,7 +764,6 @@
         </div>
 
     </div>
-    <!--footer-->
     <!--  JavaScript -->
     <script src="js/jQueryv3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -940,6 +772,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="js/custom.js"></script>
+
 </body>
 
 </html>
