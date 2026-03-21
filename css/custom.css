@@ -3205,11 +3205,18 @@ text-transform: uppercase;
 }
 /* my cart pages */
 /* HEADER */
+.cartPannel {
+    position: relative;
+}
 .cart-header{
     padding:20px 40px;
-    font-weight:600;
+    font-weight:500;
+    font-size: 24px;
 }
-
+.cart-header h2 {
+     font-weight:500;
+    font-size: 29px;   
+}
 /* MAIN */
 .cartproducts{
     display:grid;
@@ -3439,8 +3446,91 @@ background: linear-gradient(135deg, #1f6f08, #cbbc64);
     display:none;
     text-align:center;
     padding:60px;
+     position: absolute;
+      top: 80px;
+       left: 300px;
+
 }
 
+
+/* Card Animation (fade + scale) */
+.empty-cart-box {
+    text-align: center;
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    max-width: 350px;
+    width: 100%;
+    animation: fadeInScale 0.6s ease;
+}
+
+/* Cart Icon Animation */
+.empty-icon {
+    font-size: 65px;
+    margin-bottom: 15px;
+    animation: bounce 1.5s infinite;
+}
+.empty-icon img {
+     width: 90px;
+}
+/* Text */
+.empty-cart-box h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.empty-cart-box p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.shop-btn {
+    display: inline-block;
+    padding: 10px 22px;
+       background: linear-gradient(45deg, #1f6f08, #ffb347);
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+/* Hover Animation */
+.shop-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+/* KEYFRAMES */
+
+/* Fade + Zoom */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Bounce Effect */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+.empty-cart h3 {
+       font-size: 40px;
+}
 /* RESPONSIVE */
 @media(max-width:900px){
     .cart{
@@ -3531,11 +3621,7 @@ background: linear-gradient(135deg, #1f6f08, #cbbc64);
     background: #1f6f08;
 }
 
-/* Title */
-
-
 /* Price */
-
 .services-price {
     margin-top: 8px;
 }
@@ -3667,7 +3753,7 @@ background: linear-gradient(135deg, #1f6f08, #cbbc64);
     width:100%;
     padding:14px;
     border:none;
-background: linear-gradient(135deg, #1f6f08, #cbbc64);
+    background: linear-gradient(135deg, #1f6f08, #cbbc64);
     color:#fff;
     border-radius:10px;
     font-weight:600;
