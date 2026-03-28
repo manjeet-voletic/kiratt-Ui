@@ -28,22 +28,6 @@
 </head>
 
 <body>
-    <!-- <div id="loader">
-        <div class="logoLoader">
-            <span>K</span>
-            <span>I</span>
-            <span>R</span>
-            <span>A</span>
-            <span>T</span>
-            <span>T</span>
-        </div>
-
-        <div class="slogan">
-            Make It Happen
-        </div>
-
-    </div> -->
-
     <!--TopPannel-->
     <div class="discountTop">
         <div class="row align-items-center">
@@ -529,12 +513,140 @@
                     <div class="profileContentBox">
                         <div class="tab-content">
                             <div class="tab-pane fade show active" id="profile">
-                                <h5>Profile Information</h5>
-                                <p>Profile form here...</p>
+                                <div class="personalInformation">
+                                    <div class="topProfile">
+                                        <h3>My Profile</h3>
+                                        <button id=""><i class="bi bi-pencil-square"></i> Edit</button>
+                                    </div>
+                                    <div class="generalInformation">
+                                        <h3>General Information</h3>
+
+                                        <div class="row">
+                                            <div class="col-md-6 formGroup">
+                                                <label>Name</label>
+                                                <input type="text" placeholder="Enter name">
+                                            </div>
+
+                                            <div class="col-md-6 formGroup">
+                                                <label>Number</label>
+                                                <input type="text" placeholder="Enter number">
+                                            </div>
+
+                                            <div class="col-md-6 formGroup">
+                                                <label>Email</label>
+                                                <input type="email" placeholder="Enter email">
+                                            </div>
+
+                                            <!-- Gender Select -->
+                                            <div class="col-md-6 formGroup">
+                                                <label>Gender</label>
+                                                <select>
+                                                    <option value="">Select Gender</option>
+                                                    <option>Male</option>
+                                                    <option>Female</option>
+                                                    <option>Other</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="address">
-                                <h5>Manage Addresses</h5>
-                                <p>Address list here...</p>
+                                <div class="manageAddress">
+                                    <h3>Manage Address</h3>
+                                    <button type="button" data-bs-toggle="collapse" href="#addAddress" role="button"
+                                        aria-expanded="false" aria-controls="collapseExample"><i
+                                            class="bi bi-file-plus"></i> Add Address</button>
+                                </div>
+                                <div class="collapse" id="addAddress">
+                                    <div class="addAddress">
+                                        <h3>Add Address</h3>
+                                        <div class="row">
+                                            <div class="col-md-6 formGroup">
+                                                <label>Name</label>
+                                                <input type="text" placeholder="Enter name">
+                                            </div>
+
+                                            <div class="col-md-6 formGroup">
+                                                <label>Number</label>
+                                                <input type="text" placeholder="Enter number">
+                                            </div>
+
+                                            <div class="col-md-6 formGroup">
+                                                <label>Pincode</label>
+                                                <input type="number" placeholder="Enter Pincode">
+                                            </div>
+                                            <div class="col-md-6 formGroup">
+                                                <label>locality</label>
+                                                <input type="number" placeholder="Enter locality">
+                                            </div>
+                                             <div class="col-md-6 formGroup">
+                                                <label>City / District / Town</label>
+                                                <input type="number" placeholder="Enter locality">
+                                            </div>
+                                             <div class="col-md-6 formGroup">
+                                                <label>State</label>
+                                                <select>
+                                                    <option value="">Select State</option>
+                                                    <option>Delhi</option>
+                                                    <option>Bihar</option>
+                                                    <option>Punjab</option>
+                                                </select>
+                                            </div>
+                                               <div class="col-md-6 formGroup">
+                                                <label>Landmark (optional)</label>
+                                                <input type="number" placeholder="Enter Landmark">
+                                            </div>
+                                            <div class="col-md-6 formGroup">
+                                                <label>Alternate number (optional)</label>
+                                                <input type="number" placeholder="Enter Alternate number">
+                                            </div>
+                                              <div class="col-md-6 formGroup">
+                                                <label>Adress type</label>
+                                                <select>
+                                                    <option value="">Select type</option>
+                                                    <option>Work</option>
+                                                    <option>Home</option>
+                                                </select>
+                                            </div>
+                                             <div class="col-md-12 formGroup">
+                                                <label>Address</label>
+                                               <textarea name="" id=""placeholder="Enter Address"></textarea>
+                                            </div>
+                                            <div class="saveCancel">
+                                                <button><i class="bi bi-box2-heart"></i> Save</button>
+                                                <button  data-bs-toggle="collapse" href="#addAddress"><i class="bi bi-x-square"></i> Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="profile-address">
+                                    <div class="row align-items-center">
+                                        <!-- Left -->
+                                        <div class="col-md-10">
+                                            <span class="badge">HOME</span>
+                                        </div>
+
+                                        <!-- Right -->
+                                        <div class="col-md-2 text-end">
+                                            <div class="editDeleteAdress">
+                                                <span><i class="bi bi-pencil-square"></i></span>
+                                                <span><i class="bi bi-trash"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="addressDetails">
+                                        <p> <i class="bi bi-person-circle"></i> Manjeet Raj <span>7004261702</span></p>
+                                        <p> <i class="bi bi-geo-alt-fill"></i> Ward no 05, Narainapur sukhwan road
+                                            mantri market bagaha 2, Bagaha, Bihar -
+                                            <b>845105</b>
+                                        </p>
+                                    </div>
+
+                                </div>
+
                             </div>
                             <div class="tab-pane fade" id="pan">
                                 <h5>PAN Card Info</h5>
@@ -572,9 +684,9 @@
 
                     </div>
                 </div>
-
             </div>
         </div>
+    </div>
     </div>
     <!--My Profile Panel -->
     <!--footer-->
@@ -586,7 +698,8 @@
                         <img src="images/logo.png" alt="">
                         <p>We are a trusted company dedicated to providing high-quality products and professional
                             services to meet the growing needs of our customers.
-                            Our goal is to deliver reliable solutions that make life easier, businesses stronger, and
+                            Our goal is to deliver reliable solutions that make life easier, businesses stronger,
+                            and
                             experiences better.</p>
                     </div>
                 </div>
