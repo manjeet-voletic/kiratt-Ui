@@ -3363,7 +3363,7 @@ footer {
     font-size: 14px;
 }
 
-.registerText span {
+.registerText a {
     color: #28a745;
     font-weight: 600;
     cursor: pointer;
@@ -3384,7 +3384,81 @@ footer {
 .formGroup span:hover {
     color: #000;
 }
+.otp-input {
+  width: 50px;
+  height: 55px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 10px;
+}
 
+.resend-link {
+  cursor: pointer;
+}
+
+.verifyPannel {
+  background-color: #d4af37;
+  color: #fff;
+}
+
+.success-icon svg {
+  width: 90px;
+  height: 90px;
+  display: block;
+  margin: 0 auto;
+}
+
+.circle {
+  stroke: #28a745;
+  stroke-width: 3;
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-linecap: round;
+  animation: stroke 0.6s ease-out forwards;
+}
+
+.check {
+  stroke: #28a745;
+  stroke-width: 4;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  stroke-linecap: round;
+  animation: stroke 0.4s 0.6s ease forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.modal-content {
+  animation: popup 0.4s ease;
+}
+
+@keyframes popup {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.Continue {
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(45deg, #4CAF50, #2e7d32);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 10px;
+}
 /* my cart pages */
 /* HEADER */
 .cartPannel {
@@ -4893,5 +4967,214 @@ background: linear-gradient(135deg, #1f6f08, #d4c87f);
     resize: none;
 }
 
+/*Privacy Policy*/
+.privacyPolicy {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+}
 
-/* Contact Us Page */
+
+/* Header */
+.privacyPolicy h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.privacyPolicy .date {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Section */
+.privacyPolicy section {
+    margin-bottom: 18px;
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.privacyPolicy section:hover {
+      background: #fffdec;
+}
+
+/* Titles */
+.privacyPolicy h2 {
+       color: #1f6f08;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.privacyPolicy h3 {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Text */
+.privacyPolicy p {
+    color: #555;
+    font-size: 15px;
+    margin: 8px 0;
+}
+
+/* List */
+.privacyPolicy ul {
+    margin-left: 20px;
+}
+
+.privacyPolicy ul li {
+    margin-bottom: 6px;
+    color: #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .privacyPolicy .container {
+        padding: 20px;
+    }
+}
+/*Privacy Policy*/
+.termsPolicy {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+}
+
+
+/* Header */
+.termsPolicy h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.termsPolicy .date {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Section */
+.termsPolicy section {
+    margin-bottom: 18px;
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.termsPolicy section:hover {
+      background: #fffdec;
+}
+
+/* Titles */
+.termsPolicy h2 {
+       color: #1f6f08;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.termsPolicy h3 {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Text */
+.termsPolicy p {
+    color: #555;
+    font-size: 15px;
+    margin: 8px 0;
+}
+
+/* List */
+.termsPolicy ul {
+    margin-left: 20px;
+}
+
+.termsPolicy ul li {
+    margin-bottom: 6px;
+    color: #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .termsPolicy .container {
+        padding: 20px;
+    }
+}
+/* policyPage*/
+
+.policyPage {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+}
+
+
+/* Header */
+.policyPage h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.policyPage .date {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Section */
+.policyPage section {
+    margin-bottom: 18px;
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.policyPage section:hover {
+      background: #fffdec;
+}
+
+/* Titles */
+.policyPage h2 {
+       color: #1f6f08;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.policyPage h3 {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Text */
+.policyPage p {
+    color: #555;
+    font-size: 15px;
+    margin: 8px 0;
+}
+
+/* List */
+.policyPage ul {
+    margin-left: 20px;
+}
+
+.policyPage ul li {
+    margin-bottom: 6px;
+    color: #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .policyPage .container {
+        padding: 20px;
+    }
+}

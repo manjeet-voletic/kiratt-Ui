@@ -28,6 +28,22 @@
 </head>
 
 <body>
+    <!-- <div id="loader">
+        <div class="logoLoader">
+            <span>K</span>
+            <span>I</span>
+            <span>R</span>
+            <span>A</span>
+            <span>T</span>
+            <span>T</span>
+        </div>
+
+        <div class="slogan">
+            Make It Happen
+        </div>
+
+    </div> -->
+
     <!--TopPannel-->
     <div class="discountTop">
         <div class="row align-items-center">
@@ -87,11 +103,6 @@
                                         <p id="userAddress">Bettiah 845438</p>
                                     </div>
                                 </div>
-                                <!-- Mobile Search Icon -->
-                                <button class="mobile-search-icon" id="mobileSearchBtn">
-                                    <i class="bi bi-search"></i>
-                                </button>
-
                                 <div class="search-container" id="searchContainer">
                                     <div class="search-bar">
                                         <!-- Category Dropdown -->
@@ -123,27 +134,29 @@
                                             <span class="close-suggestions">&times;</span>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-5">
                             <div class="TopLeft">
+                                <!-- Mobile Search Icon -->
+                                <button class="mobile-search-icon" id="mobileSearchBtn">
+                                    <i class="bi bi-search"></i>
+                                </button>
                                 <!-- TRIGGER -->
-                                <div class="signInIndex" data-bs-toggle="collapse" data-bs-target="#signInBox">
-                                    <i class="bi bi-person-circle"></i>
-                                    <span>Login</span>
+                                <div class="signInIndex">
+                                    <div data-bs-toggle="collapse" data-bs-target="#signInBox">
+                                        <i class="bi bi-person-circle"></i>
+                                        <span>Login</span>
+                                    </div>
                                     <!-- PANEL -->
                                     <div class="collapse signInIndex-panel" id="signInBox">
-
                                         <!-- Header -->
                                         <div class="signInIndex-header">
                                             <span>New customer?</span>
-                                            <a href="#">Sign Up</a>
+                                            <a href="login.html" onclick="event.stopPropagation()">Sign Up</a>
                                         </div>
-
                                         <div class="signInIndex-divider"></div>
-
                                         <!-- MENU -->
                                         <div class="signInIndex-item">
                                             <i class="bi bi-person"></i>
@@ -287,6 +300,7 @@
             </div>
         </div>
     </div>
+
     <!--TopPannel-->
     <div class="header-menu">
         <div class="container">
@@ -295,6 +309,7 @@
                 <i class="bi bi-x-lg" id="menuClose"></i>
             </div>
             <div class="row">
+
                 <div class="col-md-8">
                     <div class="menuRight">
                         <ul>
@@ -424,6 +439,7 @@
                         </ul>
                     </div>
                 </div>
+
                 <div class="col-md-4">
                     <div class="menuLeft">
                         <ul>
@@ -432,53 +448,235 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
 
-            </div>
+    <div class="policyPage">
+        <div class="container">
+
+            <h1>Cancellation & Return Policy</h1>
+            <p class="date">Last Updated: March 2026</p>
+
+            <section>
+                <h2>Cancellation Policy</h2>
+                <p>
+                    At Kiratt, we strive to provide a seamless shopping experience for both products and services. This
+                    Cancellation Policy outlines the terms under which orders may be canceled.
+                </p>
+            </section>
+
+            <section>
+                <h2>1. Order Cancellation by Customer</h2>
+                <ul>
+                    <li>Customers may cancel an order any time before it is dispatched.</li>
+                    <li>Once the order has been dispatched or is out for delivery, it cannot be canceled. However, the
+                        customer may choose to reject the order at the time of delivery.</li>
+                    <li>The cancellation window may vary depending on the product category and will be clearly mentioned
+                        on the product page or order confirmation page.</li>
+                    <li>After the specified cancellation window, a cancellation fee may apply, depending on the product
+                        or service.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>2. Seller or Company Cancellation</h2>
+                <p>Kiratt reserves the right to cancel any order under the following circumstances:</p>
+                <ul>
+                    <li>Product is out of stock or unavailable</li>
+                    <li>Incorrect pricing or product information</li>
+                    <li>Suspected fraudulent transaction</li>
+                    <li>Violation of Terms & Conditions</li>
+                    <li>Logistical issues or force majeure events</li>
+                </ul>
+
+                <p>In such cases:</p>
+                <ul>
+                    <li>A full refund will be initiated for prepaid orders</li>
+                    <li>Refunds are typically processed within 5–7 business days</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>3. Hyperlocal / Instant Delivery Orders</h2>
+                <ul>
+                    <li>Orders are generally non-cancellable and non-refundable due to fast processing</li>
+                    <li>Cancellation/refund may be allowed only if:</li>
+                    <ul>
+                        <li>Order was not delivered within promised time</li>
+                        <li>Order was not picked up by delivery partner</li>
+                        <li>Seller failed to accept the order</li>
+                        <li>Other exceptional circumstances approved by Kiratt</li>
+                    </ul>
+                </ul>
+            </section>
+
+            <section>
+                <h2>4. Additional Terms</h2>
+                <ul>
+                    <li>Kiratt reserves the right to modify cancellation policies, time windows, or fees at any time
+                    </li>
+                    <li>Customers will be notified through the Platform or order details</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Return & Refund Policy</h2>
+                <p>
+                    Returns are offered by sellers on the Platform and may vary depending on product categories. The
+                    return policy mentioned on the product page shall always prevail.
+                </p>
+            </section>
+
+            <section>
+                <h2>1. General Return Conditions</h2>
+                <p>A return request may be accepted only if:</p>
+                <ul>
+                    <li>The product is unused, unwashed, and in original condition</li>
+                    <li>All accessories, manuals, tags, and packaging are intact</li>
+                    <li>The product is not damaged or altered</li>
+                    <li>The return request is raised within the applicable return window</li>
+                </ul>
+
+                <p>Kiratt reserves the right to reject returns that do not meet these conditions.</p>
+            </section>
+
+            <section>
+                <h2>2. Return Categories & Time Windows</h2>
+
+                <p><strong>A. Lifestyle Products (Clothing, Footwear, Accessories)</strong></p>
+                <ul>
+                    <li>Return Window: 10 Days</li>
+                    <li>Options: Refund / Replacement / Exchange</li>
+                    <li>Condition: Must be unused with original tags</li>
+                </ul>
+
+                <p><strong>B. Electronics & Appliances</strong></p>
+                <ul>
+                    <li>Return Window: 7 Days (Replacement only or Service Center support)</li>
+                    <li>Conditions:</li>
+                    <ul>
+                        <li>Product must be in original condition</li>
+                        <li>Issues may require verification by brand/service center</li>
+                        <li>Only one replacement allowed</li>
+                    </ul>
+                </ul>
+
+                <p><strong>C. Furniture & Large Appliances</strong></p>
+                <ul>
+                    <li>Return Window: 10 Days</li>
+                    <li>Options: Replacement</li>
+                    <li>Conditions:</li>
+                    <ul>
+                        <li>Installation must be done by authorized personnel</li>
+                        <li>Technical inspection may be required</li>
+                    </ul>
+                </ul>
+
+                <p><strong>D. Grocery & Daily Essentials</strong></p>
+                <ul>
+                    <li>Fresh Items: 1–2 Days Refund Only</li>
+                    <li>Packaged Goods: 3–7 Days Refund Only</li>
+                    <li>Condition: Product must be defective, expired, or incorrect</li>
+                </ul>
+
+                <p><strong>E. Books, Toys, Stationery, Sports Equipment</strong></p>
+                <ul>
+                    <li>Return Window: 7 Days</li>
+                    <li>Option: Replacement only</li>
+                    <li>Condition: Must be unused and in original packaging</li>
+                </ul>
+
+                <p><strong>F. Medicines & Healthcare Products</strong></p>
+                <ul>
+                    <li>Return Window: 2–3 Days Refund Only</li>
+                    <li>Returns accepted only if:</li>
+                    <ul>
+                        <li>Product is damaged</li>
+                        <li>Wrong item delivered</li>
+                        <li>Product is expired</li>
+                    </ul>
+                </ul>
+
+                <p><strong>G. Non-Returnable Items</strong></p>
+                <ul>
+                    <li>Personal care & hygiene items</li>
+                    <li>Innerwear, socks, intimate products</li>
+                    <li>Perishable goods</li>
+                    <li>Customized or made-to-order items</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>3. Return Pickup & Verification</h2>
+                <ul>
+                    <li>Correct product (matching serial number, IMEI, etc.)</li>
+                    <li>Complete accessories and packaging</li>
+                    <li>Product is unused and undamaged</li>
+                </ul>
+
+                <p>If conditions are not met, the return may be rejected.</p>
+            </section>
+
+            <section>
+                <h2>4. Refund Process</h2>
+                <ul>
+                    <li>Refunds are processed after inspection</li>
+                    <li>Online payments: 5–7 business days</li>
+                    <li>COD: Bank transfer or wallet refund</li>
+                </ul>
+
+                <p>Kiratt is not responsible for delays caused by banks.</p>
+            </section>
+
+            <section>
+                <h2>5. Replacement Policy</h2>
+                <ul>
+                    <li>Damaged products</li>
+                    <li>Defective items</li>
+                    <li>Wrong product delivery</li>
+                    <li>Only one replacement allowed</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>6. Open Box Delivery Rule</h2>
+                <p>
+                    If a customer accepts an open box delivery, it confirms the product is correct and undamaged.
+                </p>
+
+                <p>No return allowed except for manufacturing defects.</p>
+            </section>
+
+            <section>
+                <h2>7. Service-Based Orders</h2>
+                <ul>
+                    <li>Depends on service provider policies</li>
+                    <li>Depends on service stage</li>
+                    <li>Not refundable after service starts</li>
+                </ul>
+
+                <p>Kiratt acts only as a facilitator.</p>
+            </section>
+
+            <section>
+                <h2>8. Fraud Prevention & Restrictions</h2>
+                <ul>
+                    <li>Limit excessive returns</li>
+                    <li>Reject fraudulent claims</li>
+                    <li>Suspend misuse accounts</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>9. Policy Updates</h2>
+                <p>
+                    Kiratt may update this policy from time to time. Users should review periodically.
+                </p>
+            </section>
+
         </div>
     </div>
-    <!-- Login pannel -->
-    <div class="loginDash container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="row">
-                 <div class="col-md-6 changeImage">
-                <div class="longinleft">
-                    <img src="images/login.png" alt="">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="loginBox">
-                    <h3>Sign In</h3>
-                    <p>Insert your account information:</p>
-                    <form>
-                        <div class="formGroup">
-                            <label>Email / Mobile</label>
-                            <input type="text" placeholder="Enter Email or Mobile Number">
-                        </div>
-                        <div class="formGroup">
-                                    <label>Password</label>
-                                    <input type="password" id="password" placeholder="Password">
-                                    <span onclick="togglePassword('password', this)">
-                                        <i class="bi bi-eye"></i>
-                                    </span>
-                                </div>
-                        <div class="forgotBox">
-                            <a href="#">Forgot Password?</a>
-                        </div>
-                        <button type="submit" class="loginBtn">Login</button>
-                        <div class="registerText">
-                            If you don't have an account?
-                            <a href="register.html">Register</a>
-                        </div>
-                    </form>
-                </div>
-            </div>
-                </div>
-            </div>
-         
-        </div>
-    </div>
-    <!-- Login pannel -->
     <!--footer-->
     <footer>
         <div class="container">
@@ -530,7 +728,6 @@
             </div>
         </div>
     </footer>
-    <!--footer-->
     <!--  JavaScript -->
     <script src="js/jQueryv3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

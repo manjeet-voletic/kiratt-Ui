@@ -28,6 +28,22 @@
 </head>
 
 <body>
+    <!-- <div id="loader">
+        <div class="logoLoader">
+            <span>K</span>
+            <span>I</span>
+            <span>R</span>
+            <span>A</span>
+            <span>T</span>
+            <span>T</span>
+        </div>
+
+        <div class="slogan">
+            Make It Happen
+        </div>
+
+    </div> -->
+
     <!--TopPannel-->
     <div class="discountTop">
         <div class="row align-items-center">
@@ -87,11 +103,6 @@
                                         <p id="userAddress">Bettiah 845438</p>
                                     </div>
                                 </div>
-                                <!-- Mobile Search Icon -->
-                                <button class="mobile-search-icon" id="mobileSearchBtn">
-                                    <i class="bi bi-search"></i>
-                                </button>
-
                                 <div class="search-container" id="searchContainer">
                                     <div class="search-bar">
                                         <!-- Category Dropdown -->
@@ -123,27 +134,29 @@
                                             <span class="close-suggestions">&times;</span>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-5">
                             <div class="TopLeft">
+                                <!-- Mobile Search Icon -->
+                                <button class="mobile-search-icon" id="mobileSearchBtn">
+                                    <i class="bi bi-search"></i>
+                                </button>
                                 <!-- TRIGGER -->
-                                <div class="signInIndex" data-bs-toggle="collapse" data-bs-target="#signInBox">
-                                    <i class="bi bi-person-circle"></i>
-                                    <span>Login</span>
+                                <div class="signInIndex">
+                                    <div data-bs-toggle="collapse" data-bs-target="#signInBox">
+                                        <i class="bi bi-person-circle"></i>
+                                        <span>Login</span>
+                                    </div>
                                     <!-- PANEL -->
                                     <div class="collapse signInIndex-panel" id="signInBox">
-
                                         <!-- Header -->
                                         <div class="signInIndex-header">
                                             <span>New customer?</span>
-                                            <a href="#">Sign Up</a>
+                                            <a href="login.html" onclick="event.stopPropagation()">Sign Up</a>
                                         </div>
-
                                         <div class="signInIndex-divider"></div>
-
                                         <!-- MENU -->
                                         <div class="signInIndex-item">
                                             <i class="bi bi-person"></i>
@@ -287,6 +300,7 @@
             </div>
         </div>
     </div>
+
     <!--TopPannel-->
     <div class="header-menu">
         <div class="container">
@@ -295,6 +309,7 @@
                 <i class="bi bi-x-lg" id="menuClose"></i>
             </div>
             <div class="row">
+
                 <div class="col-md-8">
                     <div class="menuRight">
                         <ul>
@@ -424,6 +439,7 @@
                         </ul>
                     </div>
                 </div>
+
                 <div class="col-md-4">
                     <div class="menuLeft">
                         <ul>
@@ -432,53 +448,234 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
 
-            </div>
+    <div class="termsPolicy">
+        <div class="container">
+
+            <h1>Terms & Conditions</h1>
+            <p class="date">Last Updated: March 2026</p>
+
+            <section>
+                <h2>1. Introduction</h2>
+                <p>This document is an electronic record in terms of the Information Technology Act, 2000 and applicable
+                    rules. It does not require physical or digital signatures.</p>
+
+                <p>This document is published in accordance with applicable laws governing usage of the Platform.</p>
+
+                <p>The Platform is owned and operated by Kiratt, an e-commerce business offering products and services
+                    across India.</p>
+
+                <p>By accessing or using the Platform, you agree to be bound by these Terms & Conditions. If you do not
+                    agree, please do not use the Platform.</p>
+            </section>
+
+            <section>
+                <h2>2. Definitions</h2>
+                <ul>
+                    <li><strong>User / You:</strong> Any person accessing or using the Platform</li>
+                    <li><strong>Company / We / Our:</strong> Kiratt</li>
+                    <li><strong>Products:</strong> Physical or digital goods listed on the Platform</li>
+                    <li><strong>Services:</strong> Services offered on the Platform</li>
+                    <li><strong>Platform:</strong> Website/mobile application operated by Kiratt</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>3. User Eligibility</h2>
+                <p>Use of the Platform is available only to persons who can form legally binding contracts under the
+                    Indian Contract Act, 1872.</p>
+
+                <ul>
+                    <li>Users under 18 years may use under parental supervision</li>
+                    <li>Accounts may be terminated for incorrect age information</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>4. Account Registration & Responsibility</h2>
+                <p>To access certain features, users may need to register.</p>
+
+                <ul>
+                    <li>Provide accurate and complete information</li>
+                    <li>Maintain confidentiality of login credentials</li>
+                    <li>Responsible for all activities under your account</li>
+                </ul>
+
+                <p>Kiratt is not liable for unauthorized account usage.</p>
+            </section>
+
+            <section>
+                <h2>5. Products & Services</h2>
+                <p>Kiratt offers:</p>
+                <ul>
+                    <li>Physical products</li>
+                    <li>Digital products</li>
+                    <li>Online and offline services</li>
+                </ul>
+
+                <p>All purchases are subject to availability.</p>
+
+                <p>Kiratt does not guarantee:</p>
+                <ul>
+                    <li>Accuracy of product descriptions</li>
+                    <li>Exact color, size, or specifications</li>
+                    <li>Continuous availability</li>
+                </ul>
+
+                <p>Services may involve third-party providers; Kiratt acts as a facilitator.</p>
+            </section>
+
+            <section>
+                <h2>6. Pricing & Payments</h2>
+                <ul>
+                    <li>All prices are in INR</li>
+                    <li>Prices may change without notice</li>
+                    <li>Payments via approved methods only</li>
+                </ul>
+
+                <p>Kiratt is not responsible for payment failures, bank issues, or unauthorized transactions.</p>
+            </section>
+
+            <section>
+                <h2>7. Order Acceptance & Cancellation</h2>
+                <ul>
+                    <li>Orders are offers to purchase</li>
+                    <li>Kiratt may accept or reject orders</li>
+                </ul>
+
+                <p>Orders may be canceled due to:</p>
+                <ul>
+                    <li>Pricing errors</li>
+                    <li>Stock issues</li>
+                    <li>Fraud suspicion</li>
+                </ul>
+
+                <p>Refunds (if applicable) will be processed accordingly.</p>
+            </section>
+
+            <section>
+                <h2>8. Shipping & Delivery</h2>
+                <ul>
+                    <li>Delivery timelines are estimates only</li>
+                    <li>Delays may occur due to external factors</li>
+                    <li>Kiratt is not liable for third-party delays</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>9. Returns, Refunds & Replacement</h2>
+                <p>Returns allowed if:</p>
+                <ul>
+                    <li>Product unused</li>
+                    <li>Original packaging</li>
+                    <li>Within return period</li>
+                </ul>
+
+                <p>Refunds:</p>
+                <ul>
+                    <li>After verification</li>
+                    <li>Time depends on payment method</li>
+                </ul>
+
+                <p>Some items may not be eligible (digital/customized).</p>
+            </section>
+
+            <section>
+                <h2>10. Services Disclaimer</h2>
+                <ul>
+                    <li>Service providers are independent</li>
+                    <li>No guarantee of service quality</li>
+                    <li>Disputes handled with provider</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>11. User Conduct</h2>
+                <ul>
+                    <li>No illegal or abusive content</li>
+                    <li>No intellectual property violations</li>
+                    <li>No hacking or misuse</li>
+                    <li>No fraudulent transactions</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>12. Intellectual Property</h2>
+                <ul>
+                    <li>Logos</li>
+                    <li>Text</li>
+                    <li>Images</li>
+                    <li>Design</li>
+                </ul>
+
+                <p>All content is owned by Kiratt and protected by law.</p>
+            </section>
+
+            <section>
+                <h2>13. Privacy Policy</h2>
+                <p>
+                    We collect and process data as per our Privacy Policy. By using the Platform, you consent to it.
+                </p>
+            </section>
+
+            <section>
+                <h2>14. Third-Party Links & Services</h2>
+                <p>
+                    Kiratt does not control or take responsibility for third-party services or content.
+                </p>
+            </section>
+
+            <section>
+                <h2>15. Limitation of Liability</h2>
+                <ul>
+                    <li>No liability for indirect damages</li>
+                    <li>No liability for data or revenue loss</li>
+                    <li>No liability for service interruptions</li>
+                    <li>No liability for third-party actions</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>16. Indemnity</h2>
+                <p>
+                    You agree to indemnify Kiratt against claims arising from misuse or violation of Terms.
+                </p>
+            </section>
+
+            <section>
+                <h2>17. Termination</h2>
+                <p>
+                    Kiratt may suspend or terminate accounts without prior notice if Terms are violated.
+                </p>
+            </section>
+
+            <section>
+                <h2>18. Changes to Terms</h2>
+                <p>
+                    Kiratt may update Terms at any time. Continued use means acceptance.
+                </p>
+            </section>
+
+            <section>
+                <h2>19. Governing Law & Jurisdiction</h2>
+                <p>
+                    These Terms are governed by laws of India. Disputes fall under Indian courts.
+                </p>
+            </section>
+
+            <section>
+                <h2>20. Contact Information</h2>
+                <p>
+                    Email: support@kiratt.com
+                </p>
+            </section>
+
         </div>
     </div>
-    <!-- Login pannel -->
-    <div class="loginDash container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="row">
-                 <div class="col-md-6 changeImage">
-                <div class="longinleft">
-                    <img src="images/login.png" alt="">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="loginBox">
-                    <h3>Sign In</h3>
-                    <p>Insert your account information:</p>
-                    <form>
-                        <div class="formGroup">
-                            <label>Email / Mobile</label>
-                            <input type="text" placeholder="Enter Email or Mobile Number">
-                        </div>
-                        <div class="formGroup">
-                                    <label>Password</label>
-                                    <input type="password" id="password" placeholder="Password">
-                                    <span onclick="togglePassword('password', this)">
-                                        <i class="bi bi-eye"></i>
-                                    </span>
-                                </div>
-                        <div class="forgotBox">
-                            <a href="#">Forgot Password?</a>
-                        </div>
-                        <button type="submit" class="loginBtn">Login</button>
-                        <div class="registerText">
-                            If you don't have an account?
-                            <a href="register.html">Register</a>
-                        </div>
-                    </form>
-                </div>
-            </div>
-                </div>
-            </div>
-         
-        </div>
-    </div>
-    <!-- Login pannel -->
+    <!--footer-->
     <!--footer-->
     <footer>
         <div class="container">
@@ -530,7 +727,6 @@
             </div>
         </div>
     </footer>
-    <!--footer-->
     <!--  JavaScript -->
     <script src="js/jQueryv3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
