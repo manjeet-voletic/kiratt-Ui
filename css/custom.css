@@ -291,7 +291,7 @@ img::-moz-selection {
 }
 
 .useLocation {
-    color: #0d6efd;
+    color: #0f3704;
     font-weight: 500;
     cursor: pointer;
 }
@@ -302,7 +302,7 @@ img::-moz-selection {
 }
 
 .locationModal .loginLink {
-    color: #110dfd;
+    color: #4b4b4b;
     cursor: pointer;
 }
 
@@ -1292,7 +1292,7 @@ header ul li {
 
 /* OWL NAV */
 
-.owl-nav {
+.banner.owl-nav {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -1301,14 +1301,14 @@ header ul li {
     transform: translateY(-50%);
 }
 
-.owl-nav button {
+.banner.owl-nav button {
     background: white !important;
     width: 40px;
     height: 40px;
     border-radius: 50% !important;
 }
 
-.owl-nav i {
+.banner .owl-nav i {
     font-size: 22px;
 }
 
@@ -1319,7 +1319,7 @@ header ul li {
     top: 50%;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     transform: translateY(-50%);
     opacity: 0;
     transition: 0.3s;
@@ -1529,7 +1529,7 @@ header ul li {
 /* TEXT DARK */
 
 .featuresBox:hover p {
-    background: #222;
+   background: linear-gradient(135deg, #1f6f08, #cbbc64);
     color: #fff;
 }
 
@@ -1659,7 +1659,7 @@ header ul li {
 /* BUTTON */
 
 .saleFlash-btn {
-    background: black;
+    background: #1f6f08;;
     color: white;
     border: none;
     padding: 13px 32px;
@@ -1669,7 +1669,7 @@ header ul li {
 }
 
 .saleFlash-btn:hover {
-    background: #222;
+  opacity: 0.9;
 }
 
 /* MOBILE */
@@ -1762,19 +1762,11 @@ header ul li {
     border: 1px solid #eee;
     border-radius: 10px;
     padding: 15px;
-    position: relative;
-    overflow: hidden;
     transition: .3s;
-    height: 438px;
     margin-bottom: 80px;
 }
 
-.allProduct:hover {
-    height: 420px;
-    border: 1px solid #000;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    margin-bottom: 0px;
-}
+
 
 /* Image */
 
@@ -1811,7 +1803,7 @@ header ul li {
 .iconsPro {
     position: absolute;
     top: 15px;
-    right: -40px;
+    right: -50px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -1829,10 +1821,13 @@ header ul li {
     border-radius: 50%;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+        height: 40px;
+    width: 40px;
+    text-align: center;
 }
 
 .iconsPro i:hover {
-    background: #000;
+    background: #1f6f08;
     color: #fff;
 }
 
@@ -1849,23 +1844,39 @@ header ul li {
 }
 
 /* Add Cart */
-
 .add-cartPro {
     width: 100%;
-    margin-top: 10px;
-    background: #000;
-    color: #fff;
+    padding: 10px 14px;
     border: none;
-    padding: 10px;
-    border-radius: 6px;
-    opacity: 0;
-    transition: .3s;
+    background: linear-gradient(135deg, #1f6f08, #cbbc64);
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+     margin-top: 10px;
 }
 
-.allProduct:hover .add-cartPro {
-    opacity: 1;
+/* SHINE EFFECT */
+.add-cartPro::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: 0.4s;
 }
 
+.add-cartPro:hover::after {
+    left: 100%;
+}
+
+.add-cartProt:hover {
+    transform: scale(1.02);
+}
 /* Owl Arrows */
 
 .allProduct .owl-nav button {
@@ -1880,6 +1891,7 @@ header ul li {
 
 .allProduct .owl-prev {
     left: -20px;
+    display: block;
 }
 
 .allProduct .owl-next {
@@ -2151,8 +2163,6 @@ footer {
 /*ShortPannel*/
 /* Select trading  */
 .trandingPannel {
-    padding: 30px;
-    background-color: #fff;
     border-radius: 5px;
     margin-top: 30px;
 }

@@ -1,0 +1,790 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta name="google-site-verification" content="rXMy9A8ZZU2oNKl1e-vwqx7j1yHQ5TV9wD1sro8pCQo">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <meta name="theme-color" content="#fff">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#f10000">
+    <meta name="moblie-web-app-capable" content="yes">
+    <meta name="apple-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- iOS Safari -->
+    <title>KIRATT</title>
+    <link rel="apple-touch-icon" href="images/favicon.png" sizes="180x180">
+    <link rel="icon" href="images/favicon.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="css/custom.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+
+<body>
+    <!--TopPannel-->
+    <div class="discountTop">
+        <div class="row align-items-center">
+            <div class="col-md-4 infoIndexTop">
+                <a href=""><i class="bi bi-envelope-fill"></i> @InfoKiratt.com</a>
+                <a href=""><i class="bi bi-telephone-fill"></i> +919041342552</a>
+            </div>
+            <div class="col-md-4 codeIndex">
+                <a href="">🎉 Get 15% OFF your first order with code: WELCOME15</a>
+            </div>
+            <div class="col-md-4">
+                <!-- Language Dropdown -->
+                <div class="language-wrapper">
+                    <div class="selected-lang" onclick="toggleLang()">
+                        <span id="currentLang"><i class="bi bi-translate"></i> Your Language</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+
+                    <ul class="lang-dropdown" id="langDropdown">
+                        <li onclick="changeLang('en','English')">English</li>
+                        <li onclick="changeLang('hi','हिन्दी')">हिन्दी</li>
+                        <li onclick="changeLang('bn','বাংলা')">বাংলা</li>
+                        <li onclick="changeLang('ta','தமிழ்')">தமிழ்</li>
+                        <li onclick="changeLang('te','తెలుగు')">తెలుగు</li>
+                        <li onclick="changeLang('mr','मराठी')">मराठी</li>
+                        <li onclick="changeLang('gu','ગુજરાતી')">ગુજરાતી</li>
+                        <li onclick="changeLang('kn','ಕನ್ನಡ')">ಕನ್ನಡ</li>
+                        <li onclick="changeLang('ml','മലയാളം')">മലയാളം</li>
+                        <li onclick="changeLang('pa','ਪੰਜਾਬੀ')">ਪੰਜਾਬੀ</li>
+                        <li onclick="changeLang('ur','اردو')">اردو</li>
+                    </ul>
+                </div>
+                <!-- Google Translate Hidden -->
+                <div id="google_translate_element" style="display:none;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="topBar">
+            <div class="row align-items-center">
+                <div class="col-md-2">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="logo" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="row align-items-center">
+                        <div class="col-lg-10 col-md-7">
+                            <div class="topRight">
+                                <div class="locationIndex" data-bs-toggle="modal" data-bs-target="#locationModal">
+                                    <div>
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                    </div>
+                                    <div>
+                                        <p> Deliver to Manjeet</p>
+                                        <p id="userAddress">Bettiah 845438</p>
+                                    </div>
+                                </div>
+                                <div class="search-container" id="searchContainer">
+                                    <div class="search-bar">
+                                        <!-- Category Dropdown -->
+                                        <select class="search-category">
+                                            <option>All</option>
+                                            <option>Mobiles</option>
+                                            <option>Electronics</option>
+                                            <option>Home & Kitchen</option>
+                                            <option>Mobiles</option>
+                                            <option>Electronics</option>
+                                            <option>Home & Kitchen</option>
+                                        </select>
+
+                                        <!-- Search Input -->
+                                        <input type="search" id="searchInput" class="search-input"
+                                            placeholder="Search Kiratt.com">
+
+                                        <!-- Search Button -->
+                                        <button class="search-button">
+                                            <i class="bi bi-search"></i>
+                                        </button>
+
+                                    </div>
+                                    <!-- Suggestions -->
+                                    <div id="suggestions" class="suggestions-box">
+                                        <div class="suggestion-item">
+                                            nutripro 500w blender juicer mixer grinder & smoothie maker machine – 1-year
+                                            warranty
+                                            <span class="close-suggestions">&times;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-5">
+                            <div class="TopLeft">
+                                <!-- Mobile Search Icon -->
+                                <button class="mobile-search-icon" id="mobileSearchBtn">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                                <!-- TRIGGER -->
+                                <div class="signInIndex" data-bs-toggle="collapse" data-bs-target="#signInBox">
+                                    <i class="bi bi-person-circle"></i>
+                                    <span>Login</span>
+                                    <!-- PANEL -->
+                                    <div class="collapse signInIndex-panel" id="signInBox">
+                                        <!-- Header -->
+                                        <div class="signInIndex-header">
+                                            <span>New customer?</span>
+                                            <a href="#">Sign Up</a>
+                                        </div>
+                                        <div class="signInIndex-divider"></div>
+                                        <!-- MENU -->
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-person"></i>
+                                            <span>My Profile</span>
+                                        </div>
+
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-box"></i>
+                                            <span>Orders</span>
+                                        </div>
+
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-heart"></i>
+                                            <span>Wishlist</span>
+                                        </div>
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-basket2-fill"></i>
+                                            <span>Returns</span>
+                                        </div>
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-shop"></i>
+                                            <span>Become a Vendor</span>
+                                        </div>
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-shop"></i>
+                                            <span>Become a Growth Leader</span>
+                                        </div>
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-gift"></i>
+                                            <span>Rewards</span>
+                                        </div>
+
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-gift"></i>
+                                            <span>Gift Cards</span>
+                                        </div>
+
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-bell"></i>
+                                            <span>Notification Preferences</span>
+                                        </div>
+
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-headphones"></i>
+                                            <span>24x7 Customer Care</span>
+                                        </div>
+
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-megaphone"></i>
+                                            <span>Advertise</span>
+                                        </div>
+
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-download"></i>
+                                            <span>Download App</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="wishlistIndex">
+                                    <a href=""><i class="bi bi-heart"></i></a>
+                                </div>
+                                <!-- CART ICON -->
+                                <div class="myCart-wrapper">
+                                    <i class="bi bi-cart-check" data-bs-toggle="collapse"
+                                        data-bs-target="#myCartBox"></i>
+                                    <span class="myCart-count" data-bs-toggle="collapse"
+                                        data-bs-target="#myCartBox">3</span>
+                                    <!-- CART PANEL -->
+                                    <div class="collapse myCart-panel" id="myCartBox">
+                                        <div class="myCart-header">My Cart</div>
+                                        <!-- Tabs -->
+                                        <ul class="nav nav-tabs myCart-tabs mb-3">
+                                            <li class="nav-item">
+                                                <button class="nav-link active" data-bs-toggle="tab"
+                                                    data-bs-target="#myCart-products">Products</button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button class="nav-link" data-bs-toggle="tab"
+                                                    data-bs-target="#myCart-services">Services</button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button class="nav-link" data-bs-toggle="tab"
+                                                    data-bs-target="#myCart-Food">Food</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+
+                                            <!-- PRODUCTS -->
+                                            <div class="tab-pane fade show active" id="myCart-products">
+                                                <div class="myCart-item">
+                                                    <img src="images/bag.jpg" class="myCart-img">
+                                                    <div>
+                                                        <div class="myCart-title">iPhone 14</div>
+                                                        <div class="myCart-price">₹80,000</div>
+                                                    </div>
+                                                    <i class="bi bi-x myCart-remove"></i>
+                                                </div>
+                                            </div>
+
+                                            <!-- SERVICES -->
+                                            <div class="tab-pane fade" id="myCart-services">
+
+                                                <div class="myCart-item">
+                                                    <img src="images/Ac.jfif" class="myCart-img">
+                                                    <div>
+                                                        <div class="myCart-title">AC Repair</div>
+                                                        <div class="myCart-price">₹599</div>
+                                                    </div>
+                                                    <i class="bi bi-x myCart-remove"></i>
+                                                </div>
+
+                                            </div>
+                                            <!-- FOOD -->
+                                            <div class="tab-pane fade" id="myCart-Food">
+
+                                                <div class="myCart-item">
+                                                    <img src="images/fast.png" class="myCart-img">
+                                                    <div>
+                                                        <div class="myCart-title">burger</div>
+                                                        <div class="myCart-price">₹599</div>
+                                                    </div>
+                                                    <i class="bi bi-x myCart-remove"></i>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <!-- FOOTER -->
+                                        <div class="myCart-footer mt-2">
+                                            <button class="btn myCart-btn w-100">Checkout</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--TopPannel-->
+    <div class="header-menu">
+        <div class="container">
+            <div class="menuToggle">
+                <i class="bi bi-list" id="menuOpen"></i>
+                <i class="bi bi-x-lg" id="menuClose"></i>
+            </div>
+            <div class="row">
+
+                <div class="col-md-8">
+                    <div class="menuRight">
+                        <ul>
+                            <li class="megaParent">
+                                <a href="#allDepartment" class="department">
+                                    <i class="bi bi-list"></i> All Department
+                                </a>
+                                <div class="megaMenu allDeep">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <ul>
+
+                                                <li class="megaParent">
+                                                    <a href="#">
+                                                        <span>
+                                                            <img src="images/icon_menu4.png" alt="" class="Fashion">
+                                                            Fashion
+                                                        </span>
+                                                    </a>
+                                                    <!-- RIGHT SIDE SUB MENU -->
+                                                    <div class="subMegaMenu">
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <ul>
+                                                                    <li><a href="#">Men Clothing</a></li>
+                                                                    <li><a href="#">Women Clothing</a></li>
+                                                                    <li><a href="#">Kids Wear</a></li>
+                                                                    <li><a href="#">Shoes</a></li>
+                                                                    <li><a href="#">Bags</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <ul>
+                                                                    <li><a href="#">Men Clothing</a></li>
+                                                                    <li><a href="#">Women Clothing</a></li>
+                                                                    <li><a href="#">Kids Wear</a></li>
+                                                                    <li><a href="#">Shoes</a></li>
+                                                                    <li><a href="#">Bags</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <ul>
+                                                                    <li><a href="#">Men Clothing</a></li>
+                                                                    <li><a href="#">Women Clothing</a></li>
+                                                                    <li><a href="#">Kids Wear</a></li>
+                                                                    <li><a href="#">Shoes</a></li>
+                                                                    <li><a href="#">Bags</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <ul>
+                                                                    <li><a href="#">Men Clothing</a></li>
+                                                                    <li><a href="#">Women Clothing</a></li>
+                                                                    <li><a href="#">Kids Wear</a></li>
+                                                                    <li><a href="#">Shoes</a></li>
+                                                                    <li><a href="#">Bags</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">
+                                                        <span>
+                                                            <img src="images/icon_menu13.png" alt="" class="Fashion">
+                                                            Furniture
+                                                        </span>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">
+                                                        <span>
+                                                            <img src="images/icon_menu4.png" alt="" class="Fashion">
+                                                            Electronics
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li><a href="#"> <span><img src="images/icon_menu5.png" alt=""
+                                                                class="Fashion"> Health & Beauty Beauty</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li><a href="index.html">Home</a></li>
+
+                            <!-- MEGA MENU -->
+                            <li class="megaParent">
+                                <a href=""><i class="bi bi-building"></i> Shop</a>
+                                <div class="megaMenu">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6>Product Shop</h6>
+                                            <ul>
+                                                <li><a href="#">Star Mart </a></li>
+                                                <li><a href="#">Fresh Choice Store </a></li>
+                                                <li><a href="#">Lucky Corner Shop </a></li>
+                                                <li><a href="#">yal Market </a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h6> Service Shop</h6>
+                                            <ul>
+                                                <li><a href="#">Daily Needs Store </a></li>
+                                                <li><a href="#">Sunrise Mart </a></li>
+                                                <li><a href="#">Green Leaf Market </a></li>
+                                                <li><a href="#">Family Choice Shop </a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <img src="images/service.jpg" alt="" class="img-fluid">
+                                            <p>Ac Repair</p>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href=""><i class="bi bi-layers-half"></i> Products</a></li>
+                            <li><a href=""><i class="bi bi-layers-half"></i> Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="menuLeft">
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--My Profile Panel -->
+    <div class="myProfilePanel">
+        <div class="container">
+            <div class="row g-3">
+                <!-- SIDEBAR -->
+                <div class="col-md-4">
+                    <div class="profileMenu">
+                        <!-- User -->
+                        <div class="profileUserBox">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+                            <div>
+                                <small>Hello,</small>
+                                <h6 class="mb-0">Manjeet Srivastav</h6>
+                            </div>
+                        </div>
+
+                        <!-- Nav Pills -->
+                        <div class="nav flex-column nav-pills">
+
+                            <!-- ACCOUNT SETTINGS -->
+                            <div class="profilemenuSection">
+                                <div class="profilemenuTitle">
+                                    <i class="bi bi-person"></i> ACCOUNT SETTINGS
+                                </div>
+
+                                <button class="profilemenuItem " data-bs-toggle="pill" data-bs-target="#profile">
+                                    Profile Information
+                                </button>
+
+                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#address">
+                                    Manage Addresses
+                                </button>
+
+                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#pan">
+                                    PAN Card Information
+                                </button>
+                            </div>
+
+                            <!-- PAYMENTS -->
+                            <div class="profilemenuSection">
+                                <div class="profilemenuTitle">
+                                    <i class="bi bi-wallet2"></i> PAYMENTS
+                                </div>
+                                <button class="profilemenuItem d-flex justify-content-between" data-bs-toggle="pill"
+                                    data-bs-target="#gift">
+                                    Gift Cards <span class="text-success">₹0</span>
+                                </button>
+                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#upi">
+                                    Saved UPI
+                                </button>
+                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#cards">
+                                    Saved Cards
+                                </button>
+                            </div>
+                            <!-- MY STUFF -->
+                            <div class="profilemenuSection">
+                                <div class="profilemenuTitle">
+                                    <i class="bi bi-folder"></i> MY STUFF
+                                </div>
+                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#coupon">
+                                    My Coupons
+                                </button>
+                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#reviews">
+                                    My Reviews & Ratings
+                                </button>
+                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#notifications">
+                                    All Notifications
+                                </button>
+                                <button class="profilemenuItem active" data-bs-toggle="pill" data-bs-target="#wishlist">
+                                    My Wishlist
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CONTENT -->
+                <div class="col-md-8">
+                    <div class="profileContentBox">
+                        <div class="tab-content">
+                            <div class="tab-pane fade" id="profile">
+                                <div class="personalInformation">
+                                    <div class="topProfile">
+                                        <h3>My Profile</h3>
+                                        <button id=""><i class="bi bi-pencil-square"></i> Edit</button>
+                                    </div>
+                                    <div class="generalInformation">
+                                        <h3>General Information</h3>
+
+                                        <div class="row">
+                                            <div class="col-md-6 formGroup">
+                                                <label>Name</label>
+                                                <input type="text" placeholder="Enter name">
+                                            </div>
+
+                                            <div class="col-md-6 formGroup">
+                                                <label>Number</label>
+                                                <input type="text" placeholder="Enter number">
+                                            </div>
+
+                                            <div class="col-md-6 formGroup">
+                                                <label>Email</label>
+                                                <input type="email" placeholder="Enter email">
+                                            </div>
+
+                                            <!-- Gender Select -->
+                                            <div class="col-md-6 formGroup">
+                                                <label>Gender</label>
+                                                <select>
+                                                    <option value="">Select Gender</option>
+                                                    <option>Male</option>
+                                                    <option>Female</option>
+                                                    <option>Other</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="address">
+                                <div class="manageAddress">
+                                    <h3>Manage Address</h3>
+                                    <button type="button" data-bs-toggle="collapse" href="#addAddress" role="button"
+                                        aria-expanded="false" aria-controls="collapseExample"><i
+                                            class="bi bi-file-plus"></i> Add Address</button>
+                                </div>
+                                <div class="collapse" id="addAddress">
+                                    <div class="addAddress">
+                                        <h3>Add Address</h3>
+                                        <div class="row">
+                                            <div class="col-md-6 formGroup">
+                                                <label>Name</label>
+                                                <input type="text" placeholder="Enter name">
+                                            </div>
+
+                                            <div class="col-md-6 formGroup">
+                                                <label>Number</label>
+                                                <input type="text" placeholder="Enter number">
+                                            </div>
+
+                                            <div class="col-md-6 formGroup">
+                                                <label>Pincode</label>
+                                                <input type="number" placeholder="Enter Pincode">
+                                            </div>
+                                            <div class="col-md-6 formGroup">
+                                                <label>locality</label>
+                                                <input type="number" placeholder="Enter locality">
+                                            </div>
+                                            <div class="col-md-6 formGroup">
+                                                <label>City / District / Town</label>
+                                                <input type="number" placeholder="Enter locality">
+                                            </div>
+                                            <div class="col-md-6 formGroup">
+                                                <label>State</label>
+                                                <select>
+                                                    <option value="">Select State</option>
+                                                    <option>Delhi</option>
+                                                    <option>Bihar</option>
+                                                    <option>Punjab</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6 formGroup">
+                                                <label>Landmark (optional)</label>
+                                                <input type="number" placeholder="Enter Landmark">
+                                            </div>
+                                            <div class="col-md-6 formGroup">
+                                                <label>Alternate number (optional)</label>
+                                                <input type="number" placeholder="Enter Alternate number">
+                                            </div>
+                                            <div class="col-md-6 formGroup">
+                                                <label>Adress type</label>
+                                                <select>
+                                                    <option value="">Select type</option>
+                                                    <option>Work</option>
+                                                    <option>Home</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-12 formGroup">
+                                                <label>Address</label>
+                                                <textarea name="" id="" placeholder="Enter Address"></textarea>
+                                            </div>
+                                            <div class="saveCancel">
+                                                <button><i class="bi bi-box2-heart"></i> Save</button>
+                                                <button data-bs-toggle="collapse" href="#addAddress"><i class="bi bi-x-square"></i> Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="profile-address">
+                                    <div class="row align-items-center">
+                                        <!-- Left -->
+                                        <div class="col-md-10">
+                                            <span class="badge">HOME</span>
+                                        </div>
+
+                                        <!-- Right -->
+                                        <div class="col-md-2 text-end">
+                                            <div class="editDeleteAdress">
+                                                <span><i class="bi bi-pencil-square"></i></span>
+                                                <span><i class="bi bi-trash"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="addressDetails">
+                                        <p> <i class="bi bi-person-circle"></i> Manjeet Raj <span>7004261702</span></p>
+                                        <p> <i class="bi bi-geo-alt-fill"></i> Ward no 05, Narainapur sukhwan road
+                                            mantri market bagaha 2, Bagaha, Bihar -
+                                            <b>845105</b>
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="pan">
+                                <h5>PAN Card Info</h5>
+                            </div>
+
+                            <div class="tab-pane fade" id="gift">
+                                <h5>Gift Cards</h5>
+                            </div>
+
+                            <div class="tab-pane fade" id="upi">
+                                <h5>Saved UPI</h5>
+                            </div>
+
+                            <div class="tab-pane fade" id="cards">
+                                <h5>Saved Cards</h5>
+                            </div>
+
+                            <div class="tab-pane fade" id="coupon">
+                                <h5>My Coupons</h5>
+                            </div>
+
+                            <div class="tab-pane fade" id="reviews">
+                                <h5>Reviews & Ratings</h5>
+                            </div>
+
+                            <div class="tab-pane fade" id="notifications">
+                                <h5>Notifications</h5>
+                            </div>
+
+                            <div class="tab-pane fade show active" id="wishlist">
+                               <div class="wishlistPanel">
+                                
+                               </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--My Profile Panel -->
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logoFooter">
+                        <img src="images/logo.png" alt="">
+                        <p>We are a trusted company dedicated to providing high-quality products and professional
+                            services to meet the growing needs of our customers.
+                            Our goal is to deliver reliable solutions that make life easier, businesses stronger,
+                            and
+                            experiences better.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="companyFooter">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href=""><i class="bi bi-arrow-right"></i> About</a></li>
+                            <li><a href=""><i class="bi bi-arrow-right"></i> Terms & Conditions </a></li>
+                            <li><a href=""><i class="bi bi-arrow-right"></i> Privacy Policy </a></li>
+                            <li><a href=""><i class="bi bi-arrow-right"></i> Returns Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="companyFooter">
+                        <h3>For Customer</h3>
+                        <ul>
+                            <li><a href=""><i class="bi bi-arrow-right"></i> Products</a></li>
+                            <li><a href=""><i class="bi bi-arrow-right"></i> Services </a></li>
+                            <li><a href=""><i class="bi bi-arrow-right"></i> Categories</a></li>
+                            <li><a href=""><i class="bi bi-arrow-right"></i> Contact </a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="socialMediaIndex">
+                        <h3>Connect With Us</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal fade locationModal" id="locationModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- HEADER -->
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h6 class="mb-0">Select delivery address</h6>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- SEARCH -->
+                <input type="text" class="form-control searchBox mb-3"
+                    placeholder="Search by area, street name, pin code">
+
+                <!-- USE LOCATION -->
+                <div class="d-flex align-items-center gap-2 useLocation mb-3" id="getLocationBtn">
+                    <i class="bi bi-crosshair"></i>
+                    <span id="locationText">Use my current location</span>
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- SAVED -->
+                <p class="fw-semibold mb-2">Saved addresses</p>
+
+                <div class="d-flex align-items-center gap-2 loginLink">
+                    <i class="bi bi-person-circle"></i>
+                    <span>Login to see saved addresses</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <!--  JavaScript -->
+    <script src="js/jQueryv3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Owl -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
