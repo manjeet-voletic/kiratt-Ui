@@ -433,302 +433,29 @@
             </div>
         </div>
     </div>
-    <!--My Profile Panel -->
-    <div class="myProfilePanel">
+    <!--Error page -->
+    <div class="error-wrapper">
         <div class="container">
-            <div class="row g-3">
-                <!-- SIDEBAR -->
-                <div class="col-md-4">
-                    <div class="profileMenu">
-                        <!-- User -->
-                        <div class="profileUserBox">
-                            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
-                            <div>
-                                <small>Hello,</small>
-                                <h6 class="mb-0">Manjeet Srivastav</h6>
-                            </div>
-                        </div>
 
-                        <!-- Nav Pills -->
-                        <div class="nav flex-column nav-pills">
+            <div class="error-card">
 
-                            <!-- ACCOUNT SETTINGS -->
-                            <div class="profilemenuSection">
-                                <div class="profilemenuTitle">
-                                    <i class="bi bi-person"></i> ACCOUNT SETTINGS
-                                </div>
+                <!-- Image -->
+                <img src="https://cdn-icons-png.flaticon.com/512/6195/6195678.png" class="error-image mb-3">
 
-                                <button class="profilemenuItem " data-bs-toggle="pill" data-bs-target="#profile">
-                                    Profile Information
-                                </button>
+                <!-- Text -->
+                <div class="error-code">404</div>
+                <div class="error-title">Page Not Found</div>
+                <p class="error-desc mb-4">
+                    Sorry, the page you're looking for doesn’t exist. Let’s get you back to shopping.
+                </p>
 
-                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#address">
-                                    Manage Addresses
-                                </button>
-
-                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#pan">
-                                    PAN Card Information
-                                </button>
-                            </div>
-
-                            <!-- PAYMENTS -->
-                            <div class="profilemenuSection">
-                                <div class="profilemenuTitle">
-                                    <i class="bi bi-wallet2"></i> PAYMENTS
-                                </div>
-                                <button class="profilemenuItem d-flex justify-content-between" data-bs-toggle="pill"
-                                    data-bs-target="#gift">
-                                    Gift Cards <span class="text-success">₹0</span>
-                                </button>
-                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#upi">
-                                    Saved UPI
-                                </button>
-                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#cards">
-                                    Saved Cards
-                                </button>
-                            </div>
-                            <!-- MY STUFF -->
-                            <div class="profilemenuSection">
-                                <div class="profilemenuTitle">
-                                    <i class="bi bi-folder"></i> MY STUFF
-                                </div>
-                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#coupon">
-                                    My Coupons
-                                </button>
-                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#reviews">
-                                    My Reviews & Ratings
-                                </button>
-                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#notifications">
-                                    All Notifications
-                                </button>
-                                <button class="profilemenuItem active" data-bs-toggle="pill" data-bs-target="#wishlist">
-                                    My Wishlist
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+              
                 </div>
-                <!-- CONTENT -->
-                <div class="col-md-8">
-                    <div class="profileContentBox">
-                        <div class="tab-content">
-                            <div class="tab-pane fade" id="profile">
-                                <div class="personalInformation">
-                                    <div class="topProfile">
-                                        <h3>My Profile</h3>
-                                        <button id=""><i class="bi bi-pencil-square"></i> Edit</button>
-                                    </div>
-                                    <div class="generalInformation">
-                                        <h3>General Information</h3>
 
-                                        <div class="row">
-                                            <div class="col-md-6 formGroup">
-                                                <label>Name</label>
-                                                <input type="text" placeholder="Enter name">
-                                            </div>
-
-                                            <div class="col-md-6 formGroup">
-                                                <label>Number</label>
-                                                <input type="text" placeholder="Enter number">
-                                            </div>
-
-                                            <div class="col-md-6 formGroup">
-                                                <label>Email</label>
-                                                <input type="email" placeholder="Enter email">
-                                            </div>
-
-                                            <!-- Gender Select -->
-                                            <div class="col-md-6 formGroup">
-                                                <label>Gender</label>
-                                                <select>
-                                                    <option value="">Select Gender</option>
-                                                    <option>Male</option>
-                                                    <option>Female</option>
-                                                    <option>Other</option>
-                                                </select>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="address">
-                                <div class="manageAddress">
-                                    <h3>Manage Address</h3>
-                                    <button type="button" data-bs-toggle="collapse" href="#addAddress" role="button"
-                                        aria-expanded="false" aria-controls="collapseExample"><i
-                                            class="bi bi-file-plus"></i> Add Address</button>
-                                </div>
-                                <div class="collapse" id="addAddress">
-                                    <div class="addAddress">
-                                        <h3>Add Address</h3>
-                                        <div class="row">
-                                            <div class="col-md-6 formGroup">
-                                                <label>Name</label>
-                                                <input type="text" placeholder="Enter name">
-                                            </div>
-
-                                            <div class="col-md-6 formGroup">
-                                                <label>Number</label>
-                                                <input type="text" placeholder="Enter number">
-                                            </div>
-
-                                            <div class="col-md-6 formGroup">
-                                                <label>Pincode</label>
-                                                <input type="number" placeholder="Enter Pincode">
-                                            </div>
-                                            <div class="col-md-6 formGroup">
-                                                <label>locality</label>
-                                                <input type="number" placeholder="Enter locality">
-                                            </div>
-                                            <div class="col-md-6 formGroup">
-                                                <label>City / District / Town</label>
-                                                <input type="number" placeholder="Enter locality">
-                                            </div>
-                                            <div class="col-md-6 formGroup">
-                                                <label>State</label>
-                                                <select>
-                                                    <option value="">Select State</option>
-                                                    <option>Delhi</option>
-                                                    <option>Bihar</option>
-                                                    <option>Punjab</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-6 formGroup">
-                                                <label>Landmark (optional)</label>
-                                                <input type="number" placeholder="Enter Landmark">
-                                            </div>
-                                            <div class="col-md-6 formGroup">
-                                                <label>Alternate number (optional)</label>
-                                                <input type="number" placeholder="Enter Alternate number">
-                                            </div>
-                                            <div class="col-md-6 formGroup">
-                                                <label>Adress type</label>
-                                                <select>
-                                                    <option value="">Select type</option>
-                                                    <option>Work</option>
-                                                    <option>Home</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-12 formGroup">
-                                                <label>Address</label>
-                                                <textarea name="" id="" placeholder="Enter Address"></textarea>
-                                            </div>
-                                            <div class="saveCancel">
-                                                <button><i class="bi bi-box2-heart"></i> Save</button>
-                                                <button data-bs-toggle="collapse" href="#addAddress"><i
-                                                        class="bi bi-x-square"></i> Cancel</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="profile-address">
-                                    <div class="row align-items-center">
-                                        <!-- Left -->
-                                        <div class="col-md-10">
-                                            <span class="badge">HOME</span>
-                                        </div>
-
-                                        <!-- Right -->
-                                        <div class="col-md-2 text-end">
-                                            <div class="editDeleteAdress">
-                                                <span><i class="bi bi-pencil-square"></i></span>
-                                                <span><i class="bi bi-trash"></i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="addressDetails">
-                                        <p> <i class="bi bi-person-circle"></i> Manjeet Raj <span>7004261702</span></p>
-                                        <p> <i class="bi bi-geo-alt-fill"></i> Ward no 05, Narainapur sukhwan road
-                                            mantri market bagaha 2, Bagaha, Bihar -
-                                            <b>845105</b>
-                                        </p>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div class="tab-pane fade" id="pan">
-                                <h5>PAN Card Info</h5>
-                            </div>
-
-                            <div class="tab-pane fade" id="gift">
-                                <h5>Gift Cards</h5>
-                            </div>
-
-                            <div class="tab-pane fade" id="upi">
-                                <h5>Saved UPI</h5>
-                            </div>
-
-                            <div class="tab-pane fade" id="cards">
-                                <h5>Saved Cards</h5>
-                            </div>
-
-                            <div class="tab-pane fade" id="coupon">
-                                <h5>My Coupons</h5>
-                            </div>
-
-                            <div class="tab-pane fade" id="reviews">
-                                <h5>Reviews & Ratings</h5>
-                            </div>
-
-                            <div class="tab-pane fade" id="notifications">
-                                <h5>Notifications</h5>
-                            </div>
-
-                            <div class="tab-pane fade show active" id="wishlist">
-                                <div class="wishlistPanel">
-                                    <h4>My whislist (1)</h4>
-                                    <div class="wishlist" id="wishlist">
-                                        <!-- ITEM -->
-                                        <div class="wishlist-card">
-                                            <div class="wishlist-left">
-                                                <img src="images/bag.jpg" alt="">
-                                                <div class="status">Currently unavailable</div>
-                                            </div>
-
-                                            <div class="wishlist-middle">
-                                                <h3>huami Bip U 1.4 HD display cornilla 3 reinforced glass Smartwatch
-                                                </h3>
-                                                <div class="price">Price: Not Available</div>
-                                            </div>
-
-                                            <div class="wishlist-right">
-                                                <div class="wishlist-btn" onclick="removeItem(this)">
-                                                    <i class="fa fa-trash"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="wishlist-card">
-                                            <div class="wishlist-left">
-                                                <img src="images/bag.jpg" alt="">
-                                            </div>
-
-                                            <div class="wishlist-middle">
-                                                <h3>huami Bip U 1.4 HD display cornilla 3 reinforced glass Smartwatch
-                                                </h3>
-                                                <div class="price">Price: Rs500</div>
-                                            </div>
-
-                                            <div class="wishlist-right">
-                                                <div class="wishlist-btn" onclick="removeItem(this)">
-                                                    <i class="fa fa-trash"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
             </div>
         </div>
-    </div>
-    <!--My Profile Panel -->
+   
+    <!--Errror page -->
     <!--footer-->
     <footer>
         <div class="container">
@@ -781,40 +508,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- MODAL -->
-    <div class="modal fade locationModal" id="locationModal">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <!-- HEADER -->
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                    <h6 class="mb-0">Select delivery address</h6>
-                    <button class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-
-                <!-- SEARCH -->
-                <input type="text" class="form-control searchBox mb-3"
-                    placeholder="Search by area, street name, pin code">
-
-                <!-- USE LOCATION -->
-                <div class="d-flex align-items-center gap-2 useLocation mb-3" id="getLocationBtn">
-                    <i class="bi bi-crosshair"></i>
-                    <span id="locationText">Use my current location</span>
-                </div>
-
-                <div class="divider"></div>
-
-                <!-- SAVED -->
-                <p class="fw-semibold mb-2">Saved addresses</p>
-
-                <div class="d-flex align-items-center gap-2 loginLink">
-                    <i class="bi bi-person-circle"></i>
-                    <span>Login to see saved addresses</span>
-                </div>
-
-            </div>
-        </div>
-    </div>
     <!--footer-->
     <!--  JavaScript -->
     <script src="js/jQueryv3.6.0.min.js"></script>

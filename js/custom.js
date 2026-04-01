@@ -267,4 +267,17 @@ function togglePassword(inputId, el) {
 }
 // close hide and show
 // 
+// wishlist card
+function removeItem(btn) {
+    const card = btn.closest('.wishlist-card');
 
+    // smooth delete animation
+    card.style.transition = "0.3s";
+    card.style.opacity = "0";
+    card.style.transform = "translateX(50px)";
+
+    setTimeout(() => {
+        card.remove();
+    }, 300);
+}
+// wishlist card

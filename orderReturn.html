@@ -433,302 +433,118 @@
             </div>
         </div>
     </div>
-    <!--My Profile Panel -->
-    <div class="myProfilePanel">
-        <div class="container">
-            <div class="row g-3">
-                <!-- SIDEBAR -->
-                <div class="col-md-4">
-                    <div class="profileMenu">
-                        <!-- User -->
-                        <div class="profileUserBox">
-                            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
-                            <div>
-                                <small>Hello,</small>
-                                <h6 class="mb-0">Manjeet Srivastav</h6>
-                            </div>
+    <!--Order Return-->
+    <div class="orderReturnPanel">
+        <div class="container orderClick">
+            <div class="orderSearch">
+                <div class="row g-3 align-items-center">
+                    <!-- Search -->
+                     <div class="col-md-12">
+                        <div class="topOrder">
+                            <p>Home / My orders</p>
                         </div>
-
-                        <!-- Nav Pills -->
-                        <div class="nav flex-column nav-pills">
-
-                            <!-- ACCOUNT SETTINGS -->
-                            <div class="profilemenuSection">
-                                <div class="profilemenuTitle">
-                                    <i class="bi bi-person"></i> ACCOUNT SETTINGS
-                                </div>
-
-                                <button class="profilemenuItem " data-bs-toggle="pill" data-bs-target="#profile">
-                                    Profile Information
-                                </button>
-
-                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#address">
-                                    Manage Addresses
-                                </button>
-
-                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#pan">
-                                    PAN Card Information
-                                </button>
-                            </div>
-
-                            <!-- PAYMENTS -->
-                            <div class="profilemenuSection">
-                                <div class="profilemenuTitle">
-                                    <i class="bi bi-wallet2"></i> PAYMENTS
-                                </div>
-                                <button class="profilemenuItem d-flex justify-content-between" data-bs-toggle="pill"
-                                    data-bs-target="#gift">
-                                    Gift Cards <span class="text-success">₹0</span>
-                                </button>
-                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#upi">
-                                    Saved UPI
-                                </button>
-                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#cards">
-                                    Saved Cards
-                                </button>
-                            </div>
-                            <!-- MY STUFF -->
-                            <div class="profilemenuSection">
-                                <div class="profilemenuTitle">
-                                    <i class="bi bi-folder"></i> MY STUFF
-                                </div>
-                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#coupon">
-                                    My Coupons
-                                </button>
-                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#reviews">
-                                    My Reviews & Ratings
-                                </button>
-                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#notifications">
-                                    All Notifications
-                                </button>
-                                <button class="profilemenuItem active" data-bs-toggle="pill" data-bs-target="#wishlist">
-                                    My Wishlist
-                                </button>
+                     </div>
+                    <div class="col-md-10">
+                        <div class="search-box">
+                            <input type="text" class="form-control" placeholder="Search Order">
+                            <div class="search-action">
+                                <i class="fa fa-search"></i>
+                                <span>Search Order</span>
                             </div>
                         </div>
                     </div>
+                    <!-- Dropdown -->
+                    <div class="col-md-2">
+                        <div class="select-box">
+                            <select class="form-select">
+                                <option selected>Filter by Status</option>
+                                <option>On the way</option>
+                                <option>Delivered</option>
+                                <option>Cancelled</option>
+                            </select>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                    </div>
+
                 </div>
-                <!-- CONTENT -->
-                <div class="col-md-8">
-                    <div class="profileContentBox">
-                        <div class="tab-content">
-                            <div class="tab-pane fade" id="profile">
-                                <div class="personalInformation">
-                                    <div class="topProfile">
-                                        <h3>My Profile</h3>
-                                        <button id=""><i class="bi bi-pencil-square"></i> Edit</button>
-                                    </div>
-                                    <div class="generalInformation">
-                                        <h3>General Information</h3>
+            </div>
+            <div class="return-card">
+                <div class="row align-items-center">
+                    <!-- IMAGE -->
+                    <div class="col-md-1 col-3 text-center">
+                        <img src="images/cloth.jpg" class="return-img" alt="Product">
+                    </div>
 
-                                        <div class="row">
-                                            <div class="col-md-6 formGroup">
-                                                <label>Name</label>
-                                                <input type="text" placeholder="Enter name">
-                                            </div>
+                    <!-- INFO -->
+                    <div class="col-md-5 col-9">
+                        <div class="return-title">Nellist Men Embroidered Straight Kurta</div>
+                        <div class="return-meta">Color: Red &nbsp; Size: XXL</div>
+                    </div>
 
-                                            <div class="col-md-6 formGroup">
-                                                <label>Number</label>
-                                                <input type="text" placeholder="Enter number">
-                                            </div>
+                    <!-- PRICE -->
+                    <div class="col-md-2 col-6 mt-3 mt-md-0">
+                        <div class="return-price">₹462</div>
+                    </div>
 
-                                            <div class="col-md-6 formGroup">
-                                                <label>Email</label>
-                                                <input type="email" placeholder="Enter email">
-                                            </div>
-
-                                            <!-- Gender Select -->
-                                            <div class="col-md-6 formGroup">
-                                                <label>Gender</label>
-                                                <select>
-                                                    <option value="">Select Gender</option>
-                                                    <option>Male</option>
-                                                    <option>Female</option>
-                                                    <option>Other</option>
-                                                </select>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="address">
-                                <div class="manageAddress">
-                                    <h3>Manage Address</h3>
-                                    <button type="button" data-bs-toggle="collapse" href="#addAddress" role="button"
-                                        aria-expanded="false" aria-controls="collapseExample"><i
-                                            class="bi bi-file-plus"></i> Add Address</button>
-                                </div>
-                                <div class="collapse" id="addAddress">
-                                    <div class="addAddress">
-                                        <h3>Add Address</h3>
-                                        <div class="row">
-                                            <div class="col-md-6 formGroup">
-                                                <label>Name</label>
-                                                <input type="text" placeholder="Enter name">
-                                            </div>
-
-                                            <div class="col-md-6 formGroup">
-                                                <label>Number</label>
-                                                <input type="text" placeholder="Enter number">
-                                            </div>
-
-                                            <div class="col-md-6 formGroup">
-                                                <label>Pincode</label>
-                                                <input type="number" placeholder="Enter Pincode">
-                                            </div>
-                                            <div class="col-md-6 formGroup">
-                                                <label>locality</label>
-                                                <input type="number" placeholder="Enter locality">
-                                            </div>
-                                            <div class="col-md-6 formGroup">
-                                                <label>City / District / Town</label>
-                                                <input type="number" placeholder="Enter locality">
-                                            </div>
-                                            <div class="col-md-6 formGroup">
-                                                <label>State</label>
-                                                <select>
-                                                    <option value="">Select State</option>
-                                                    <option>Delhi</option>
-                                                    <option>Bihar</option>
-                                                    <option>Punjab</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-6 formGroup">
-                                                <label>Landmark (optional)</label>
-                                                <input type="number" placeholder="Enter Landmark">
-                                            </div>
-                                            <div class="col-md-6 formGroup">
-                                                <label>Alternate number (optional)</label>
-                                                <input type="number" placeholder="Enter Alternate number">
-                                            </div>
-                                            <div class="col-md-6 formGroup">
-                                                <label>Adress type</label>
-                                                <select>
-                                                    <option value="">Select type</option>
-                                                    <option>Work</option>
-                                                    <option>Home</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-12 formGroup">
-                                                <label>Address</label>
-                                                <textarea name="" id="" placeholder="Enter Address"></textarea>
-                                            </div>
-                                            <div class="saveCancel">
-                                                <button><i class="bi bi-box2-heart"></i> Save</button>
-                                                <button data-bs-toggle="collapse" href="#addAddress"><i
-                                                        class="bi bi-x-square"></i> Cancel</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="profile-address">
-                                    <div class="row align-items-center">
-                                        <!-- Left -->
-                                        <div class="col-md-10">
-                                            <span class="badge">HOME</span>
-                                        </div>
-
-                                        <!-- Right -->
-                                        <div class="col-md-2 text-end">
-                                            <div class="editDeleteAdress">
-                                                <span><i class="bi bi-pencil-square"></i></span>
-                                                <span><i class="bi bi-trash"></i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="addressDetails">
-                                        <p> <i class="bi bi-person-circle"></i> Manjeet Raj <span>7004261702</span></p>
-                                        <p> <i class="bi bi-geo-alt-fill"></i> Ward no 05, Narainapur sukhwan road
-                                            mantri market bagaha 2, Bagaha, Bihar -
-                                            <b>845105</b>
-                                        </p>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div class="tab-pane fade" id="pan">
-                                <h5>PAN Card Info</h5>
-                            </div>
-
-                            <div class="tab-pane fade" id="gift">
-                                <h5>Gift Cards</h5>
-                            </div>
-
-                            <div class="tab-pane fade" id="upi">
-                                <h5>Saved UPI</h5>
-                            </div>
-
-                            <div class="tab-pane fade" id="cards">
-                                <h5>Saved Cards</h5>
-                            </div>
-
-                            <div class="tab-pane fade" id="coupon">
-                                <h5>My Coupons</h5>
-                            </div>
-
-                            <div class="tab-pane fade" id="reviews">
-                                <h5>Reviews & Ratings</h5>
-                            </div>
-
-                            <div class="tab-pane fade" id="notifications">
-                                <h5>Notifications</h5>
-                            </div>
-
-                            <div class="tab-pane fade show active" id="wishlist">
-                                <div class="wishlistPanel">
-                                    <h4>My whislist (1)</h4>
-                                    <div class="wishlist" id="wishlist">
-                                        <!-- ITEM -->
-                                        <div class="wishlist-card">
-                                            <div class="wishlist-left">
-                                                <img src="images/bag.jpg" alt="">
-                                                <div class="status">Currently unavailable</div>
-                                            </div>
-
-                                            <div class="wishlist-middle">
-                                                <h3>huami Bip U 1.4 HD display cornilla 3 reinforced glass Smartwatch
-                                                </h3>
-                                                <div class="price">Price: Not Available</div>
-                                            </div>
-
-                                            <div class="wishlist-right">
-                                                <div class="wishlist-btn" onclick="removeItem(this)">
-                                                    <i class="fa fa-trash"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="wishlist-card">
-                                            <div class="wishlist-left">
-                                                <img src="images/bag.jpg" alt="">
-                                            </div>
-
-                                            <div class="wishlist-middle">
-                                                <h3>huami Bip U 1.4 HD display cornilla 3 reinforced glass Smartwatch
-                                                </h3>
-                                                <div class="price">Price: Rs500</div>
-                                            </div>
-
-                                            <div class="wishlist-right">
-                                                <div class="wishlist-btn" onclick="removeItem(this)">
-                                                    <i class="fa fa-trash"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+                    <!-- DELIVERY -->
+                    <div class="col-md-4 col-6 mt-3 mt-md-0">
+                        <div class="return-status d-flex align-items-center">
+                            <span class="return-dot"></span>
+                            Delivered on Mar 31, 2024
                         </div>
 
+                        <div class="return-subtext">
+                            Your item has been delivered
+                        </div>
+
+                        <div class="return-review mt-2">
+                            <i class="fa fa-star"></i> Rate & Review Product
+                        </div>
                     </div>
+
                 </div>
+                
+            </div>
+              <div class="return-card">
+                <div class="row align-items-center">
+                    <!-- IMAGE -->
+                    <div class="col-md-1 col-3 text-center">
+                        <img src="images/cloth.jpg" class="return-img" alt="Product">
+                    </div>
+
+                    <!-- INFO -->
+                    <div class="col-md-5 col-9">
+                        <div class="return-title">Nellist Men Embroidered Straight Kurta</div>
+                        <div class="return-meta">Color: Red &nbsp; Size: XXL</div>
+                    </div>
+
+                    <!-- PRICE -->
+                    <div class="col-md-2 col-6 mt-3 mt-md-0">
+                        <div class="return-price">₹462</div>
+                    </div>
+
+                    <!-- DELIVERY -->
+                    <div class="col-md-4 col-6 mt-3 mt-md-0">
+                        <div class="return-status d-flex align-items-center">
+                            <span class="return-dot"></span>
+                            Delivered on Mar 31, 2024
+                        </div>
+
+                        <div class="return-subtext">
+                            Your item has been delivered
+                        </div>
+
+                        <div class="return-review mt-2">
+                            <i class="fa fa-star"></i> Rate & Review Product
+                        </div>
+                    </div>
+
+                </div>
+                
             </div>
         </div>
     </div>
-    <!--My Profile Panel -->
+    <!--Order Return -->
     <!--footer-->
     <footer>
         <div class="container">
