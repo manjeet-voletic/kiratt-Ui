@@ -354,7 +354,6 @@
 
                                                     </div>
                                                 </li>
-
                                                 <li>
                                                     <a href="#">
                                                         <span>
@@ -363,7 +362,6 @@
                                                         </span>
                                                     </a>
                                                 </li>
-
                                                 <li>
                                                     <a href="#">
                                                         <span>
@@ -433,121 +431,102 @@
             </div>
         </div>
     </div>
-    <!--Order Return-->
-    <div class="orderReturnPanel">
-        <div class="container">
-            <div class="orderClick">
-            <div class="orderSearch">
-                <div class="row g-3 align-items-center">
-                    <!-- Search -->
-                     <div class="col-md-12">
-                        <div class="topOrder">
-                            <p>Home / My orders</p>
+    <!--Order Details-->
+    <div class="container">
+        <div class="orderDetails-wrapper">
+            <div class="homeDetails">
+          <p>Home / <span>Order Details</span> </p> 
+          </div> 
+        <div class="row">
+            <!-- LEFT -->
+            <div class="col-lg-8">
+                <div class="orderDetails-card orderDetails-header">
+                    Order tracked via <b>#8102438505</b>
+                </div>
+                <div class="orderDetails-card orderDetails-product">
+                    <div>
+                         <p>Truke BTG Ultra Earbuds</p>
+                         <p>60H Playtime • 360 Spatial • Low Latency</p>
+                         <p>Black | BUZZINDIA</p>
+                        <div class="orderDetails-price">
+                            ₹809 <span class="orderDetails-offer">Best Deal</span>
                         </div>
-                     </div>
-                    <div class="col-md-10">
-                        <div class="search-box">
-                            <input type="text" class="form-control" placeholder="Search Order">
-                            <div class="search-action">
-                                <i class="fa fa-search"></i>
-                                <span>Search Order</span>
+                    </div>
+                    <img src="images/bag.jpg">
+                </div>
+                <!-- TIMELINE -->
+                <div class="orderDetails-card">
+                    <h5>Order Timeline</h5>
+                    <div class="orderDetails-timeline">
+                        <div class="orderDetails-step orderDetails-completed">
+                            <div class="orderDetails-circle"></div>
+                            <div>
+                                <p>Order Confirmed</p>
+                                <p>Dec 26, 2024</p>
+                            </div>
+                        </div>
+                        <div class="orderDetails-step orderDetails-completed">
+                            <div class="orderDetails-circle"></div>
+                            <div>
+                                <p>Delivered</p>
+                                <p>Dec 26, 2024</p>
                             </div>
                         </div>
                     </div>
-                    <!-- Dropdown -->
-                    <div class="col-md-2">
-                        <div class="select-box">
-                            <select class="form-select">
-                                <option selected>Filter by Status</option>
-                                <option>On the way</option>
-                                <option>Delivered</option>
-                                <option>Cancelled</option>
-                            </select>
-                            <i class="fa fa-chevron-down"></i>
-                        </div>
+                    <div class="orderDetails-viewTracking" data-bs-toggle="modal" data-bs-target="#trackingModal">
+                        View Tracking →
                     </div>
-
                 </div>
             </div>
-            <div class="return-card">
-                <div class="row align-items-center">
-                    <!-- IMAGE -->
-                    <div class="col-md-1 col-3 text-center">
-                        <img src="images/cloth.jpg" class="return-img" alt="Product">
-                    </div>
-
-                    <!-- INFO -->
-                    <div class="col-md-5 col-9">
-                        <div class="return-title">Nellist Men Embroidered Straight Kurta</div>
-                        <div class="return-meta">Color: Red &nbsp; Size: XXL</div>
-                    </div>
-
-                    <!-- PRICE -->
-                    <div class="col-md-2 col-6 mt-3 mt-md-0">
-                        <div class="return-price">₹462</div>
-                    </div>
-
-                    <!-- DELIVERY -->
-                    <div class="col-md-4 col-6 mt-3 mt-md-0">
-                        <div class="return-status d-flex align-items-center">
-                            <span class="return-dot"></span>
-                            Delivered on Mar 31, 2024
-                        </div>
-
-                        <div class="return-subtext">
-                            Your item has been delivered
-                        </div>
-
-                        <div class="return-review mt-2">
-                            <i class="fa fa-star"></i> Rate & Review Product
-                        </div>
-                    </div>
-
+            <!-- RIGHT -->
+            <div class="col-lg-4">
+                <div class="orderDetails-Delivery">
+                    <h5>Delivery Info</h5>
+                    <p><b>Address:</b> BSNL tower near shukla chauraha</p>
+                    <p><b>Name:</b> Mansi</p>
+                    <p><b>Phone:</b> 8102438505</p>
                 </div>
-                
-            </div>
-              <div class="return-card">
-                <div class="row align-items-center">
-                    <!-- IMAGE -->
-                    <div class="col-md-1 col-3 text-center">
-                        <img src="images/cloth.jpg" class="return-img" alt="Product">
+
+                <div class="orderDetails-card">
+                    <h5>Payment Summary</h5>
+
+                    <div class="orderDetails-row">
+                        <span>MRP</span>
+                        <span>₹2,999</span>
                     </div>
 
-                    <!-- INFO -->
-                    <div class="col-md-5 col-9">
-                        <div class="return-title">Nellist Men Embroidered Straight Kurta</div>
-                        <div class="return-meta">Color: Red &nbsp; Size: XXL</div>
+                    <div class="orderDetails-row">
+                        <span>Discount</span>
+                        <span>-₹2,200</span>
                     </div>
 
-                    <!-- PRICE -->
-                    <div class="col-md-2 col-6 mt-3 mt-md-0">
-                        <div class="return-price">₹462</div>
+                    <div class="orderDetails-row">
+                        <span>Fees</span>
+                        <span>₹10</span>
                     </div>
 
-                    <!-- DELIVERY -->
-                    <div class="col-md-4 col-6 mt-3 mt-md-0">
-                        <div class="return-status d-flex align-items-center">
-                            <span class="return-dot"></span>
-                            Delivered on Mar 31, 2024
-                        </div>
+                    <hr>
 
-                        <div class="return-subtext">
-                            Your item has been delivered
-                        </div>
-
-                        <div class="return-review mt-2">
-                            <i class="fa fa-star"></i> Rate & Review Product
-                        </div>
+                    <div class="orderDetails-row orderDetails-total">
+                        <span>Total</span>
+                        <span>₹809</span>
                     </div>
 
+                    <div class="orderDetails-payment mt-2">
+                      <i class="bi bi-cash-coin"></i>  Cash on Delivery
+                    </div>
+
+                    <button class="orderDetails-btn mt-2">
+                       <i class="bi bi-download"></i>  Download Invoice
+                    </button>
                 </div>
-                
+
             </div>
+
+        </div>
         </div>
     </div>
-    </div>
-    </div>
-    <!--Order Return -->
+    <!--Order Details-->
     <!--footer-->
     <footer>
         <div class="container">
@@ -600,39 +579,7 @@
             </div>
         </div>
     </footer>
-    <!-- MODAL -->
-    <div class="modal fade locationModal" id="locationModal">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <!-- HEADER -->
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                    <h6 class="mb-0">Select delivery address</h6>
-                    <button class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
 
-                <!-- SEARCH -->
-                <input type="text" class="form-control searchBox mb-3"
-                    placeholder="Search by area, street name, pin code">
-
-                <!-- USE LOCATION -->
-                <div class="d-flex align-items-center gap-2 useLocation mb-3" id="getLocationBtn">
-                    <i class="bi bi-crosshair"></i>
-                    <span id="locationText">Use my current location</span>
-                </div>
-
-                <div class="divider"></div>
-
-                <!-- SAVED -->
-                <p class="fw-semibold mb-2">Saved addresses</p>
-
-                <div class="d-flex align-items-center gap-2 loginLink">
-                    <i class="bi bi-person-circle"></i>
-                    <span>Login to see saved addresses</span>
-                </div>
-
-            </div>
-        </div>
-    </div>
     <!--footer-->
     <!--  JavaScript -->
     <script src="js/jQueryv3.6.0.min.js"></script>
