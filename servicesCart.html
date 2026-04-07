@@ -1,674 +1,624 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta name="google-site-verification" content="rXMy9A8ZZU2oNKl1e-vwqx7j1yHQ5TV9wD1sro8pCQo">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <meta name="theme-color" content="#fff">
-    <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#f10000">
-    <meta name="moblie-web-app-capable" content="yes">
-    <meta name="apple-web-app-capable" content="yes">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- iOS Safari -->
-    <title>KIRATT</title>
-    <link rel="apple-touch-icon" href="images/favicon.png" sizes="180x180">
-    <link rel="icon" href="images/favicon.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">
-    <link rel="stylesheet" href="css/custom.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Owl Carousel -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-</head>
-<body>
-    <!--TopPannel-->
-    <div class="discountTop">
-        <div class="row align-items-center">
-            <div class="col-md-4 infoIndexTop">
-                <a href=""><i class="bi bi-envelope-fill"></i> @InfoKiratt.com</a>
-                <a href=""><i class="bi bi-telephone-fill"></i> +919041342552</a>
-            </div>
-            <div class="col-md-4 codeIndex">
-                <a href="">🎉 Get 15% OFF your first order with code: WELCOME15</a>
-            </div>
-            <div class="col-md-4">
-                <!-- Language Dropdown -->
-                <div class="language-wrapper">
-                    <div class="selected-lang" onclick="toggleLang()">
-                        <span id="currentLang"><i class="bi bi-translate"></i> Your Language</span>
-                        <i class="bi bi-chevron-down"></i>
-                    </div>
-                    <ul class="lang-dropdown" id="langDropdown">
-                        <li onclick="changeLang('en','English')">English</li>
-                        <li onclick="changeLang('hi','हिन्दी')">हिन्दी</li>
-                        <li onclick="changeLang('bn','বাংলা')">বাংলা</li>
-                        <li onclick="changeLang('ta','தமிழ்')">தமிழ்</li>
-                        <li onclick="changeLang('te','తెలుగు')">తెలుగు</li>
-                        <li onclick="changeLang('mr','मराठी')">मराठी</li>
-                        <li onclick="changeLang('gu','ગુજરાતી')">ગુજરાતી</li>
-                        <li onclick="changeLang('kn','ಕನ್ನಡ')">ಕನ್ನಡ</li>
-                        <li onclick="changeLang('ml','മലയാളം')">മലയാളം</li>
-                        <li onclick="changeLang('pa','ਪੰਜਾਬੀ')">ਪੰਜਾਬੀ</li>
-                        <li onclick="changeLang('ur','اردو')">اردو</li>
-                    </ul>
-                </div>
-                <!-- Google Translate Hidden -->
-                <div id="google_translate_element" style="display:none;"></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="topBar">
+    <head>
+        <!-- Required meta tags -->
+        <meta name="google-site-verification" content="rXMy9A8ZZU2oNKl1e-vwqx7j1yHQ5TV9wD1sro8pCQo">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <meta name="theme-color" content="#fff">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#f10000">
+        <meta name="moblie-web-app-capable" content="yes">
+        <meta name="apple-web-app-capable" content="yes">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- iOS Safari -->
+        <title>KIRATT</title>
+        <link rel="apple-touch-icon" href="images/favicon.png" sizes="180x180">
+        <link rel="icon" href="images/favicon.png" sizes="32x32" type="image/png">
+        <link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">
+        <link rel="stylesheet" href="css/custom.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    </head>
+    <body>
+        <!--TopPannel-->
+        <div class="discountTop">
             <div class="row align-items-center">
-                <div class="col-md-2">
-                    <div class="logo">
-                        <img src="images/logo.png" alt="logo" class="img-fluid">
-                    </div>
+                <div class="col-md-4 infoIndexTop">
+                    <a href=""><i class="bi bi-envelope-fill"></i> @InfoKiratt.com</a>
+                    <a href=""><i class="bi bi-telephone-fill"></i> +919041342552</a>
                 </div>
-                <div class="col-md-10">
-                    <div class="row align-items-center">
-                        <div class="col-lg-10 col-md-7">
-                            <div class="topRight">
-                                <div class="locationIndex" data-bs-toggle="modal" data-bs-target="#locationModal">
-                                    <div>
-                                        <i class="bi bi-geo-alt-fill"></i>
-                                    </div>
-                                    <div>
-                                        <p> Deliver to Manjeet</p>
-                                        <p id="userAddress">Bettiah 845438</p>
-                                    </div>
-                                </div>
-                                <!-- Mobile Search Icon -->
-                                <button class="mobile-search-icon" id="mobileSearchBtn">
-                                    <i class="bi bi-search"></i>
-                                </button>
-
-                                <div class="search-container" id="searchContainer">
-                                    <div class="search-bar">
-                                        <!-- Category Dropdown -->
-                                        <select class="search-category">
-                                            <option>All</option>
-                                            <option>Mobiles</option>
-                                            <option>Electronics</option>
-                                            <option>Home & Kitchen</option>
-                                            <option>Mobiles</option>
-                                            <option>Electronics</option>
-                                            <option>Home & Kitchen</option>
-                                        </select>
-
-                                        <!-- Search Input -->
-                                        <input type="search" id="searchInput" class="search-input"
-                                            placeholder="Search Kiratt.com">
-
-                                        <!-- Search Button -->
-                                        <button class="search-button">
-                                            <i class="bi bi-search"></i>
-                                        </button>
-
-                                    </div>
-                                    <!-- Suggestions -->
-                                    <div id="suggestions" class="suggestions-box">
-                                        <div class="suggestion-item">
-                                            nutripro 500w blender juicer mixer grinder & smoothie maker machine – 1-year
-                                            warranty
-                                            <span class="close-suggestions">&times;</span>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-5">
-                            <div class="TopLeft">
-                                <!-- TRIGGER -->
-                                <div class="signInIndex" data-bs-toggle="collapse" data-bs-target="#signInBox">
-                                    <i class="bi bi-person-circle"></i>
-                                    <span>Login</span>
-                                    <!-- PANEL -->
-                                    <div class="collapse signInIndex-panel" id="signInBox">
-
-                                        <!-- Header -->
-                                        <div class="signInIndex-header">
-                                            <span>New customer?</span>
-                                            <a href="#">Sign Up</a>
-                                        </div>
-
-                                        <div class="signInIndex-divider"></div>
-
-                                        <!-- MENU -->
-                                        <div class="signInIndex-item">
-                                            <i class="bi bi-person"></i>
-                                            <span>My Profile</span>
-                                        </div>
-
-                                        <div class="signInIndex-item">
-                                            <i class="bi bi-box"></i>
-                                            <span>Orders</span>
-                                        </div>
-
-                                        <div class="signInIndex-item">
-                                            <i class="bi bi-heart"></i>
-                                            <span>Wishlist</span>
-                                        </div>
-                                        <div class="signInIndex-item">
-                                            <i class="bi bi-basket2-fill"></i>
-                                            <span>Returns</span>
-                                        </div>
-                                        <div class="signInIndex-item">
-                                            <i class="bi bi-shop"></i>
-                                            <span>Become a Vendor</span>
-                                        </div>
-                                        <div class="signInIndex-item">
-                                            <i class="bi bi-shop"></i>
-                                            <span>Become a Growth Leader</span>
-                                        </div>
-                                        <div class="signInIndex-item">
-                                            <i class="bi bi-gift"></i>
-                                            <span>Rewards</span>
-                                        </div>
-
-                                        <div class="signInIndex-item">
-                                            <i class="bi bi-gift"></i>
-                                            <span>Gift Cards</span>
-                                        </div>
-
-                                        <div class="signInIndex-item">
-                                            <i class="bi bi-bell"></i>
-                                            <span>Notification Preferences</span>
-                                        </div>
-
-                                        <div class="signInIndex-item">
-                                            <i class="bi bi-headphones"></i>
-                                            <span>24x7 Customer Care</span>
-                                        </div>
-
-                                        <div class="signInIndex-item">
-                                            <i class="bi bi-megaphone"></i>
-                                            <span>Advertise</span>
-                                        </div>
-
-                                        <div class="signInIndex-item">
-                                            <i class="bi bi-download"></i>
-                                            <span>Download App</span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="wishlistIndex">
-                                    <a href=""><i class="bi bi-heart"></i></a>
-                                </div>
-                                <!-- CART ICON -->
-                                <div class="myCart-wrapper">
-                                    <i class="bi bi-cart-check" data-bs-toggle="collapse"
-                                        data-bs-target="#myCartBox"></i>
-                                    <span class="myCart-count" data-bs-toggle="collapse"
-                                        data-bs-target="#myCartBox">3</span>
-                                    <!-- CART PANEL -->
-                                    <div class="collapse myCart-panel" id="myCartBox">
-                                        <div class="myCart-header">My Cart</div>
-                                        <!-- Tabs -->
-                                        <ul class="nav nav-tabs myCart-tabs mb-3">
-                                            <li class="nav-item">
-                                                <button class="nav-link active" data-bs-toggle="tab"
-                                                    data-bs-target="#myCart-products">Products</button>
-                                            </li>
-                                            <li class="nav-item">
-                                                <button class="nav-link" data-bs-toggle="tab"
-                                                    data-bs-target="#myCart-services">Services</button>
-                                            </li>
-                                            <li class="nav-item">
-                                                <button class="nav-link" data-bs-toggle="tab"
-                                                    data-bs-target="#myCart-Food">Food</button>
-                                            </li>
-                                        </ul>
-                                        <div class="tab-content">
-
-                                            <!-- PRODUCTS -->
-                                            <div class="tab-pane fade show active" id="myCart-products">
-                                                <div class="myCart-item">
-                                                    <img src="images/bag.jpg" class="myCart-img">
-                                                    <div>
-                                                        <div class="myCart-title">iPhone 14</div>
-                                                        <div class="myCart-price">₹80,000</div>
-                                                    </div>
-                                                    <i class="bi bi-x myCart-remove"></i>
-                                                </div>
-                                            </div>
-
-                                            <!-- SERVICES -->
-                                            <div class="tab-pane fade" id="myCart-services">
-
-                                                <div class="myCart-item">
-                                                    <img src="images/Ac.jfif" class="myCart-img">
-                                                    <div>
-                                                        <div class="myCart-title">AC Repair</div>
-                                                        <div class="myCart-price">₹599</div>
-                                                    </div>
-                                                    <i class="bi bi-x myCart-remove"></i>
-                                                </div>
-
-                                            </div>
-                                            <!-- FOOD -->
-                                            <div class="tab-pane fade" id="myCart-Food">
-
-                                                <div class="myCart-item">
-                                                    <img src="images/fast.png" class="myCart-img">
-                                                    <div>
-                                                        <div class="myCart-title">burger</div>
-                                                        <div class="myCart-price">₹599</div>
-                                                    </div>
-                                                    <i class="bi bi-x myCart-remove"></i>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                        <!-- FOOTER -->
-                                        <div class="myCart-footer mt-2">
-                                            <button class="btn myCart-btn w-100">Checkout</button>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--TopPannel-->
-    <div class="header-menu">
-        <div class="container">
-            <div class="menuToggle">
-                <i class="bi bi-list" id="menuOpen"></i>
-                <i class="bi bi-x-lg" id="menuClose"></i>
-            </div>
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="menuRight">
-                        <ul>
-                            <li class="megaParent">
-                                <a href="#allDepartment" class="department">
-                                    <i class="bi bi-list"></i> All Department
-                                </a>
-                                <div class="megaMenu allDeep">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <ul>
-
-                                                <li class="megaParent">
-                                                    <a href="#">
-                                                        <span>
-                                                            <img src="images/icon_menu4.png" alt="" class="Fashion">
-                                                            Fashion
-                                                        </span>
-                                                    </a>
-                                                    <!-- RIGHT SIDE SUB MENU -->
-                                                    <div class="subMegaMenu">
-                                                        <div class="row">
-                                                            <div class="col-md-3">
-                                                                <ul>
-                                                                    <li><a href="#">Men Clothing</a></li>
-                                                                    <li><a href="#">Women Clothing</a></li>
-                                                                    <li><a href="#">Kids Wear</a></li>
-                                                                    <li><a href="#">Shoes</a></li>
-                                                                    <li><a href="#">Bags</a></li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <ul>
-                                                                    <li><a href="#">Men Clothing</a></li>
-                                                                    <li><a href="#">Women Clothing</a></li>
-                                                                    <li><a href="#">Kids Wear</a></li>
-                                                                    <li><a href="#">Shoes</a></li>
-                                                                    <li><a href="#">Bags</a></li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <ul>
-                                                                    <li><a href="#">Men Clothing</a></li>
-                                                                    <li><a href="#">Women Clothing</a></li>
-                                                                    <li><a href="#">Kids Wear</a></li>
-                                                                    <li><a href="#">Shoes</a></li>
-                                                                    <li><a href="#">Bags</a></li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <ul>
-                                                                    <li><a href="#">Men Clothing</a></li>
-                                                                    <li><a href="#">Women Clothing</a></li>
-                                                                    <li><a href="#">Kids Wear</a></li>
-                                                                    <li><a href="#">Shoes</a></li>
-                                                                    <li><a href="#">Bags</a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                </li>
-
-                                                <li>
-                                                    <a href="#">
-                                                        <span>
-                                                            <img src="images/icon_menu13.png" alt="" class="Fashion">
-                                                            Furniture
-                                                        </span>
-                                                    </a>
-                                                </li>
-
-                                                <li>
-                                                    <a href="#">
-                                                        <span>
-                                                            <img src="images/icon_menu4.png" alt="" class="Fashion">
-                                                            Electronics
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                                <li><a href="#"> <span><img src="images/icon_menu5.png" alt=""
-                                                                class="Fashion"> Health & Beauty Beauty</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li><a href="index.html">Home</a></li>
-
-                            <!-- MEGA MENU -->
-                            <li class="megaParent">
-                                <a href=""><i class="bi bi-building"></i> Shop</a>
-                                <div class="megaMenu">
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <h6>Product Shop</h6>
-                                            <ul>
-                                                <li><a href="#">Star Mart </a></li>
-                                                <li><a href="#">Fresh Choice Store </a></li>
-                                                <li><a href="#">Lucky Corner Shop </a></li>
-                                                <li><a href="#">yal Market </a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <h6> Service Shop</h6>
-                                            <ul>
-                                                <li><a href="#">Daily Needs Store </a></li>
-                                                <li><a href="#">Sunrise Mart </a></li>
-                                                <li><a href="#">Green Leaf Market </a></li>
-                                                <li><a href="#">Family Choice Shop </a></li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <img src="images/service.jpg" alt="" class="img-fluid">
-                                            <p>Ac Repair</p>
-                                        </div>
-
-
-
-                                    </div>
-                                </div>
-                            </li>
-                            <li><a href=""><i class="bi bi-layers-half"></i> Products</a></li>
-                            <li><a href=""><i class="bi bi-layers-half"></i> Services</a></li>
-                        </ul>
-                    </div>
+                <div class="col-md-4 codeIndex">
+                    <a href="">🎉 Get 15% OFF your first order with code: WELCOME15</a>
                 </div>
                 <div class="col-md-4">
-                    <div class="menuLeft">
-                        <ul>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="">Contact</a></li>
+                    <!-- Language Dropdown -->
+                    <div class="language-wrapper">
+                        <div class="selected-lang" onclick="toggleLang()">
+                            <span id="currentLang"><i class="bi bi-translate"></i> Your Language</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </div>
+                        <ul class="lang-dropdown" id="langDropdown">
+                            <li onclick="changeLang('en','English')">English</li>
+                            <li onclick="changeLang('hi','हिन्दी')">हिन्दी</li>
+                            <li onclick="changeLang('bn','বাংলা')">বাংলা</li>
+                            <li onclick="changeLang('ta','தமிழ்')">தமிழ்</li>
+                            <li onclick="changeLang('te','తెలుగు')">తెలుగు</li>
+                            <li onclick="changeLang('mr','मराठी')">मराठी</li>
+                            <li onclick="changeLang('gu','ગુજરાતી')">ગુજરાતી</li>
+                            <li onclick="changeLang('kn','ಕನ್ನಡ')">ಕನ್ನಡ</li>
+                            <li onclick="changeLang('ml','മലയാളം')">മലയാളം</li>
+                            <li onclick="changeLang('pa','ਪੰਜਾਬੀ')">ਪੰਜਾਬੀ</li>
+                            <li onclick="changeLang('ur','اردو')">اردو</li>
                         </ul>
                     </div>
+                    <!-- Google Translate Hidden -->
+                    <div id="google_translate_element" style="display:none;"></div>
                 </div>
-
             </div>
         </div>
-    </div>
-    <!-- Cart Services -->
- <div class="cartPannel">
-    <div class="cart-header">
-        <h2>Your Cart (<span id="cartCount">2</span>)</h2>
-    </div>
-    <div class="cartproducts">
-        <!-- ITEMS -->
-        <div id="cartItems">
-            <div class="cart-item">
-                <img src="images/bag.jpg" class="cart-item__img">
-                <div>
-                    <h4>Chicken Burger</h4>
-                    <span class="tag food">Food</span>
-                    <p class="sub-info">🚚 Delivery in 25 mins</p>
-
-                    <div class="item-actions">
-                        <span class="save">Save</span>
-                        <span class="remove">Remove</span>
-                    </div>
-                </div>
-
-                <div class="cart-item__qty">
-                    <button class="minus">-</button>
-                    <span class="qty">1</span>
-                    <button class="plus">+</button>
-                </div>
-
-                <div class="cart-item__price" data-price="150">₹150</div>
-            </div>
-                    <div class="cart-item">
-                <img src="images/bag.jpg" class="cart-item__img">
-
-                <div>
-                    <h4>Chicken Burger</h4>
-                    <span class="tag food">Food</span>
-                    <p class="sub-info">🚚 Delivery in 25 mins</p>
-
-                    <div class="item-actions">
-                        <span class="save">Save</span>
-                        <span class="remove">Remove</span>
-                    </div>
-                </div>
-
-                <div class="cart-item__qty">
-                    <button class="minus">-</button>
-                    <span class="qty">1</span>
-                    <button class="plus">+</button>
-                </div>
-
-                <div class="cart-item__price" data-price="150">₹150</div>
-            </div>
-
-    
-
-        </div>
-
-        <!-- SUMMARY -->
-        <div class="cart__summary">
-
-            <h3>Order Summary</h3>
-
-            <div class="free-delivery">🎉 Free delivery above ₹999</div>
-
-            <div class="summary-row">
-                <span>Subtotal</span>
-                <span id="subtotal"></span>
-            </div>
-
-            <div class="summary-row">
-                <span>Delivery</span>
-                <span id="delivery"></span>
-            </div>
-
-            <div class="summary-row discount">
-                <span>Discount</span>
-                <span id="discount">-₹100</span>
-            </div>
-            <hr>
-            <div class="summary-row total">
-                <span>Total</span>
-                <span id="total"></span>
-            </div>
-
-            <div class="coupon">
-                <input type="text" placeholder="Coupon code">
-                <button>Apply</button>
-            </div>
-
-            <button class="checkout">Proceed to Checkout</button>
-
-        </div>
-    </div>
-      <div class="empty-cart" id="emptyCart">
-    <div class="empty-cart-box">
-        
-        <!-- Animated Icon -->
-        <div class="empty-icon">
-          <img src="images/shopping-cart.png" alt="">
-        </div>
-
-        <h3>Your Cart is Empty</h3>
-        <p>Add some   to get started</p>
-
-        <a href="#" class="shop-btn">Start Shopping</a>
-
-    </div>
-    </div>
-    </div>
-    <!-- Cart Services -->
-    <!--footer-->
-    <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="logoFooter">
-                        <img src="images/logo.png" alt="">
-                        <p>We are a trusted company dedicated to providing high-quality products and professional
-                            services to meet the growing needs of our customers.
-                            Our goal is to deliver reliable solutions that make life easier, businesses stronger, and
-                            experiences better.</p>
+            <div class="topBar">
+                <div class="row align-items-center">
+                    <div class="col-md-2">
+                        <div class="logo">
+                            <img src="images/logo.png" alt="logo" class="img-fluid">
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="companyFooter">
-                        <h3>Company</h3>
-                        <ul>
-                            <li><a href=""><i class="bi bi-arrow-right"></i> About</a></li>
-                            <li><a href=""><i class="bi bi-arrow-right"></i> Terms & Conditions </a></li>
-                            <li><a href=""><i class="bi bi-arrow-right"></i> Privacy Policy </a></li>
-                            <li><a href=""><i class="bi bi-arrow-right"></i> Returns Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="companyFooter">
-                        <h3>For Customer</h3>
-                        <ul>
-                            <li><a href=""><i class="bi bi-arrow-right"></i> Products</a></li>
-                            <li><a href=""><i class="bi bi-arrow-right"></i> Services </a></li>
-                            <li><a href=""><i class="bi bi-arrow-right"></i> Categories</a></li>
-                            <li><a href=""><i class="bi bi-arrow-right"></i> Contact </a></li>
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="socialMediaIndex">
-                        <h3>Connect With Us</h3>
-                        <div class="social-icons">
-                            <a href="#"><i class="bi bi-facebook"></i></a>
-                            <a href="#"><i class="bi bi-instagram"></i></a>
-                            <a href="#"><i class="bi bi-twitter"></i></a>
-                            <a href="#"><i class="bi bi-youtube"></i></a>
+                    <div class="col-md-10">
+                        <div class="row align-items-center">
+                            <div class="col-lg-10 col-md-7">
+                                <div class="topRight">
+                                    <div class="locationIndex" data-bs-toggle="modal" data-bs-target="#locationModal">
+                                        <div>
+                                            <i class="bi bi-geo-alt-fill"></i>
+                                        </div>
+                                        <div>
+                                            <p> Deliver to Manjeet</p>
+                                            <p id="userAddress">Bettiah 845438</p>
+                                        </div>
+                                    </div>
+                                    <!-- Mobile Search Icon -->
+                                    <button class="mobile-search-icon" id="mobileSearchBtn">
+                                    <i class="bi bi-search"></i>
+                                    </button>
+                                    <div class="search-container" id="searchContainer">
+                                        <div class="search-bar">
+                                            <!-- Category Dropdown -->
+                                            <select class="search-category">
+                                                <option>All</option>
+                                                <option>Mobiles</option>
+                                                <option>Electronics</option>
+                                                <option>Home & Kitchen</option>
+                                                <option>Mobiles</option>
+                                                <option>Electronics</option>
+                                                <option>Home & Kitchen</option>
+                                            </select>
+                                            <!-- Search Input -->
+                                            <input type="search" id="searchInput" class="search-input"
+                                                placeholder="Search Kiratt.com">
+                                            <!-- Search Button -->
+                                            <button class="search-button">
+                                            <i class="bi bi-search"></i>
+                                            </button>
+                                        </div>
+                                        <!-- Suggestions -->
+                                        <div id="suggestions" class="suggestions-box">
+                                            <div class="suggestion-item">
+                                                nutripro 500w blender juicer mixer grinder & smoothie maker machine – 1-year
+                                                warranty
+                                                <span class="close-suggestions">&times;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-5">
+                                <div class="TopLeft">
+                                    <!-- TRIGGER -->
+                                    <div class="signInIndex" data-bs-toggle="collapse" data-bs-target="#signInBox">
+                                        <i class="bi bi-person-circle"></i>
+                                        <span>Login</span>
+                                        <!-- PANEL -->
+                                        <div class="collapse signInIndex-panel" id="signInBox">
+                                            <!-- Header -->
+                                            <div class="signInIndex-header">
+                                                <span>New customer?</span>
+                                                <a href="#">Sign Up</a>
+                                            </div>
+                                            <div class="signInIndex-divider"></div>
+                                            <!-- MENU -->
+                                            <div class="signInIndex-item">
+                                                <i class="bi bi-person"></i>
+                                                <span>My Profile</span>
+                                            </div>
+                                            <div class="signInIndex-item">
+                                                <i class="bi bi-box"></i>
+                                                <span>Orders</span>
+                                            </div>
+                                            <div class="signInIndex-item">
+                                                <i class="bi bi-heart"></i>
+                                                <span>Wishlist</span>
+                                            </div>
+                                            <div class="signInIndex-item">
+                                                <i class="bi bi-basket2-fill"></i>
+                                                <span>Returns</span>
+                                            </div>
+                                            <div class="signInIndex-item">
+                                                <i class="bi bi-shop"></i>
+                                                <span>Become a Vendor</span>
+                                            </div>
+                                            <div class="signInIndex-item">
+                                                <i class="bi bi-shop"></i>
+                                                <span>Become a Growth Leader</span>
+                                            </div>
+                                            <div class="signInIndex-item">
+                                                <i class="bi bi-gift"></i>
+                                                <span>Rewards</span>
+                                            </div>
+                                            <div class="signInIndex-item">
+                                                <i class="bi bi-gift"></i>
+                                                <span>Gift Cards</span>
+                                            </div>
+                                            <div class="signInIndex-item">
+                                                <i class="bi bi-bell"></i>
+                                                <span>Notification Preferences</span>
+                                            </div>
+                                            <div class="signInIndex-item">
+                                                <i class="bi bi-headphones"></i>
+                                                <span>24x7 Customer Care</span>
+                                            </div>
+                                            <div class="signInIndex-item">
+                                                <i class="bi bi-megaphone"></i>
+                                                <span>Advertise</span>
+                                            </div>
+                                            <div class="signInIndex-item">
+                                                <i class="bi bi-download"></i>
+                                                <span>Download App</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wishlistIndex">
+                                        <a href=""><i class="bi bi-heart"></i></a>
+                                    </div>
+                                    <!-- CART ICON -->
+                                    <div class="myCart-wrapper">
+                                        <i class="bi bi-cart-check" data-bs-toggle="collapse"
+                                            data-bs-target="#myCartBox"></i>
+                                        <span class="myCart-count" data-bs-toggle="collapse"
+                                            data-bs-target="#myCartBox">3</span>
+                                        <!-- CART PANEL -->
+                                        <div class="collapse myCart-panel" id="myCartBox">
+                                            <div class="myCart-header">My Cart</div>
+                                            <!-- Tabs -->
+                                            <ul class="nav nav-tabs myCart-tabs mb-3">
+                                                <li class="nav-item">
+                                                    <button class="nav-link active" data-bs-toggle="tab"
+                                                        data-bs-target="#myCart-products">Products</button>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <button class="nav-link" data-bs-toggle="tab"
+                                                        data-bs-target="#myCart-services">Services</button>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <button class="nav-link" data-bs-toggle="tab"
+                                                        data-bs-target="#myCart-Food">Food</button>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <!-- PRODUCTS -->
+                                                <div class="tab-pane fade show active" id="myCart-products">
+                                                    <div class="myCart-item">
+                                                        <img src="images/bag.jpg" class="myCart-img">
+                                                        <div>
+                                                            <div class="myCart-title">iPhone 14</div>
+                                                            <div class="myCart-price">₹80,000</div>
+                                                        </div>
+                                                        <i class="bi bi-x myCart-remove"></i>
+                                                    </div>
+                                                </div>
+                                                <!-- SERVICES -->
+                                                <div class="tab-pane fade" id="myCart-services">
+                                                    <div class="myCart-item">
+                                                        <img src="images/Ac.jfif" class="myCart-img">
+                                                        <div>
+                                                            <div class="myCart-title">AC Repair</div>
+                                                            <div class="myCart-price">₹599</div>
+                                                        </div>
+                                                        <i class="bi bi-x myCart-remove"></i>
+                                                    </div>
+                                                </div>
+                                                <!-- FOOD -->
+                                                <div class="tab-pane fade" id="myCart-Food">
+                                                    <div class="myCart-item">
+                                                        <img src="images/fast.png" class="myCart-img">
+                                                        <div>
+                                                            <div class="myCart-title">burger</div>
+                                                            <div class="myCart-price">₹599</div>
+                                                        </div>
+                                                        <i class="bi bi-x myCart-remove"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- FOOTER -->
+                                            <div class="myCart-footer mt-2">
+                                                <button class="btn myCart-btn w-100">Checkout</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-    </footer>
-    <!--footer-->
-
-
-    <!--  JavaScript -->
-    <script src="js/jQueryv3.6.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- Owl -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script src="js/custom.js"></script>
-    <script>
-
-        // REMOVE WITH SMOOTH ANIMATION
-        document.addEventListener("click", function (e) {
-
-            if (e.target.classList.contains("remove")) {
-                let item = e.target.closest(".cart-item");
-
-                item.classList.add("removing");
-
-                setTimeout(() => {
-                    item.remove();
-                    updateTotal();
-                    checkEmpty();
-                }, 400);
-            }
-        });
-
-        // QTY
-        document.addEventListener("click", function (e) {
-
-            if (e.target.classList.contains("plus")) {
-                let q = e.target.parentElement.querySelector(".qty");
-                q.innerText = +q.innerText + 1;
-                updateTotal();
-            }
-
-            if (e.target.classList.contains("minus")) {
-                let q = e.target.parentElement.querySelector(".qty");
-                if (+q.innerText > 1) {
-                    q.innerText = +q.innerText - 1;
+        <!--TopPannel-->
+        <div class="header-menu">
+            <div class="container">
+                <div class="menuToggle">
+                    <i class="bi bi-list" id="menuOpen"></i>
+                    <i class="bi bi-x-lg" id="menuClose"></i>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="menuRight">
+                            <ul>
+                                <li class="megaParent">
+                                    <a href="#allDepartment" class="department">
+                                    <i class="bi bi-list"></i> All Department
+                                    </a>
+                                    <div class="megaMenu allDeep">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <ul>
+                                                    <li class="megaParent">
+                                                        <a href="#">
+                                                        <span>
+                                                        <img src="images/icon_menu4.png" alt="" class="Fashion">
+                                                        Fashion
+                                                        </span>
+                                                        </a>
+                                                        <!-- RIGHT SIDE SUB MENU -->
+                                                        <div class="subMegaMenu">
+                                                            <div class="row">
+                                                                <div class="col-md-3">
+                                                                    <ul>
+                                                                        <li><a href="#">Men Clothing</a></li>
+                                                                        <li><a href="#">Women Clothing</a></li>
+                                                                        <li><a href="#">Kids Wear</a></li>
+                                                                        <li><a href="#">Shoes</a></li>
+                                                                        <li><a href="#">Bags</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <ul>
+                                                                        <li><a href="#">Men Clothing</a></li>
+                                                                        <li><a href="#">Women Clothing</a></li>
+                                                                        <li><a href="#">Kids Wear</a></li>
+                                                                        <li><a href="#">Shoes</a></li>
+                                                                        <li><a href="#">Bags</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <ul>
+                                                                        <li><a href="#">Men Clothing</a></li>
+                                                                        <li><a href="#">Women Clothing</a></li>
+                                                                        <li><a href="#">Kids Wear</a></li>
+                                                                        <li><a href="#">Shoes</a></li>
+                                                                        <li><a href="#">Bags</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <ul>
+                                                                        <li><a href="#">Men Clothing</a></li>
+                                                                        <li><a href="#">Women Clothing</a></li>
+                                                                        <li><a href="#">Kids Wear</a></li>
+                                                                        <li><a href="#">Shoes</a></li>
+                                                                        <li><a href="#">Bags</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                        <span>
+                                                        <img src="images/icon_menu13.png" alt="" class="Fashion">
+                                                        Furniture
+                                                        </span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                        <span>
+                                                        <img src="images/icon_menu4.png" alt="" class="Fashion">
+                                                        Electronics
+                                                        </span>
+                                                        </a>
+                                                    </li>
+                                                    <li><a href="#"> <span><img src="images/icon_menu5.png" alt=""
+                                                        class="Fashion"> Health & Beauty Beauty</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="index.html">Home</a></li>
+                                <!-- MEGA MENU -->
+                                <li class="megaParent">
+                                    <a href=""><i class="bi bi-building"></i> Shop</a>
+                                    <div class="megaMenu">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <h6>Product Shop</h6>
+                                                <ul>
+                                                    <li><a href="#">Star Mart </a></li>
+                                                    <li><a href="#">Fresh Choice Store </a></li>
+                                                    <li><a href="#">Lucky Corner Shop </a></li>
+                                                    <li><a href="#">yal Market </a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <h6> Service Shop</h6>
+                                                <ul>
+                                                    <li><a href="#">Daily Needs Store </a></li>
+                                                    <li><a href="#">Sunrise Mart </a></li>
+                                                    <li><a href="#">Green Leaf Market </a></li>
+                                                    <li><a href="#">Family Choice Shop </a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <img src="images/service.jpg" alt="" class="img-fluid">
+                                                <p>Ac Repair</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href=""><i class="bi bi-layers-half"></i> Products</a></li>
+                                <li><a href=""><i class="bi bi-layers-half"></i> Services</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="menuLeft">
+                            <ul>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cart Services -->
+        <div class="cartPannel">
+            <div class="container">
+                <div class="clickCart">
+                    <!-- HEADER -->
+                    <div class="cart-header">
+                        <h2>Your Cart (<span id="cartCount">2</span>)</h2>
+                    </div>
+                    <!-- MAIN -->
+                    <div class="row g-4">
+                        <!-- LEFT SIDE -->
+                        <div class="col-lg-8">
+                            <div id="cartItems">
+                                <!-- ITEM -->
+                                <div class="cart-item d-grid align-items-center mb-3">
+                                    <img src="images/cloth.jpg" class="cart-item__img">
+                                    <div>
+                                        <h4>Wireless Headphones</h4>
+                                        <span class="tag product">Product</span>
+                                        <p class="sub-info">📦 In stock | Delivery Tomorrow</p>
+                                        <div class="item-actions d-flex gap-3">
+                                            <span class="save">Save</span>
+                                            <span class="remove">Remove</span>
+                                        </div>
+                                    </div>
+                                    <div class="cart-item__qty d-flex align-items-center gap-2">
+                                        <button class="minus">-</button>
+                                        <span class="qty">2</span>
+                                        <button class="plus">+</button>
+                                    </div>
+                                    <div class="cart-item__price" data-price="600">₹1200</div>
+                                </div>
+                                <!-- ITEM 2 -->
+                                <div class="cart-item d-grid align-items-center mb-3">
+                                    <img src="images/cloth.jpg" class="cart-item__img">
+                                    <div>
+                                        <h4>Wireless Headphones</h4>
+                                        <span class="tag product">Product</span>
+                                        <p class="sub-info">📦 In stock | Delivery Tomorrow</p>
+                                        <div class="item-actions d-flex gap-3">
+                                            <span class="save">Save</span>
+                                            <span class="remove">Remove</span>
+                                        </div>
+                                    </div>
+                                    <div class="cart-item__qty d-flex align-items-center gap-2">
+                                        <button class="minus">-</button>
+                                        <span class="qty">2</span>
+                                        <button class="plus">+</button>
+                                    </div>
+                                    <div class="cart-item__price" data-price="600">₹1200</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- RIGHT SIDE (SUMMARY) -->
+                        <div class="col-lg-4">
+                            <div class="cart__summary">
+                                <h3>Order Summary</h3>
+                                <div class="free-delivery">
+                                    🎉 Free delivery above ₹999
+                                </div>
+                                <div class="summary-row d-flex justify-content-between">
+                                    <span>Subtotal</span>
+                                    <span id="subtotal"></span>
+                                </div>
+                                <div class="summary-row d-flex justify-content-between">
+                                    <span>Delivery</span>
+                                    <span id="delivery"></span>
+                                </div>
+                                <div class="summary-row discount d-flex justify-content-between">
+                                    <span>Discount</span>
+                                    <span id="discount">-₹100</span>
+                                </div>
+                                <hr>
+                                <div class="summary-row total d-flex justify-content-between">
+                                    <span>Total</span>
+                                    <span id="total"></span>
+                                </div>
+                                <div class="coupon d-flex gap-2">
+                                    <input type="text" class="form-control" placeholder="Coupon code">
+                                    <button class="btn btn-success">Apply</button>
+                                </div>
+                                <button class="checkout mt-2">Proceed to Checkout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- EMPTY CART -->
+                <div class="empty-cart text-center" id="emptyCart">
+                    <div class="empty-cart-box mx-auto">
+                        <div class="empty-icon">
+                            <img src="images/shopping-cart.png" alt="">
+                        </div>
+                        <h3>Your Cart is Empty</h3>
+                        <p>Add some products to get started</p>
+                        <a href="#" class="shop-btn">Start Shopping</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cart Services -->
+        <!--footer-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="logoFooter">
+                            <img src="images/logo.png" alt="">
+                            <p>We are a trusted company dedicated to providing high-quality products and professional
+                                services to meet the growing needs of our customers.
+                                Our goal is to deliver reliable solutions that make life easier, businesses stronger, and
+                                experiences better.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="companyFooter">
+                            <h3>Company</h3>
+                            <ul>
+                                <li><a href=""><i class="bi bi-arrow-right"></i> About</a></li>
+                                <li><a href=""><i class="bi bi-arrow-right"></i> Terms & Conditions </a></li>
+                                <li><a href=""><i class="bi bi-arrow-right"></i> Privacy Policy </a></li>
+                                <li><a href=""><i class="bi bi-arrow-right"></i> Returns Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="companyFooter">
+                            <h3>For Customer</h3>
+                            <ul>
+                                <li><a href=""><i class="bi bi-arrow-right"></i> Products</a></li>
+                                <li><a href=""><i class="bi bi-arrow-right"></i> Services </a></li>
+                                <li><a href=""><i class="bi bi-arrow-right"></i> Categories</a></li>
+                                <li><a href=""><i class="bi bi-arrow-right"></i> Contact </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="socialMediaIndex">
+                            <h3>Connect With Us</h3>
+                            <div class="social-icons">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                                <a href="#"><i class="bi bi-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--footer-->
+        <!--  JavaScript -->
+        <script src="js/jQueryv3.6.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- Owl -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script src="js/custom.js"></script>
+        <script>
+            // REMOVE WITH SMOOTH ANIMATION
+            document.addEventListener("click", function (e) {
+            
+                if (e.target.classList.contains("remove")) {
+                    let item = e.target.closest(".cart-item");
+            
+                    item.classList.add("removing");
+            
+                    setTimeout(() => {
+                        item.remove();
+                        updateTotal();
+                        checkEmpty();
+                    }, 400);
+                }
+            });
+            
+            // QTY
+            document.addEventListener("click", function (e) {
+            
+                if (e.target.classList.contains("plus")) {
+                    let q = e.target.parentElement.querySelector(".qty");
+                    q.innerText = +q.innerText + 1;
                     updateTotal();
                 }
-            }
-        });
-
-        // TOTAL
-        function updateTotal() {
-            let subtotal = 0;
-
-            document.querySelectorAll(".cart-item").forEach(item => {
-                let price = +item.querySelector(".cart-item__price").dataset.price;
-                let qty = +item.querySelector(".qty").innerText;
-
-                subtotal += price * qty;
+            
+                if (e.target.classList.contains("minus")) {
+                    let q = e.target.parentElement.querySelector(".qty");
+                    if (+q.innerText > 1) {
+                        q.innerText = +q.innerText - 1;
+                        updateTotal();
+                    }
+                }
             });
-
-            let delivery = subtotal > 999 ? 0 : 50;
-
-            document.getElementById("subtotal").innerText = "₹" + subtotal;
-            document.getElementById("delivery").innerText = "₹" + delivery;
-            document.getElementById("total").innerText = "₹" + (subtotal + delivery - 100);
-
-            document.getElementById("cartCount").innerText = document.querySelectorAll(".cart-item").length;
-        }
-
-        // EMPTY
-        function checkEmpty() {
-            if (document.querySelectorAll(".cart-item").length === 0) {
-                document.getElementById("emptyCart").style.display = "block";
+            
+            // TOTAL
+            function updateTotal() {
+                let subtotal = 0;
+            
+                document.querySelectorAll(".cart-item").forEach(item => {
+                    let price = +item.querySelector(".cart-item__price").dataset.price;
+                    let qty = +item.querySelector(".qty").innerText;
+            
+                    subtotal += price * qty;
+                });
+            
+                let delivery = subtotal > 999 ? 0 : 50;
+            
+                document.getElementById("subtotal").innerText = "₹" + subtotal;
+                document.getElementById("delivery").innerText = "₹" + delivery;
+                document.getElementById("total").innerText = "₹" + (subtotal + delivery - 100);
+            
+                document.getElementById("cartCount").innerText = document.querySelectorAll(".cart-item").length;
             }
-        }
-
-        // INIT
-        updateTotal();
-
-    </script>
-</body>
-
+            
+            // EMPTY
+            function checkEmpty() {
+                if (document.querySelectorAll(".cart-item").length === 0) {
+                    document.getElementById("emptyCart").style.display = "block";
+                }
+            }
+            
+            // INIT
+            updateTotal();
+            
+        </script>
+    </body>
 </html>

@@ -410,9 +410,6 @@
                                             <img src="images/service.jpg" alt="" class="img-fluid">
                                             <p>Ac Repair</p>
                                         </div>
-
-
-
                                     </div>
                                 </div>
                             </li>
@@ -446,12 +443,13 @@
                             <div>
                                 <small>Hello,</small>
                                 <h6 class="mb-0">Manjeet Srivastav</h6>
+                                <p data-bs-toggle="modal" data-bs-target="#editModal">
+                                    Edit
+                                </p>
                             </div>
                         </div>
-
                         <!-- Nav Pills -->
                         <div class="nav flex-column nav-pills">
-
                             <!-- ACCOUNT SETTINGS -->
                             <div class="profilemenuSection">
                                 <div class="profilemenuTitle">
@@ -616,7 +614,8 @@
                                             </div>
                                             <div class="saveCancel">
                                                 <button><i class="bi bi-box2-heart"></i> Save</button>
-                                                <button data-bs-toggle="collapse" href="#addAddress"><i class="bi bi-x-square"></i> Cancel</button>
+                                                <button data-bs-toggle="collapse" href="#addAddress"><i
+                                                        class="bi bi-x-square"></i> Cancel</button>
                                             </div>
                                         </div>
                                     </div>
@@ -775,6 +774,35 @@
         </div>
     </div>
     <!--footer-->
+    <!-- MODAL -->
+    <div class="modal fade" id="editModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title">Update Profile</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <form action="/upload-profile" method="POST" enctype="multipart/form-data">
+                    <div class="modal-body text-center">
+                        <!-- PROFILE PREVIEW -->
+                        <img id="previewImage" src="https://via.placeholder.com/120" class="profile-preview mb-3">
+                        <!-- HIDDEN INPUT -->
+                        <input id="fileInput" type="file" name="profile" accept="image/*" hidden>
+                        <!-- EDIT BUTTON -->
+                        
+                    </div>
+                    <div class="modal-footer border-0 justify-content-center">
+                      <button type="button" class="editPhoto"
+                            onclick="document.getElementById('fileInput').click()">
+                            Edit Photo
+                        </button>
+                        <button class="saveImage" type="submit">Save</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
     <!--  JavaScript -->
     <script src="js/jQueryv3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -783,6 +811,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="js/custom.js"></script>
+    <script>
+        const fileInput = document.getElementById("fileInput");
+        const previewImage = document.getElementById("previewImage");
+
+        fileInput.addEventListener("change", function () {
+            const file = this.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    previewImage.src = e.target.result;
+                };
+
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
 </body>
 
 </html>
