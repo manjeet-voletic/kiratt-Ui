@@ -28,24 +28,8 @@
 </head>
 
 <body>
-    <!-- <div id="loader">
-        <div class="logoLoader">
-            <span>K</span>
-            <span>I</span>
-            <span>R</span>
-            <span>A</span>
-            <span>T</span>
-            <span>T</span>
-        </div>
-
-        <div class="slogan">
-            Make It Happen
-        </div>
-
-    </div> -->
-
     <!--TopPannel-->
-    <div class="discountTop">
+    <!-- <div class="discountTop">
         <div class="row align-items-center">
             <div class="col-md-4 infoIndexTop">
                 <a href=""><i class="bi bi-envelope-fill"></i> @InfoKiratt.com</a>
@@ -55,7 +39,7 @@
                 <a href="">🎉 Get 15% OFF your first order with code: WELCOME15</a>
             </div>
             <div class="col-md-4">
-                <!-- Language Dropdown -->
+             
                 <div class="language-wrapper">
                     <div class="selected-lang" onclick="toggleLang()">
                         <span id="currentLang"><i class="bi bi-translate"></i> Your Language</span>
@@ -76,11 +60,11 @@
                         <li onclick="changeLang('ur','اردو')">اردو</li>
                     </ul>
                 </div>
-                <!-- Google Translate Hidden -->
+            
                 <div id="google_translate_element" style="display:none;"></div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="container">
         <div class="topBar">
@@ -441,12 +425,34 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="menuLeft">
+                    <!-- <div class="menuLeft">
                         <ul>
                             <li><a href="about.html">About</a></li>
                             <li><a href="">Contact</a></li>
                         </ul>
+                    </div> -->
+                     <div class="language-wrapper">
+                    <div class="selected-lang" onclick="toggleLang()">
+                        <span id="currentLang"><i class="bi bi-translate"></i> Your Language</span>
+                        <i class="bi bi-chevron-down"></i>
                     </div>
+
+                    <ul class="lang-dropdown" id="langDropdown">
+                        <li onclick="changeLang('en','English')">English</li>
+                        <li onclick="changeLang('hi','हिन्दी')">हिन्दी</li>
+                        <li onclick="changeLang('bn','বাংলা')">বাংলা</li>
+                        <li onclick="changeLang('ta','தமிழ்')">தமிழ்</li>
+                        <li onclick="changeLang('te','తెలుగు')">తెలుగు</li>
+                        <li onclick="changeLang('mr','मराठी')">मराठी</li>
+                        <li onclick="changeLang('gu','ગુજરાતી')">ગુજરાતી</li>
+                        <li onclick="changeLang('kn','ಕನ್ನಡ')">ಕನ್ನಡ</li>
+                        <li onclick="changeLang('ml','മലയാളം')">മലയാളം</li>
+                        <li onclick="changeLang('pa','ਪੰਜਾਬੀ')">ਪੰਜਾਬੀ</li>
+                        <li onclick="changeLang('ur','اردو')">اردو</li>
+                    </ul>
+                </div>
+            
+                <div id="google_translate_element" style="display:none;"></div>
                 </div>
             </div>
         </div>
@@ -505,662 +511,874 @@
         </div>
     </div> -->
     <main>
-    <div class="container banner">
-        <div class="row g-4 align-items-stretch">
-            <!-- LEFT SLIDER -->
-            <div class="col-lg-8">
-                <div class="owl-carousel banner-slider">
-                    <div class="banner-slide">
-                        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
-                        <div class="banner-overlay"></div>
-                        <div class="banner-content">
-                            <span>NEW ARRIVAL</span>
-                            <h1>Smart Tech<br>Collection</h1>
-                            <button class="banner-btn">Shop Now</button>
+        <div class="container banner">
+            <div class="row g-4 align-items-stretch">
+                <!-- LEFT SLIDER -->
+                <div class="col-lg-8">
+                    <div class="owl-carousel banner-slider">
+                        <div class="banner-slide">
+                            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
+                            <div class="banner-overlay"></div>
+                            <div class="banner-content">
+                                <span>NEW ARRIVAL</span>
+                                <h1>Smart Tech<br>Collection</h1>
+                                <button class="banner-btn">Shop Now</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="banner-slide">
-                        <img src="images/service.jpg">
-                        <div class="banner-overlay"></div>
-                        <div class="banner-content">
-                            <span>AC Repair</span>
-                            <h1> Quick response service for urgent AC problems.</h1>
-                            <button class="banner-btn">Book Now</button>
+                        <div class="banner-slide">
+                            <img src="images/service.jpg">
+                            <div class="banner-overlay"></div>
+                            <div class="banner-content">
+                                <span>AC Repair</span>
+                                <h1> Quick response service for urgent AC problems.</h1>
+                                <button class="banner-btn">Book Now</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="banner-slide">
-                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
-                        <div class="banner-overlay"></div>
-                        <div class="banner-content">
-                            <span>LIMITED DEAL</span>
-                            <h1>Premium Laptop<br>Sale</h1>
-                            <button class="banner-btn">Shop Now</button>
+                        <div class="banner-slide">
+                            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+                            <div class="banner-overlay"></div>
+                            <div class="banner-content">
+                                <span>LIMITED DEAL</span>
+                                <h1>Premium Laptop<br>Sale</h1>
+                                <button class="banner-btn">Shop Now</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- RIGHT SIDE -->
-            <div class="col-lg-4">
-                <div class="banner-right">
-                    <div class="banner-card-large">
-                        <img src="images/fast.png">
-                        <div class="banner-card-overlay"></div>
-                        <div class="banner-card-content">
-                            <h4>Fast Food</h4>
-                            <p>Choose Your Food</p>
-                            <button class="banner-btn">Order Now</button>
-                        </div>
-                    </div>
-                    <div class="banner-small-cards">
-                        <div class="banner-card">
-                            <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad">
+                <!-- RIGHT SIDE -->
+                <div class="col-lg-4">
+                    <div class="banner-right">
+                        <div class="banner-card-large">
+                            <img src="images/fast.png">
                             <div class="banner-card-overlay"></div>
-                            <h5>Pure Wireless Sound</h5>
-                            <p>Sleek. Crisp. Daily.</p>
+                            <div class="banner-card-content">
+                                <h4>Fast Food</h4>
+                                <p>Choose Your Food</p>
+                                <button class="banner-btn">Order Now</button>
+                            </div>
                         </div>
-                        <div class="banner-card">
-                            <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52">
-                            <div class="banner-card-overlay"></div>
-                            <h5>Mist Meets Calm</h5>
-                            <p>Soft scent. Zen feel.</p>
+                        <div class="banner-small-cards">
+                            <div class="banner-card">
+                                <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad">
+                                <div class="banner-card-overlay"></div>
+                                <h5>Pure Wireless Sound</h5>
+                                <p>Sleek. Crisp. Daily.</p>
+                            </div>
+                            <div class="banner-card">
+                                <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52">
+                                <div class="banner-card-overlay"></div>
+                                <h5>Mist Meets Calm</h5>
+                                <p>Soft scent. Zen feel.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--marquee-->
-    <div class="topTicker">
-        <div class="topTicker-track">
-            <span>FREE DELIVERY ON ORDERS OVER $200</span>
-            <span>★</span>
-            <span>CASH ON DELIVERY</span>
-            <span>★</span>
-            <span>30 DAY MONEY BACK GUARANTEE</span>
-            <span>★</span>
-            <span>SECURE PAYMENT SYSTEMS</span>
-            <span>★</span>
-            <span>FREE DELIVERY ON ORDERS OVER $200</span>
-            <span>★</span>
-            <span>CASH ON DELIVERY</span>
-            <span>★</span>
-            <!-- duplicate for seamless loop -->
+        <!--marquee-->
+        <div class="topTicker">
+            <div class="topTicker-track">
+                <span>FREE DELIVERY ON ORDERS OVER $200</span>
+                <span>★</span>
+                <span>CASH ON DELIVERY</span>
+                <span>★</span>
+                <span>30 DAY MONEY BACK GUARANTEE</span>
+                <span>★</span>
+                <span>SECURE PAYMENT SYSTEMS</span>
+                <span>★</span>
+                <span>FREE DELIVERY ON ORDERS OVER $200</span>
+                <span>★</span>
+                <span>CASH ON DELIVERY</span>
+                <span>★</span>
+                <!-- duplicate for seamless loop -->
 
-            <span>FREE DELIVERY ON ORDERS OVER $200</span>
-            <span>★</span>
+                <span>FREE DELIVERY ON ORDERS OVER $200</span>
+                <span>★</span>
 
-            <span>CASH ON DELIVERY</span>
-            <span>★</span>
+                <span>CASH ON DELIVERY</span>
+                <span>★</span>
 
-            <span>30 DAY MONEY BACK GUARANTEE</span>
-            <span>★</span>
+                <span>30 DAY MONEY BACK GUARANTEE</span>
+                <span>★</span>
 
-            <span>SECURE PAYMENT SYSTEMS</span>
-            <span>★</span>
+                <span>SECURE PAYMENT SYSTEMS</span>
+                <span>★</span>
 
-            <span>FREE DELIVERY ON ORDERS OVER $200</span>
-            <span>★</span>
+                <span>FREE DELIVERY ON ORDERS OVER $200</span>
+                <span>★</span>
 
-            <span>CASH ON DELIVERY</span>
+                <span>CASH ON DELIVERY</span>
 
+            </div>
         </div>
-    </div>
-    <!--marquee-->
-    <!--features Box Index-->
-    <section class="featuresIndex">
-        <div class="container">
-            <div class="topcat">
+        <!--marquee-->
+        <!--features Box Index-->
+        <section class="featuresIndex">
+            <div class="container">
+                <div class="topcat">
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="featuresTopIndex">
+                                <h3>FEATURED CATEGORIES</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="featuresTopMore">
+                                <a href="">View More <i class="bi bi-cursor-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
-
-                    <div class="col-md-6">
-                        <div class="featuresTopIndex">
-                            <h3>FEATURED CATEGORIES</h3>
+                    <div class="col-md-3">
+                        <div class="featuresBox">
+                            <img src="images/watch.jpg" alt="" class="img-fluid">
+                            <p>WATCHES</p>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="featuresTopMore">
-                            <a href="">View More <i class="bi bi-cursor-fill"></i></a>
+                    <div class="col-md-3">
+                        <div class="featuresBox">
+                            <img src="images/bag.jpg" alt="" class="img-fluid">
+                            <p>BAG</p>
                         </div>
                     </div>
+                    <div class="col-md-3">
+                        <div class="featuresBox">
+                            <img src="images/cloth.jpg" alt="" class="img-fluid">
+                            <p>Accessories</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="featuresBox">
+                            <img src="images/shoes.jpg" alt="" class="img-fluid">
+                            <p>SHOES</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="featuresBox">
-                        <img src="images/watch.jpg" alt="" class="img-fluid">
-                        <p>WATCHES</p>
+        </section>
+        <!--features Box Index-->
+        <!--all products and services-->
+        <section class="shortPannel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="proservices">
+                            <h3>Continue Services deals</h3>
+                            <a href="servicePage.html"><img src="images/Ac.jfif" alt="" title="Ac Repair"
+                                    class="img-fluid"></a>
+                            <a href="servicePage.html"><img src="images/Electrician.jfif" alt="" title="Electrician"
+                                    class="img-fluid"></a>
+                            <a href="servicePage.html"><img src="images/Plumbing.jfif" alt="" title="Plumbing"
+                                    class="img-fluid"></a>
+                            <a href="servicePage.html"><img src="images/Home.jfif" alt="" title="Home Cleaning"
+                                    class="img-fluid"></a>
+                            <a href="servicePage.html"><img src="images/PestControl.jfif" alt="" title="Pest Control"
+                                    class="img-fluid"></a>
+                            <a href="servicePage.html"><img src="images/CarpenterService.jfif" alt=""
+                                    title="Carpenter Service" class="img-fluid"></a>
+                            <a href="servicePage.html"><img src="images/HairSalon.jfif" alt="" title="HairSalon"
+                                    class="img-fluid"></a>
+                            <a href="servicePage.html"><img src="images/Beauty.jfif" alt="" title="Beauty"
+                                    class="img-fluid"></a>
+                            <a href="servicePage.html" class="seeMore">See More <i class="bi bi-arrow-right"></i></a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="featuresBox">
-                        <img src="images/bag.jpg" alt="" class="img-fluid">
-                        <p>BAG</p>
+                    <div class="col-md-4">
+                        <div class="proservices">
+                            <h3>Continue Products deals</h3>
+                            <a href=""><img src="images/HomeAppliances.jfif" alt="" title="HomeAppliances"
+                                    class="img-fluid"></a>
+                            <a href=""><img src="images/Furniture.jfif" alt="" title="Furniture" class="img-fluid"></a>
+                            <a href=""><img src="images/cloth.jfif" alt="" title="cloth" class="img-fluid"></a>
+                            <a href=""><img src="images/Home.jfif" alt="" title="Home Cleaning" class="img-fluid"></a>
+                            <a href=""><img src="images/Kitchen.jfif" alt="" title="Kitchen" class="img-fluid"></a>
+                            <a href=""><img src="images/Automotive.jpg" alt="" title="Automotive" class="img-fluid"></a>
+                            <a href=""><img src="images/school bag.jpg" alt="" title="school bag" class="img-fluid"></a>
+                            <a href=""><img src="images/Sports.jfif" alt="" title="Sports" class="img-fluid"></a>
+                            <a href="" class="seeMore">Explore More <i class="bi bi-arrow-right"></i></a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="featuresBox">
-                        <img src="images/cloth.jpg" alt="" class="img-fluid">
-                        <p>Accessories</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="featuresBox">
-                        <img src="images/shoes.jpg" alt="" class="img-fluid">
-                        <p>SHOES</p>
+                    <div class="col-md-4">
+                        <div class="servicesPro">
+                            <img src="images/proServices.png" alt="">
+                        </div>
                     </div>
                 </div>
 
             </div>
-        </div>
-    </section>
-    <!--features Box Index-->
-    <!--all products and services-->
-    <section class="shortPannel">
+        </section>
+        <!--all products and services-->
+        <!--Saleflash-->
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="proservices">
-                        <h3>Continue Services deals</h3>
-                        <a href="servicePage.html"><img src="images/Ac.jfif" alt="" title="Ac Repair"
-                                class="img-fluid"></a>
-                        <a href="servicePage.html"><img src="images/Electrician.jfif" alt="" title="Electrician"
-                                class="img-fluid"></a>
-                        <a href="servicePage.html"><img src="images/Plumbing.jfif" alt="" title="Plumbing"
-                                class="img-fluid"></a>
-                        <a href="servicePage.html"><img src="images/Home.jfif" alt="" title="Home Cleaning"
-                                class="img-fluid"></a>
-                        <a href="servicePage.html"><img src="images/PestControl.jfif" alt="" title="Pest Control"
-                                class="img-fluid"></a>
-                        <a href="servicePage.html"><img src="images/CarpenterService.jfif" alt=""
-                                title="Carpenter Service" class="img-fluid"></a>
-                        <a href="servicePage.html"><img src="images/HairSalon.jfif" alt="" title="HairSalon"
-                                class="img-fluid"></a>
-                        <a href="servicePage.html"><img src="images/Beauty.jfif" alt="" title="Beauty"
-                                class="img-fluid"></a>
-                        <a href="servicePage.html" class="seeMore">See More <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="proservices">
-                        <h3>Continue Products deals</h3>
-                        <a href=""><img src="images/HomeAppliances.jfif" alt="" title="HomeAppliances"
-                                class="img-fluid"></a>
-                        <a href=""><img src="images/Furniture.jfif" alt="" title="Furniture" class="img-fluid"></a>
-                        <a href=""><img src="images/cloth.jfif" alt="" title="cloth" class="img-fluid"></a>
-                        <a href=""><img src="images/Home.jfif" alt="" title="Home Cleaning" class="img-fluid"></a>
-                        <a href=""><img src="images/Kitchen.jfif" alt="" title="Kitchen" class="img-fluid"></a>
-                        <a href=""><img src="images/Automotive.jpg" alt="" title="Automotive" class="img-fluid"></a>
-                        <a href=""><img src="images/school bag.jpg" alt="" title="school bag" class="img-fluid"></a>
-                        <a href=""><img src="images/Sports.jfif" alt="" title="Sports" class="img-fluid"></a>
-                        <a href="" class="seeMore">Explore More <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="servicesPro">
-                        <img src="images/proServices.png" alt="">
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!--all products and services-->
-    <!--Saleflash-->
-    <div class="container">
-        <div class="saleFlash">
-            <div class="saleFlash-left">
-                <h2>Flash Sale now on!</h2>
-                <p>Score Big Savings on All Your Favorites</p>
-            </div>
-
-
-            <div class="saleFlash-timer">
-
-                <div class="saleFlash-box">
-                    <span id="days">00</span>
-                    <small>DAYS</small>
+            <div class="saleFlash">
+                <div class="saleFlash-left">
+                    <h2>Flash Sale now on!</h2>
+                    <p>Score Big Savings on All Your Favorites</p>
                 </div>
 
-                <div class="saleFlash-box">
-                    <span id="hours">00</span>
-                    <small>HOURS</small>
+
+                <div class="saleFlash-timer">
+
+                    <div class="saleFlash-box">
+                        <span id="days">00</span>
+                        <small>DAYS</small>
+                    </div>
+
+                    <div class="saleFlash-box">
+                        <span id="hours">00</span>
+                        <small>HOURS</small>
+                    </div>
+
+                    <div class="saleFlash-box">
+                        <span id="mins">00</span>
+                        <small>MINS</small>
+                    </div>
+
+                    <div class="saleFlash-box">
+                        <span id="secs">00</span>
+                        <small>SECS</small>
+                    </div>
+
                 </div>
 
-                <div class="saleFlash-box">
-                    <span id="mins">00</span>
-                    <small>MINS</small>
-                </div>
 
-                <div class="saleFlash-box">
-                    <span id="secs">00</span>
-                    <small>SECS</small>
-                </div>
+                <div class="saleFlash-right">
 
-            </div>
+                    <div class="saleFlash-copy" onclick="copyCoupon(this)">
+                        <i class="bi bi-copy"></i>
+                        Topsale10STBL
+                    </div>
 
+                    <button class="saleFlash-btn">
+                        Shop Sale
+                    </button>
 
-            <div class="saleFlash-right">
-
-                <div class="saleFlash-copy" onclick="copyCoupon(this)">
-                    <i class="bi bi-copy"></i>
-                    Topsale10STBL
-                </div>
-
-                <button class="saleFlash-btn">
-                    Shop Sale
-                </button>
-
-            </div>
-        </div>
-    </div>
-    <!--Saleflash-->
-    <!-- Select trading -->
-    <div class="container">
-        <div class="trandingPannel">
-            <div class="row">
-                <div class="col-md-12 SelectedTrending">
-                    <h3>Selected <span>Trending</span> Products and Services</h3>
-                </div>
-                <div class="col-md-2">
-                    <div class="trandingbox">
-                        <img src="images/HomeAppliances.jfif" alt="" title="HomeAppliances" class="img-fluid">
-                        <p>Home Appliances </p>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="trandingbox">
-                        <img src="images/Ac.jfif" alt="" title="">
-                        <p>Ac Repair </p>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="trandingbox">
-                        <img src="images/Furniture.jfif" alt="" title="Furniture" class="img-fluid">
-                        <p>Furniture </p>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="trandingbox">
-                        <img src="images/Electrician.jfif" alt="" title="Electrician" class="img-fluid">
-                        <p>Electrician </p>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="trandingbox">
-                        <img src="images/cloth.jfif" alt="" title="cloth" class="img-fluid">
-                        <p>Clothing</p>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="trandingbox">
-                        <img src="images/Plumbing.jfif" alt="" title="Plumbing" class="img-fluid">
-                        <p>Cream Filling Machine </p>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="trandingbox">
-                        <img src="images/Kitchen.jfif" alt="" title="Kitchen" class="img-fluid">
-                        <p>Kitchen </p>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="trandingbox">
-                        <img src="images/Home.jfif" alt="" title="Home Cleaning" class="img-fluid">
-                        <p>Home Cleaning </p>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="trandingbox">
-                        <img src="images/Automotive.jpg" alt="" title="Automotive" class="img-fluid">
-                        <p>Cream Filling Machine </p>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="trandingbox">
-                        <img src="images/PestControl.jfif" alt="" title="Pest Control" class="img-fluid">
-                        <p>Automotive</p>
-                    </div>
-                </div>
-
-                <div class="col-md-2">
-                    <div class="trandingbox">
-                        <img src="images/school bag.jpg" alt="" title="school bag" class="img-fluid">
-                        <p>school bag</p>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="trandingbox">
-                        <img src="images/CarpenterService.jfif" alt="" title="Carpenter Service" class="img-fluid">
-                        <p>Carpenter Service </p>
-                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Select trading -->
-    <div class="container mt-5">
-        <!-- Tabs -->
-        <ul class="nav product-tabs mb-4">
-             <li class="nav-item">
-                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#phone"><img src="images/select.png" alt=""> <br>All</button>
-            </li>
-            <li class="nav-item">
-                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#phone"> Watch</button>
-            </li>
-            <li class="nav-item">
-                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#headphone">Salon</button>
-            </li>
-            <li class="nav-item">
-                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#furniture">Furniture</button>
-            </li>
-            <li class="nav-item">
-                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#cosmetics">Cosmetics</button>
-            </li>
-        </ul>
-        <div class="tab-content">
-            <div class="tab-pane fade show active" id="phone">
-                <div class="owl-carousel product-slider">
-                    <!-- Product -->
-                    <div class="allProduct">
-                        <div class="product-img">
-                            <span class="salepro">Sale</span>
-                            <div class="iconsPro">
-                                <i class="bi bi-heart"></i>
-                                <i class="bi bi-eye"></i>
-                                <i class="bi bi-layers"></i>
-                            </div>
-                            <img src="https://m.media-amazon.com/images/I/71vFKBpKakL._SL1500_.jpg">
-                        </div>
-                        <p class="text-muted mt-2">Home</p>
-                        <h6>Galaxy Tab A9 Plus</h6>
-                        <p>
-                            <span class="old">$399</span>
-                            <span class="new">$350</span>
-                        </p>
-                        <button class="add-cartPro">
-                            <i class="bi bi-cart"></i> Add To Cart
-                        </button>
-                    </div>
-                    <div class="allProduct">
-                        <div class="product-img">
-                            <span class="salepro">Sale</span>
-                            <div class="iconsPro">
-                                <i class="bi bi-heart"></i>
-                                <i class="bi bi-eye"></i>
-                                <i class="bi bi-layers"></i>
-                            </div>
-                            <img src="https://m.media-amazon.com/images/I/61XO4bORHUL._SL1500_.jpg">
-                        </div>
-                        <p class="text-muted mt-2">Home</p>
-                        <h6>I14 Pro Max</h6>
-                        <p>
-                            <span class="old">$690</span>
-                            <span class="new">$600</span>
-                        </p>
-                        <button class="add-cartPro">
-                            <i class="bi bi-cart"></i> Add To Cart
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade show" id="headphone">
-                <div class="owl-carousel product-slider">
-                    <!-- Product -->
-                    <div class="allProduct">
-                        <div class="product-img">
-                            <span class="salepro">Sale</span>
-                            <div class="iconsPro">
-                                <i class="bi bi-heart"></i>
-                                <i class="bi bi-eye"></i>
-                                <i class="bi bi-layers"></i>
-                            </div>
-                            <img src="https://m.media-amazon.com/images/I/71vFKBpKakL._SL1500_.jpg">
-                        </div>
-                        <p class="text-muted mt-2">Home</p>
-                        <h6>Galaxy Tab A9 Plus</h6>
-                        <p>
-                            <span class="old">$399</span>
-                            <span class="new">$350</span>
-                        </p>
-                        <button class="add-cartPro">
-                            <i class="bi bi-cart"></i> Add To Cart
-                        </button>
-                    </div>
-                    <div class="allProduct">
-                        <div class="product-img">
-                            <span class="salepro">Sale</span>
-                            <div class="iconsPro">
-                                <i class="bi bi-heart"></i>
-                                <i class="bi bi-eye"></i>
-                                <i class="bi bi-layers"></i>
-                            </div>
-                            <img src="https://m.media-amazon.com/images/I/61XO4bORHUL._SL1500_.jpg">
-                        </div>
-                        <p class="text-muted mt-2">Home</p>
-                        <h6>I14 Pro Max</h6>
-                        <p>
-                            <span class="old">$690</span>
-                            <span class="new">$600</span>
-                        </p>
-                        <button class="add-cartPro">
-                            <i class="bi bi-cart"></i> Add To Cart
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--categories-->
-    <section class="category-section">
-
+        <!--Saleflash-->
+        <!-- Select trading -->
         <div class="container">
-            <div class="allCat">
-                <div class="row text-center">
-                    <div class="col-md-6">
+            <div class="trandingPannel">
+                <div class="row">
+                    <div class="col-md-12 SelectedTrending">
+                        <h3>Selected <span>Trending</span> Products</h3>
                         <div class="row">
-                            <!-- item -->
-                            <div class="col-lg col-md-2 col-4 category-item">
-                                <div class="category-box">
-                                    <img src="https://cdn-icons-png.flaticon.com/128/3075/3075977.png">
+                            <div class="col-md-2">
+                                <div class="trandingbox">
+                                    <img src="images/HomeAppliances.jfif" alt="" title="HomeAppliances"
+                                        class="img-fluid">
+                                    <p>Home Appliances </p>
                                 </div>
-                                <p>Restaurants</p>
                             </div>
-
-                            <div class="col-lg col-md-2 col-4 category-item">
-                                <div class="category-box">
-                                    <img src="https://cdn-icons-png.flaticon.com/128/139/139899.png">
+                            <div class="col-md-2">
+                                <div class="trandingbox">
+                                    <img src="images/Kitchen.jfif" alt="" title="Kitchen" class="img-fluid">
+                                    <p>Kitchen </p>
                                 </div>
-                                <p>Hotels</p>
                             </div>
-
-                            <div class="col-lg col-md-2 col-4 category-item">
-                                <div class="category-box">
-                                    <img src="https://cdn-icons-png.flaticon.com/128/2920/2920222.png">
+                            <div class="col-md-2">
+                                <div class="trandingbox">
+                                    <img src="images/Furniture.jfif" alt="" title="Furniture" class="img-fluid">
+                                    <p>Furniture </p>
                                 </div>
-                                <p>Beauty Spa</p>
                             </div>
-
-                            <div class="col-lg col-md-2 col-4 category-item">
-                                <div class="category-box">
-                                    <img src="images/house-decoration.png">
+                            <div class="col-md-2">
+                                <div class="trandingbox">
+                                    <img src="images/school bag.jpg" alt="" title="school bag" class="img-fluid">
+                                    <p>school bag</p>
                                 </div>
-                                <p>Home Decor</p>
                             </div>
-
-                            <div class="col-lg col-md-2 col-4 category-item">
-                                <div class="category-box">
-                                    <img src="images/wedding.png">
+                            <div class="col-md-2">
+                                <div class="trandingbox">
+                                    <img src="images/shoes.jpg" alt="" title="school bag" class="img-fluid">
+                                    <p>shoes</p>
                                 </div>
-                                <p>Wedding Planning</p>
                             </div>
-
-                            <div class="col-lg col-md-2 col-4 category-item">
-                                <div class="category-box">
-                                    <img src="https://cdn-icons-png.flaticon.com/128/3135/3135755.png">
+                            <div class="col-md-2">
+                                <div class="trandingbox">
+                                    <img src="images/cloth.jfif" alt="" title="cloth" class="img-fluid">
+                                    <p>Clothing</p>
                                 </div>
-                                <p>Education</p>
                             </div>
-
-
                         </div>
-
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12 SelectedTrending mt-4">
+                        <h3>Selected <span>Trending</span> Services</h3>
                         <div class="row">
-                            <!-- item -->
-                            <div class="col-lg col-md-2 col-4 category-item">
-                                <div class="category-box">
-                                    <img src="https://cdn-icons-png.flaticon.com/128/3075/3075977.png">
+                            <div class="col-md-2">
+                                <div class="trandingbox">
+                                    <img src="images/Plumbing.jfif" alt="" title="Plumbing" class="img-fluid">
+                                    <p>Plumber </p>
                                 </div>
-                                <p>Restaurants</p>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="trandingbox">
+                                    <img src="images/Electrician.jfif" alt="" title="Electrician" class="img-fluid">
+                                    <p>Electrician </p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="trandingbox">
+                                    <img src="images/Ac.jfif" alt="" title="">
+                                    <p>Ac Repair </p>
+                                </div>
                             </div>
 
-                            <div class="col-lg col-md-2 col-4 category-item">
-                                <div class="category-box">
-                                    <img src="https://cdn-icons-png.flaticon.com/128/139/139899.png">
+                            <div class="col-md-2">
+                                <div class="trandingbox">
+                                    <img src="images/Home.jfif" alt="" title="Home Cleaning" class="img-fluid">
+                                    <p>Home Cleaning </p>
                                 </div>
-                                <p>Hotels</p>
                             </div>
 
-                            <div class="col-lg col-md-2 col-4 category-item">
-                                <div class="category-box">
-                                    <img src="https://cdn-icons-png.flaticon.com/128/2920/2920222.png">
+                            <div class="col-md-2">
+                                <div class="trandingbox">
+
+                                    <img src="images/Automotive.jpg" alt="" title="Automotive" class="img-fluid">
+                                    <p>Automotive</p>
                                 </div>
-                                <p>Beauty Spa</p>
                             </div>
 
-                            <div class="col-lg col-md-2 col-4 category-item">
-                                <div class="category-box">
-                                    <img src="images/house-decoration.png">
-                                </div>
-                                <p>Home Decor</p>
-                            </div>
 
-                            <div class="col-lg col-md-2 col-4 category-item">
-                                <div class="category-box">
-                                    <img src="images/wedding.png">
+                            <div class="col-md-2">
+                                <div class="trandingbox">
+                                    <img src="images/CarpenterService.jfif" alt="" title="Carpenter Service"
+                                        class="img-fluid">
+                                    <p>Carpenter Service </p>
                                 </div>
-                                <p>Wedding Planning</p>
                             </div>
-
-                            <div class="col-lg col-md-2 col-4 category-item">
-                                <div class="category-box">
-                                    <img src="https://cdn-icons-png.flaticon.com/128/3135/3135755.png">
-                                </div>
-                                <p>Education</p>
-                            </div>
-
                         </div>
-
                     </div>
-                    <div class="col-md-12">
-                        <div class="row">
-                            <!-- item -->
-                            <div class="col-lg col-md-2 col-4 category-item">
-                                <div class="category-box">
-                                    <img src="https://cdn-icons-png.flaticon.com/128/857/857455.png">
-                                </div>
-                                <p>Gym</p>
-                            </div>
-                            <div class="col-lg col-md-2 col-4 category-item">
-                                <div class="category-box">
-                                    <img src="https://cdn-icons-png.flaticon.com/128/2785/2785482.png">
-                                </div>
-                                <p>Hospitals</p>
-                            </div>
-                            <div class="col-lg col-md-2 col-4 category-item">
-                                <div class="category-box">
-                                    <img src="https://cdn-icons-png.flaticon.com/128/3135/3135706.png">
-                                </div>
-                                <p>Loans</p>
-                            </div>
-                            <div class="col-lg col-md-2 col-4 category-item">
-                                <div class="category-box">
-                                    <img src="images/organiser.png">
-                                </div>
-                                <p>Event Organisers</p>
-                            </div>
-                            <div class="col-lg col-md-2 col-4 category-item">
-                                <div class="category-box">
-                                    <img src="images/drive.png">
-                                </div>
-                                <p>Driving Schools</p>
-                            </div>
-                            <div class="col-lg col-md-2 col-4 category-item">
-                                <div class="category-box">
-                                    <img src="https://cdn-icons-png.flaticon.com/128/1995/1995574.png">
-                                </div>
-                                <p>Packers & Movers</p>
-                            </div>
-                            <!-- item -->
-                            <div class="col-lg col-md-2 col-4 category-item">
-                                <div class="category-box">
-                                    <img src="https://cdn-icons-png.flaticon.com/128/891/891419.png">
-                                </div>
-                                <p>Courier Service</p>
-                            </div>
-                            <div class="col-lg col-md-2 col-4 category-item">
-                                <div class="category-box">
-                                    <img src="https://cdn-icons-png.flaticon.com/128/1828/1828859.png">
-                                </div>
-                                <p>Popular Categories</p>
-                            </div>
 
+
+                </div>
+            </div>
+        </div>
+        <!-- Select trading -->
+        <div class="container mt-5">
+            <!-- Tabs -->
+            <ul class="nav product-tabs mb-4">
+                <li class="nav-item">
+                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#all"><img
+                            src="images/select.png" alt=""> <br>All</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#Watch">
+                        <img src="images/watch_icon.png" alt=""> <br> Watch</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#Salon">
+                        <img src="images/salon_icon.png" alt=""> <br> Salon</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#furniture">
+                        <img src="images/furniture_icon.png" alt=""> <br> Furniture</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#cosmetics">
+                        <img src="images/cosmetics_icon.png" alt=""> <br> Cosmetics</button>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="all">
+                    <div class="owl-carousel product-slider">
+                        <!-- Product -->
+                        <div class="allProduct">
+                            <div class="product-img">
+                                <span class="salepro">Sale</span>
+                                <div class="iconsPro">
+                                    <i class="bi bi-heart"></i>
+                                    <i class="bi bi-eye"></i>
+                                    <i class="bi bi-layers"></i>
+                                </div>
+                                <img src="https://m.media-amazon.com/images/I/71vFKBpKakL._SL1500_.jpg">
+                            </div>
+                            <p class="text-muted mt-2">Home</p>
+                            <h6>Galaxy Tab A9 Plus</h6>
+                            <p>
+                                <span class="old">$399</span>
+                                <span class="new">$350</span>
+                            </p>
+                             <div class="addBuy">
+                                <button class="add-cartPro">
+                                <i class="bi bi-cart"></i> Add To Cart
+                            </button>
+                            <button class="buyNowIndex">
+                            <i class="bi bi-box-seam-fill"></i> Buy It Now
+                        </button>
+                            </div>
+                        </div>
+                        <div class="allProduct">
+                            <div class="product-img">
+                                <span class="salepro">Sale</span>
+                                <div class="iconsPro">
+                                    <i class="bi bi-heart"></i>
+                                    <i class="bi bi-eye"></i>
+                                    <i class="bi bi-layers"></i>
+                                </div>
+                                <img src="https://m.media-amazon.com/images/I/61XO4bORHUL._SL1500_.jpg">
+                            </div>
+                            <p class="text-muted mt-2">Home</p>
+                            <h6>I14 Pro Max</h6>
+                            <p>
+                                <span class="old">$690</span>
+                                <span class="new">$600</span>
+                            </p>
+                            <div class="addBuy">
+                                <button class="add-cartPro">
+                                <i class="bi bi-cart"></i> Add To Cart
+                            </button>
+                            <button class="buyNowIndex">
+                            <i class="bi bi-box-seam-fill"></i> Buy It Now
+                        </button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade show" id="Watch">
+                    <div class="owl-carousel product-slider">
+                        <!-- Product -->
+                        <div class="allProduct">
+                            <div class="product-img">
+                                <span class="salepro">Sale</span>
+                                <div class="iconsPro">
+                                    <i class="bi bi-heart"></i>
+                                    <i class="bi bi-eye"></i>
+                                    <i class="bi bi-layers"></i>
+                                </div>
+                                <img src="https://m.media-amazon.com/images/I/71vFKBpKakL._SL1500_.jpg">
+                            </div>
+                            <p class="text-muted mt-2">Home</p>
+                            <h6>Galaxy Tab A9 Plus</h6>
+                            <p>
+                                <span class="old">$399</span>
+                                <span class="new">$350</span>
+                            </p>
+                            <div class="addBuy">
+                                <button class="add-cartPro">
+                                <i class="bi bi-cart"></i> Add To Cart
+                            </button>
+                            <button class="buyNowIndex">
+                            <i class="bi bi-box-seam-fill"></i> Buy It Now
+                        </button>
+                            </div>
+                        </div>
+                        <div class="allProduct">
+                            <div class="product-img">
+                                <span class="salepro">Sale</span>
+                                <div class="iconsPro">
+                                    <i class="bi bi-heart"></i>
+                                    <i class="bi bi-eye"></i>
+                                    <i class="bi bi-layers"></i>
+                                </div>
+                                <img src="https://m.media-amazon.com/images/I/61XO4bORHUL._SL1500_.jpg">
+                            </div>
+                            <p class="text-muted mt-2">Home</p>
+                            <h6>I14 Pro Max</h6>
+                            <p>
+                                <span class="old">$690</span>
+                                <span class="new">$600</span>
+                            </p>
+                            <div class="addBuy">
+                                <button class="add-cartPro">
+                                <i class="bi bi-cart"></i> Add To Cart
+                            </button>
+                            <button class="buyNowIndex">
+                            <i class="bi bi-box-seam-fill"></i> Buy It Now
+                        </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade show" id="furniture">
+                    <div class="owl-carousel product-slider">
+                        <!-- Product -->
+                        <div class="allProduct">
+                            <div class="product-img">
+                                <span class="salepro">Sale</span>
+                                <div class="iconsPro">
+                                    <i class="bi bi-heart"></i>
+                                    <i class="bi bi-eye"></i>
+                                    <i class="bi bi-layers"></i>
+                                </div>
+                                <img src="https://m.media-amazon.com/images/I/71vFKBpKakL._SL1500_.jpg">
+                            </div>
+                            <p class="text-muted mt-2">Home</p>
+                            <h6>Galaxy Tab A9 Plus</h6>
+                            <p>
+                                <span class="old">$399</span>
+                                <span class="new">$350</span>
+                            </p>
+                            <div class="addBuy">
+                                <button class="add-cartPro">
+                                <i class="bi bi-cart"></i> Add To Cart
+                            </button>
+                            <button class="buyNowIndex">
+                            <i class="bi bi-box-seam-fill"></i> Buy It Now
+                        </button>
+                            </div>
+                        </div>
+                        <div class="allProduct">
+                            <div class="product-img">
+                                <span class="salepro">Sale</span>
+                                <div class="iconsPro">
+                                    <i class="bi bi-heart"></i>
+                                    <i class="bi bi-eye"></i>
+                                    <i class="bi bi-layers"></i>
+                                </div>
+                                <img src="https://m.media-amazon.com/images/I/61XO4bORHUL._SL1500_.jpg">
+                            </div>
+                            <p class="text-muted mt-2">Home</p>
+                            <h6>I14 Pro Max</h6>
+                            <p>
+                                <span class="old">$690</span>
+                                <span class="new">$600</span>
+                            </p>
+                             <div class="addBuy">
+                                <button class="add-cartPro">
+                                <i class="bi bi-cart"></i> Add To Cart
+                            </button>
+                            <button class="buyNowIndex">
+                            <i class="bi bi-box-seam-fill"></i> Buy It Now
+                        </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade show" id="Salon">
+                    <div class="owl-carousel product-slider">
+                        <!-- Product -->
+                        <div class="allProduct">
+                            <div class="product-img">
+                                <span class="salepro">Sale</span>
+                                <div class="iconsPro">
+                                    <i class="bi bi-heart"></i>
+                                    <i class="bi bi-eye"></i>
+                                    <i class="bi bi-layers"></i>
+                                </div>
+                                <img src="https://m.media-amazon.com/images/I/71vFKBpKakL._SL1500_.jpg">
+                            </div>
+                            <p class="text-muted mt-2">Home</p>
+                            <h6>Galaxy Tab A9 Plus</h6>
+                            <p>
+                                <span class="old">$399</span>
+                                <span class="new">$350</span>
+                            </p>
+                             <div class="addBuy">
+                                <button class="add-cartPro">
+                                <i class="bi bi-cart"></i> Add To Cart
+                            </button>
+                            <button class="buyNowIndex">
+                            <i class="bi bi-box-seam-fill"></i> Buy It Now
+                        </button>
+                            </div>
+                        </div>
+                        <div class="allProduct">
+                            <div class="product-img">
+                                <span class="salepro">Sale</span>
+                                <div class="iconsPro">
+                                    <i class="bi bi-heart"></i>
+                                    <i class="bi bi-eye"></i>
+                                    <i class="bi bi-layers"></i>
+                                </div>
+                                <img src="https://m.media-amazon.com/images/I/61XO4bORHUL._SL1500_.jpg">
+                            </div>
+                            <p class="text-muted mt-2">Home</p>
+                            <h6>I14 Pro Max</h6>
+                            <p>
+                                <span class="old">$690</span>
+                                <span class="new">$600</span>
+                            </p>
+                            <div class="addBuy">
+                                <button class="add-cartPro">
+                                <i class="bi bi-cart"></i> Add To Cart
+                            </button>
+                            <div class="addBuy">
+                                <button class="add-cartPro">
+                                <i class="bi bi-cart"></i> Add To Cart
+                            </button>
+                            <button class="buyNowIndex">
+                            <i class="bi bi-box-seam-fill"></i> Buy It Now
+                        </button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade show" id="cosmetics">
+                    <div class="owl-carousel product-slider">
+                        <!-- Product -->
+                        <div class="allProduct">
+                            <div class="product-img">
+                                <span class="salepro">Sale</span>
+                                <div class="iconsPro">
+                                    <i class="bi bi-heart"></i>
+                                    <i class="bi bi-eye"></i>
+                                    <i class="bi bi-layers"></i>
+                                </div>
+                                <img src="https://m.media-amazon.com/images/I/71vFKBpKakL._SL1500_.jpg">
+                            </div>
+                            <p class="text-muted mt-2">Home</p>
+                            <h6>Galaxy Tab A9 Plus</h6>
+                            <p>
+                                <span class="old">$399</span>
+                                <span class="new">$350</span>
+                            </p>
+                            <div class="addBuy">
+                                <button class="add-cartPro">
+                                <i class="bi bi-cart"></i> Add To Cart
+                            </button>
+                            <button class="buyNowIndex">
+                            <i class="bi bi-box-seam-fill"></i> Buy It Now
+                        </button>
+                            </div>
+                        </div>
+                        <div class="allProduct">
+                            <div class="product-img">
+                                <span class="salepro">Sale</span>
+                                <div class="iconsPro">
+                                    <i class="bi bi-heart"></i>
+                                    <i class="bi bi-eye"></i>
+                                    <i class="bi bi-layers"></i>
+                                </div>
+                                <img src="https://m.media-amazon.com/images/I/61XO4bORHUL._SL1500_.jpg">
+                            </div>
+                            <p class="text-muted mt-2">Home</p>
+                            <h6>I14 Pro Max</h6>
+                            <p>
+                                <span class="old">$690</span>
+                                <span class="new">$600</span>
+                            </p>
+                            <div class="addBuy">
+                                <button class="add-cartPro">
+                                <i class="bi bi-cart"></i> Add To Cart
+                            </button>
+                            <button class="buyNowIndex">
+                            <i class="bi bi-box-seam-fill"></i> Buy It Now
+                        </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!--categories-->
-    <!--Query-->
-
-    <div class="container">
-        <div class="queryPannel">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="leftEnquery">
-                        <h3>Request for <span>Registration</span> </h3>
-                        <p>An effortless way to post your sourcing requirements and quickly obtain verified quotes from
-                            trusted suppliers.</p>
-                        <ul>
-                            <li><a href=""><i class="bi bi-arrow-right"></i> Post one request, get multiple quotes</a>
-                            </li>
-                            <li><a href=""><i class="bi bi-arrow-right"></i> Post one request, get multiple quotes</a>
-                            </li>
-                            <li><a href=""><i class="bi bi-arrow-right"></i> Post one request, get multiple quotes</a>
-                            </li>
-                            <li><a href=""> <i class="bi bi-arrow-right"></i> Post one request, get multiple quotes</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="writeEnquery">
-                        <h3>Fill the ENQUERY form</h3>
-                        <form action="">
+        <!--categories-->
+        <section class="category-section">
+            <div class="container">
+                <div class="allCat">
+                    <div class="row text-center">
+                        <div class="col-md-6">
                             <div class="row">
-                                <div class="col-md-6"> <label for="Name"></label>
-                                    <input type="text" placeholder="Enter Name">
+                                <!-- item -->
+                                <div class="col-lg col-md-2 col-4 category-item">
+                                    <div class="category-box">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/3075/3075977.png">
+                                    </div>
+                                    <p>Restaurants</p>
                                 </div>
-                                <div class="col-md-6"><label for="Phone"></label>
-                                    <input type="number" placeholder="Enter Phone Number">
+
+                                <div class="col-lg col-md-2 col-4 category-item">
+                                    <div class="category-box">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/139/139899.png">
+                                    </div>
+                                    <p>Hotels</p>
                                 </div>
-                                <div class="col-md-12">
-                                    <label for="Adress"></label>
-                                    <textarea name="Address" rows="2" placeholder="Enter Address"></textarea>
+
+                                <div class="col-lg col-md-2 col-4 category-item">
+                                    <div class="category-box">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/2920/2920222.png">
+                                    </div>
+                                    <p>Beauty Spa</p>
                                 </div>
-                                <div class="col-md-3">
-                                    <button class="submitEnquery"> Submit</button>
+
+                                <div class="col-lg col-md-2 col-4 category-item">
+                                    <div class="category-box">
+                                        <img src="images/house-decoration.png">
+                                    </div>
+                                    <p>Home Decor</p>
+                                </div>
+
+                                <div class="col-lg col-md-2 col-4 category-item">
+                                    <div class="category-box">
+                                        <img src="images/wedding.png">
+                                    </div>
+                                    <p>Wedding Planning</p>
+                                </div>
+
+                                <div class="col-lg col-md-2 col-4 category-item">
+                                    <div class="category-box">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/3135/3135755.png">
+                                    </div>
+                                    <p>Education</p>
                                 </div>
                             </div>
-                        </form>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <!-- item -->
+                                <div class="col-lg col-md-2 col-4 category-item">
+                                    <div class="category-box">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/3075/3075977.png">
+                                    </div>
+                                    <p>Restaurants</p>
+                                </div>
+
+                                <div class="col-lg col-md-2 col-4 category-item">
+                                    <div class="category-box">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/139/139899.png">
+                                    </div>
+                                    <p>Hotels</p>
+                                </div>
+
+                                <div class="col-lg col-md-2 col-4 category-item">
+                                    <div class="category-box">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/2920/2920222.png">
+                                    </div>
+                                    <p>Beauty Spa</p>
+                                </div>
+
+                                <div class="col-lg col-md-2 col-4 category-item">
+                                    <div class="category-box">
+                                        <img src="images/house-decoration.png">
+                                    </div>
+                                    <p>Home Decor</p>
+                                </div>
+
+                                <div class="col-lg col-md-2 col-4 category-item">
+                                    <div class="category-box">
+                                        <img src="images/wedding.png">
+                                    </div>
+                                    <p>Wedding Planning</p>
+                                </div>
+
+                                <div class="col-lg col-md-2 col-4 category-item">
+                                    <div class="category-box">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/3135/3135755.png">
+                                    </div>
+                                    <p>Education</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <!-- item -->
+                                <div class="col-lg col-md-2 col-4 category-item">
+                                    <div class="category-box">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/857/857455.png">
+                                    </div>
+                                    <p>Gym</p>
+                                </div>
+                                <div class="col-lg col-md-2 col-4 category-item">
+                                    <div class="category-box">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/2785/2785482.png">
+                                    </div>
+                                    <p>Hospitals</p>
+                                </div>
+                                <div class="col-lg col-md-2 col-4 category-item">
+                                    <div class="category-box">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/3135/3135706.png">
+                                    </div>
+                                    <p>Loans</p>
+                                </div>
+                                <div class="col-lg col-md-2 col-4 category-item">
+                                    <div class="category-box">
+                                        <img src="images/organiser.png">
+                                    </div>
+                                    <p>Event Organisers</p>
+                                </div>
+                                <div class="col-lg col-md-2 col-4 category-item">
+                                    <div class="category-box">
+                                        <img src="images/drive.png">
+                                    </div>
+                                    <p>Driving Schools</p>
+                                </div>
+                                <div class="col-lg col-md-2 col-4 category-item">
+                                    <div class="category-box">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/1995/1995574.png">
+                                    </div>
+                                    <p>Packers & Movers</p>
+                                </div>
+                                <!-- item -->
+                                <div class="col-lg col-md-2 col-4 category-item">
+                                    <div class="category-box">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/891/891419.png">
+                                    </div>
+                                    <p>Courier Service</p>
+                                </div>
+                                <div class="col-lg col-md-2 col-4 category-item">
+                                    <div class="category-box">
+                                        <img src="https://cdn-icons-png.flaticon.com/128/1828/1828859.png">
+                                    </div>
+                                    <p>Popular Categories</p>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!--Query-->
+        </section>
+        <!--categories-->
+        <!--Query-->
+
+        <!-- <div class="container">
+            <div class="queryPannel">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="leftEnquery">
+                            <h3>Request for <span>Registration</span> </h3>
+                            <p>An effortless way to post your sourcing requirements and quickly obtain verified quotes
+                                from
+                                trusted suppliers.</p>
+                            <ul>
+                                <li><a href=""><i class="bi bi-arrow-right"></i> Post one request, get multiple
+                                        quotes</a>
+                                </li>
+                                <li><a href=""><i class="bi bi-arrow-right"></i> Post one request, get multiple
+                                        quotes</a>
+                                </li>
+                                <li><a href=""><i class="bi bi-arrow-right"></i> Post one request, get multiple
+                                        quotes</a>
+                                </li>
+                                <li><a href=""> <i class="bi bi-arrow-right"></i> Post one request, get multiple
+                                        quotes</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="writeEnquery">
+                            <h3>Fill the ENQUERY form</h3>
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-md-6"> <label for="Name"></label>
+                                        <input type="text" placeholder="Enter Name">
+                                    </div>
+                                    <div class="col-md-6"><label for="Phone"></label>
+                                        <input type="number" placeholder="Enter Phone Number">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="Adress"></label>
+                                        <textarea name="Address" rows="2" placeholder="Enter Address"></textarea>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <button class="submitEnquery"> Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!--Query-->
     </main>
     <!--footer-->
     <footer>

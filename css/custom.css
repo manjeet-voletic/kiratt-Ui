@@ -1694,6 +1694,7 @@ header ul li {
     border-radius: 12px;
     border: 1px solid #ccc;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin-bottom: 80px;
 }
 
 .category-item {
@@ -1752,10 +1753,13 @@ header ul li {
     color: #888;
     border: none;
 }
-
+.product-tabs {
+    border-bottom: 2px solid#ceb03e;
+}
 .product-tabs .nav-link.active {
     color: #000;
-    border-bottom: 3px solid #000;
+    border-bottom: 3px solid #1e7007;
+        border-radius: 15px 14px 12px 12px;
 }
 .product-tabs img {
     width: 30px;
@@ -1849,7 +1853,23 @@ header ul li {
     color: #e63946;
     font-weight: 600;
 }
-
+.addBuy {
+     display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+.buyNowIndex{
+    width: 100%;
+    border: none;
+     border-radius: 8px;
+    padding: 10px 14px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 16px;
+     margin-top: 10px;
+    background: linear-gradient(135deg, #d8bd7b, #caa55d);
+    transition: all .35s ease;
+}
 /* Add Cart */
 .add-cartPro {
     width: 100%;
@@ -1863,6 +1883,7 @@ header ul li {
     position: relative;
     overflow: hidden;
     margin-top: 10px;
+    margin-right: 20px;
 }
 
 /* SHINE EFFECT */
