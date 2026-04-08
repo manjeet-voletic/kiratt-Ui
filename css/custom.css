@@ -805,7 +805,7 @@ header ul li {
 .megaMenu img {
     object-fit: cover;
     border-radius: 5px;
-    height: 150px;
+      height: auto;
     width: 100%;
 
 }
@@ -1687,14 +1687,16 @@ header ul li {
 
 }
 
-
+.category-section{
+    padding-bottom: 80px;
+}
 .allCat {
     background: #fff;
     padding: 25px;
     border-radius: 12px;
     border: 1px solid #ccc;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    margin-bottom: 80px;
+
 }
 
 .category-item {
@@ -2841,6 +2843,7 @@ footer {
     cursor: pointer;
     border-radius: 5px;
     margin-top: 20px;
+    background: #fff;
 }
 
 .boxRelated img {
@@ -2852,7 +2855,7 @@ footer {
 
 .boxRelated h3 {
     margin-top: 8px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .relatedBox h1 {
@@ -4349,6 +4352,7 @@ footer {
      font-size: 14px;
      color: #005024;
      cursor: pointer;
+         font-weight: 500;
 }
 .profilemenuTitle {
     font-size: 13px;
@@ -5416,7 +5420,7 @@ footer {
 
 
 .wishlist-btn:hover i {
-    color: #e91e63;
+       color: #df0000;
 }
 
 /* order return */
