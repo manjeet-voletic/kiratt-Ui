@@ -102,6 +102,94 @@ img::-moz-selection {
 }
 
 /*Design Of Index Page*/
+/* ===== MAIN MODAL ===== */
+.offerModal .modal-content {
+  border-radius: 18px;
+  overflow: hidden;
+}
+/* CLOSE BUTTON */
+.offerModal-close {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  background: #ffd600;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+   color: #1f6f08;
+}
+/* LEFT */
+.offerModal-left {
+  background: linear-gradient(135deg, #1f6f08, #c3b24b);
+  padding: 30px;
+   color: #fff;
+    position: relative;
+}
+.offerModal-left h4 {
+    font-size: 25px;
+ }
+ .offerModal-left p {
+    font-size: 14px;
+    margin: 12px 0px;
+ }
+ .offerModal-left img { 
+   position: absolute;
+    bottom: 0px;
+    right: 3px;
+    width: 195px;
+ }
+.offerModal-feature {
+  margin: 19px 0px;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* RIGHT */
+.offerModal-right {
+  padding: 30px;
+}
+.offerModal-right h5 {
+   font-size: 22px;
+    margin-bottom: 10px;
+}
+/* BUTTON */
+.offerModal-btn {
+ background: linear-gradient(135deg, #1f6f08, #c3b24b);
+ border: none;
+ color: #fff;
+}
+
+.offerModal-btn:hover {
+  transform: scale(1.02);
+   color: #fff;
+}
+.offerModal-right.nav-tabs {
+     border: none;
+}
+.offerModal-right .note {
+    text-align: center;
+     color: #4b4b4b;
+     font-size: 14px;
+     margin: 12px 0px;
+}
+/* TABS */
+.offerModal .nav-tabs .nav-link.active {
+  background: #ffd600;
+  border: none;
+  color: #1f6f08;
+  border-radius: 8px;
+}
+
+.offerModal .nav-tabs .nav-link {
+  border: none;
+  color: #555;
+  font-size: 14px;
+}
+.offerModal-right label {
+     font-size: 14px;
+}
 /* LANGUAGE DROPDOWN */
 .language-wrapper {
     position: relative;
@@ -2238,14 +2326,24 @@ footer {
 
 /* Select trading  */
 /* banner About */
-.aboutBanner {
-    background-image: url(../images/allPages.png);
+/* .aboutBanner {
+  background-image: url(../images/aboutAll.png);
     background-size: 100%;
-    padding: 100px 0px;
+    padding: 273px 0px;
     text-align: center;
-    border-bottom: 1px solid#ccc;
+    border-bottom: 1px solid #ccc;
+    background-repeat: no-repeat;
+} */
+.aboutBanner {
+      background-image: url(../images/aboutAll.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    height: 320px;
 }
-
 .aboutPannel h3 {
     font-size: 50px;
     color: #000000;

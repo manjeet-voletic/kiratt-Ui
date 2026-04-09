@@ -1,3 +1,10 @@
+$ (window).ready (function () {
+	setTimeout (function () {
+		$ ('#offerModalMain').modal ("show")
+	}, 20000)
+})
+
+
 // search bar Function
 const input = document.getElementById("searchInput");
 const suggestionsBox = document.getElementById("suggestions");

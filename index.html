@@ -28,6 +28,78 @@
 </head>
 
 <body>
+    <!-- ===== MODAL offer Index ===== -->
+    <div class="modal fade offerModal" id="offerModalMain">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <!-- CLOSE (TOP RIGHT) -->
+                <button class="offerModal-close" data-bs-dismiss="modal">✕</button>
+                <div class="row g-0">
+
+                    <!-- LEFT -->
+                    <div class="col-md-6 offerModal-left">
+                        <h4>🎁 Exclusive Offers</h4>
+                        <p>Join now & unlock deals</p>
+
+                        <div class="offerModal-feature">🛍️ Product Deals</div>
+                        <div class="offerModal-feature">🛠️ Service Discounts</div>
+                        <div class="offerModal-feature">🎂 Birthday Offers</div>
+                        <div class="offerModal-feature">💖 Anniversary Rewards</div>
+                        <img src="images/offerModal.png" alt="">
+                    </div>
+
+                    <!-- RIGHT -->
+                    <div class="col-md-6 offerModal-right">
+
+                        <h5>Sign Up</h5>
+
+                        <form>
+
+                            <input type="email" class="form-control mb-3" placeholder="Enter your email" required>
+
+                            <!-- TABS -->
+                            <ul class="nav nav-tabs mb-3">
+                                <li class="nav-item">
+                                    <button class="nav-link active" data-bs-toggle="tab"
+                                        data-bs-target="#offerModalDob">
+                                        🎂 DOB
+                                    </button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#offerModalAnn">
+                                        💖 Anniversary
+                                    </button>
+                                </li>
+                            </ul>
+                            <!-- TAB CONTENT -->
+                            <div class="tab-content">
+                                <!-- DOB -->
+                                <div class="tab-pane fade show active" id="offerModalDob">
+                                    <label class="mb-1">🎂 Date of Birth</label>
+                                    <input type="date" class="form-control mb-3">
+                                </div>
+
+                                <!-- ANNIVERSARY -->
+                                <div class="tab-pane fade" id="offerModalAnn">
+                                    <label class="mb-1">💖 Anniversary Date</label>
+                                    <input type="date" class="form-control mb-3">
+                                </div>
+
+                            </div>
+
+                            <button class="btn offerModal-btn w-100">
+                                Get Offers
+                            </button>
+                            <p class="note">We respect your privacy</p>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
     <!--TopPannel-->
     <!-- <div class="discountTop">
         <div class="row align-items-center">
@@ -431,28 +503,28 @@
                             <li><a href="">Contact</a></li>
                         </ul>
                     </div> -->
-                     <div class="language-wrapper">
-                    <div class="selected-lang" onclick="toggleLang()">
-                        <span id="currentLang"><i class="bi bi-translate"></i> Your Language</span>
-                        <i class="bi bi-chevron-down"></i>
+                    <div class="language-wrapper">
+                        <div class="selected-lang" onclick="toggleLang()">
+                            <span id="currentLang"><i class="bi bi-translate"></i> Your Language</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </div>
+
+                        <ul class="lang-dropdown" id="langDropdown">
+                            <li onclick="changeLang('en','English')">English</li>
+                            <li onclick="changeLang('hi','हिन्दी')">हिन्दी</li>
+                            <li onclick="changeLang('bn','বাংলা')">বাংলা</li>
+                            <li onclick="changeLang('ta','தமிழ்')">தமிழ்</li>
+                            <li onclick="changeLang('te','తెలుగు')">తెలుగు</li>
+                            <li onclick="changeLang('mr','मराठी')">मराठी</li>
+                            <li onclick="changeLang('gu','ગુજરાતી')">ગુજરાતી</li>
+                            <li onclick="changeLang('kn','ಕನ್ನಡ')">ಕನ್ನಡ</li>
+                            <li onclick="changeLang('ml','മലയാളം')">മലയാളം</li>
+                            <li onclick="changeLang('pa','ਪੰਜਾਬੀ')">ਪੰਜਾਬੀ</li>
+                            <li onclick="changeLang('ur','اردو')">اردو</li>
+                        </ul>
                     </div>
 
-                    <ul class="lang-dropdown" id="langDropdown">
-                        <li onclick="changeLang('en','English')">English</li>
-                        <li onclick="changeLang('hi','हिन्दी')">हिन्दी</li>
-                        <li onclick="changeLang('bn','বাংলা')">বাংলা</li>
-                        <li onclick="changeLang('ta','தமிழ்')">தமிழ்</li>
-                        <li onclick="changeLang('te','తెలుగు')">తెలుగు</li>
-                        <li onclick="changeLang('mr','मराठी')">मराठी</li>
-                        <li onclick="changeLang('gu','ગુજરાતી')">ગુજરાતી</li>
-                        <li onclick="changeLang('kn','ಕನ್ನಡ')">ಕನ್ನಡ</li>
-                        <li onclick="changeLang('ml','മലയാളം')">മലയാളം</li>
-                        <li onclick="changeLang('pa','ਪੰਜਾਬੀ')">ਪੰਜਾਬੀ</li>
-                        <li onclick="changeLang('ur','اردو')">اردو</li>
-                    </ul>
-                </div>
-            
-                <div id="google_translate_element" style="display:none;"></div>
+                    <div id="google_translate_element" style="display:none;"></div>
                 </div>
             </div>
         </div>
@@ -903,13 +975,13 @@
                                 <span class="old">$399</span>
                                 <span class="new">$350</span>
                             </p>
-                             <div class="addBuy">
+                            <div class="addBuy">
                                 <button class="add-cartPro">
-                                <i class="bi bi-cart"></i> Add To Cart
-                            </button>
-                            <button class="buyNowIndex">
-                            <i class="bi bi-box-seam-fill"></i> Buy It Now
-                        </button>
+                                    <i class="bi bi-cart"></i> Add To Cart
+                                </button>
+                                <button class="buyNowIndex">
+                                    <i class="bi bi-box-seam-fill"></i> Buy It Now
+                                </button>
                             </div>
                         </div>
                         <div class="allProduct">
@@ -930,13 +1002,13 @@
                             </p>
                             <div class="addBuy">
                                 <button class="add-cartPro">
-                                <i class="bi bi-cart"></i> Add To Cart
-                            </button>
-                            <button class="buyNowIndex">
-                            <i class="bi bi-box-seam-fill"></i> Buy It Now
-                        </button>
+                                    <i class="bi bi-cart"></i> Add To Cart
+                                </button>
+                                <button class="buyNowIndex">
+                                    <i class="bi bi-box-seam-fill"></i> Buy It Now
+                                </button>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -961,11 +1033,11 @@
                             </p>
                             <div class="addBuy">
                                 <button class="add-cartPro">
-                                <i class="bi bi-cart"></i> Add To Cart
-                            </button>
-                            <button class="buyNowIndex">
-                            <i class="bi bi-box-seam-fill"></i> Buy It Now
-                        </button>
+                                    <i class="bi bi-cart"></i> Add To Cart
+                                </button>
+                                <button class="buyNowIndex">
+                                    <i class="bi bi-box-seam-fill"></i> Buy It Now
+                                </button>
                             </div>
                         </div>
                         <div class="allProduct">
@@ -986,11 +1058,11 @@
                             </p>
                             <div class="addBuy">
                                 <button class="add-cartPro">
-                                <i class="bi bi-cart"></i> Add To Cart
-                            </button>
-                            <button class="buyNowIndex">
-                            <i class="bi bi-box-seam-fill"></i> Buy It Now
-                        </button>
+                                    <i class="bi bi-cart"></i> Add To Cart
+                                </button>
+                                <button class="buyNowIndex">
+                                    <i class="bi bi-box-seam-fill"></i> Buy It Now
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -1016,11 +1088,11 @@
                             </p>
                             <div class="addBuy">
                                 <button class="add-cartPro">
-                                <i class="bi bi-cart"></i> Add To Cart
-                            </button>
-                            <button class="buyNowIndex">
-                            <i class="bi bi-box-seam-fill"></i> Buy It Now
-                        </button>
+                                    <i class="bi bi-cart"></i> Add To Cart
+                                </button>
+                                <button class="buyNowIndex">
+                                    <i class="bi bi-box-seam-fill"></i> Buy It Now
+                                </button>
                             </div>
                         </div>
                         <div class="allProduct">
@@ -1039,13 +1111,13 @@
                                 <span class="old">$690</span>
                                 <span class="new">$600</span>
                             </p>
-                             <div class="addBuy">
+                            <div class="addBuy">
                                 <button class="add-cartPro">
-                                <i class="bi bi-cart"></i> Add To Cart
-                            </button>
-                            <button class="buyNowIndex">
-                            <i class="bi bi-box-seam-fill"></i> Buy It Now
-                        </button>
+                                    <i class="bi bi-cart"></i> Add To Cart
+                                </button>
+                                <button class="buyNowIndex">
+                                    <i class="bi bi-box-seam-fill"></i> Buy It Now
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -1069,13 +1141,13 @@
                                 <span class="old">$399</span>
                                 <span class="new">$350</span>
                             </p>
-                             <div class="addBuy">
+                            <div class="addBuy">
                                 <button class="add-cartPro">
-                                <i class="bi bi-cart"></i> Add To Cart
-                            </button>
-                            <button class="buyNowIndex">
-                            <i class="bi bi-box-seam-fill"></i> Buy It Now
-                        </button>
+                                    <i class="bi bi-cart"></i> Add To Cart
+                                </button>
+                                <button class="buyNowIndex">
+                                    <i class="bi bi-box-seam-fill"></i> Buy It Now
+                                </button>
                             </div>
                         </div>
                         <div class="allProduct">
@@ -1096,16 +1168,16 @@
                             </p>
                             <div class="addBuy">
                                 <button class="add-cartPro">
-                                <i class="bi bi-cart"></i> Add To Cart
-                            </button>
-                            <div class="addBuy">
-                                <button class="add-cartPro">
-                                <i class="bi bi-cart"></i> Add To Cart
-                            </button>
-                            <button class="buyNowIndex">
-                            <i class="bi bi-box-seam-fill"></i> Buy It Now
-                        </button>
-                            </div>
+                                    <i class="bi bi-cart"></i> Add To Cart
+                                </button>
+                                <div class="addBuy">
+                                    <button class="add-cartPro">
+                                        <i class="bi bi-cart"></i> Add To Cart
+                                    </button>
+                                    <button class="buyNowIndex">
+                                        <i class="bi bi-box-seam-fill"></i> Buy It Now
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1131,11 +1203,11 @@
                             </p>
                             <div class="addBuy">
                                 <button class="add-cartPro">
-                                <i class="bi bi-cart"></i> Add To Cart
-                            </button>
-                            <button class="buyNowIndex">
-                            <i class="bi bi-box-seam-fill"></i> Buy It Now
-                        </button>
+                                    <i class="bi bi-cart"></i> Add To Cart
+                                </button>
+                                <button class="buyNowIndex">
+                                    <i class="bi bi-box-seam-fill"></i> Buy It Now
+                                </button>
                             </div>
                         </div>
                         <div class="allProduct">
@@ -1156,11 +1228,11 @@
                             </p>
                             <div class="addBuy">
                                 <button class="add-cartPro">
-                                <i class="bi bi-cart"></i> Add To Cart
-                            </button>
-                            <button class="buyNowIndex">
-                            <i class="bi bi-box-seam-fill"></i> Buy It Now
-                        </button>
+                                    <i class="bi bi-cart"></i> Add To Cart
+                                </button>
+                                <button class="buyNowIndex">
+                                    <i class="bi bi-box-seam-fill"></i> Buy It Now
+                                </button>
                             </div>
                         </div>
                     </div>
