@@ -1,0 +1,1077 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta name="google-site-verification" content="rXMy9A8ZZU2oNKl1e-vwqx7j1yHQ5TV9wD1sro8pCQo">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <meta name="theme-color" content="#fff">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#f10000">
+    <meta name="moblie-web-app-capable" content="yes">
+    <meta name="apple-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- iOS Safari -->
+    <title>KIRATT</title>
+    <link rel="apple-touch-icon" href="images/favicon.png" sizes="180x180">
+    <link rel="icon" href="images/favicon.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="css/custom.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+
+<body>
+
+    <!--TopPannel-->
+    <!-- <div class="discountTop">
+        <div class="row align-items-center">
+            <div class="col-md-4 infoIndexTop">
+                <a href=""><i class="bi bi-envelope-fill"></i> @InfoKiratt.com</a>
+                <a href=""><i class="bi bi-telephone-fill"></i> +919041342552</a>
+            </div>
+            <div class="col-md-4 codeIndex">
+                <a href="">🎉 Get 15% OFF your first order with code: WELCOME15</a>
+            </div>
+            <div class="col-md-4">
+             
+                <div class="language-wrapper">
+                    <div class="selected-lang" onclick="toggleLang()">
+                        <span id="currentLang"><i class="bi bi-translate"></i> Your Language</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+
+                    <ul class="lang-dropdown" id="langDropdown">
+                        <li onclick="changeLang('en','English')">English</li>
+                        <li onclick="changeLang('hi','हिन्दी')">हिन्दी</li>
+                        <li onclick="changeLang('bn','বাংলা')">বাংলা</li>
+                        <li onclick="changeLang('ta','தமிழ்')">தமிழ்</li>
+                        <li onclick="changeLang('te','తెలుగు')">తెలుగు</li>
+                        <li onclick="changeLang('mr','मराठी')">मराठी</li>
+                        <li onclick="changeLang('gu','ગુજરાતી')">ગુજરાતી</li>
+                        <li onclick="changeLang('kn','ಕನ್ನಡ')">ಕನ್ನಡ</li>
+                        <li onclick="changeLang('ml','മലയാളം')">മലയാളം</li>
+                        <li onclick="changeLang('pa','ਪੰਜਾਬੀ')">ਪੰਜਾਬੀ</li>
+                        <li onclick="changeLang('ur','اردو')">اردو</li>
+                    </ul>
+                </div>
+            
+                <div id="google_translate_element" style="display:none;"></div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container">
+        <div class="topBar">
+            <div class="row align-items-center">
+                <div class="col-md-2">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="logo" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="row align-items-center">
+                        <div class="col-lg-10 col-md-7">
+                            <div class="topRight">
+                                <div class="locationIndex" data-bs-toggle="modal" data-bs-target="#locationModal">
+                                    <div>
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                    </div>
+                                    <div>
+                                        <p> Deliver to Manjeet</p>
+                                        <p id="userAddress">Bettiah 845438</p>
+                                    </div>
+                                </div>
+                                <div class="search-container" id="searchContainer">
+                                    <div class="search-bar">
+                                        <!-- Category Dropdown -->
+                                        <select class="search-category">
+                                            <option>All</option>
+                                            <option>Mobiles</option>
+                                            <option>Electronics</option>
+                                            <option>Home & Kitchen</option>
+                                            <option>Mobiles</option>
+                                            <option>Electronics</option>
+                                            <option>Home & Kitchen</option>
+                                        </select>
+
+                                        <!-- Search Input -->
+                                        <input type="search" id="searchInput" class="search-input"
+                                            placeholder="Search Kiratt.com">
+
+                                        <!-- Search Button -->
+                                        <button class="search-button">
+                                            <i class="bi bi-search"></i>
+                                        </button>
+
+                                    </div>
+                                    <!-- Suggestions -->
+                                    <div id="suggestions" class="suggestions-box">
+                                        <div class="suggestion-item">
+                                            nutripro 500w blender juicer mixer grinder & smoothie maker machine – 1-year
+                                            warranty
+                                            <span class="close-suggestions">&times;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-5">
+                            <div class="TopLeft">
+                                <!-- Mobile Search Icon -->
+                                <button class="mobile-search-icon" id="mobileSearchBtn">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                                <!-- TRIGGER -->
+                                <div class="signInIndex">
+                                    <div data-bs-toggle="collapse" data-bs-target="#signInBox">
+                                        <i class="bi bi-person-circle"></i>
+                                        <span>Login</span>
+                                    </div>
+                                    <!-- PANEL -->
+                                    <div class="collapse signInIndex-panel" id="signInBox">
+                                        <!-- Header -->
+                                        <div class="signInIndex-header">
+                                            <span>New customer?</span>
+                                            <a href="login.html" onclick="event.stopPropagation()">Sign Up</a>
+                                        </div>
+                                        <div class="signInIndex-divider"></div>
+                                        <!-- MENU -->
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-person"></i>
+                                            <span>My Profile</span>
+                                        </div>
+
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-box"></i>
+                                            <span>Orders</span>
+                                        </div>
+
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-heart"></i>
+                                            <a href="wishlist.html">Wishlist</span>
+                                        </div>
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-basket2-fill"></i>
+                                            <span>Returns</span>
+                                        </div>
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-shop"></i>
+                                            <span>Become a Vendor</span>
+                                        </div>
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-shop"></i>
+                                            <span>Become a Growth Leader</span>
+                                        </div>
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-gift"></i>
+                                            <span>Rewards</span>
+                                        </div>
+
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-gift"></i>
+                                            <span>Gift Cards</span>
+                                        </div>
+
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-bell"></i>
+                                            <span>Notification Preferences</span>
+                                        </div>
+
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-headphones"></i>
+                                            <span>24x7 Customer Care</span>
+                                        </div>
+
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-megaphone"></i>
+                                            <span>Advertise</span>
+                                        </div>
+
+                                        <div class="signInIndex-item">
+                                            <i class="bi bi-download"></i>
+                                            <span>Download App</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="wishlistIndex">
+                                    <a href=""><i class="bi bi-heart"></i></a>
+                                </div>
+                                <!-- CART ICON -->
+                                <div class="myCart-wrapper">
+                                    <i class="bi bi-cart-check" data-bs-toggle="collapse"
+                                        data-bs-target="#myCartBox"></i>
+                                    <span class="myCart-count" data-bs-toggle="collapse"
+                                        data-bs-target="#myCartBox">3</span>
+                                    <!-- CART PANEL -->
+                                    <div class="collapse myCart-panel" id="myCartBox">
+                                        <div class="myCart-header">My Cart</div>
+                                        <!-- Tabs -->
+                                        <ul class="nav nav-tabs myCart-tabs mb-3">
+                                            <li class="nav-item">
+                                                <button class="nav-link active" data-bs-toggle="tab"
+                                                    data-bs-target="#myCart-products">Products</button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button class="nav-link" data-bs-toggle="tab"
+                                                    data-bs-target="#myCart-services">Services</button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button class="nav-link" data-bs-toggle="tab"
+                                                    data-bs-target="#myCart-Food">Food</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+
+                                            <!-- PRODUCTS -->
+                                            <div class="tab-pane fade show active" id="myCart-products">
+                                                <div class="myCart-item">
+                                                    <img src="images/bag.jpg" class="myCart-img">
+                                                    <div>
+                                                        <div class="myCart-title">iPhone 14</div>
+                                                        <div class="myCart-price">₹80,000</div>
+                                                    </div>
+                                                    <i class="bi bi-x myCart-remove"></i>
+                                                </div>
+                                            </div>
+
+                                            <!-- SERVICES -->
+                                            <div class="tab-pane fade" id="myCart-services">
+
+                                                <div class="myCart-item">
+                                                    <img src="images/Ac.jfif" class="myCart-img">
+                                                    <div>
+                                                        <div class="myCart-title">AC Repair</div>
+                                                        <div class="myCart-price">₹599</div>
+                                                    </div>
+                                                    <i class="bi bi-x myCart-remove"></i>
+                                                </div>
+
+                                            </div>
+                                            <!-- FOOD -->
+                                            <div class="tab-pane fade" id="myCart-Food">
+
+                                                <div class="myCart-item">
+                                                    <img src="images/fast.png" class="myCart-img">
+                                                    <div>
+                                                        <div class="myCart-title">burger</div>
+                                                        <div class="myCart-price">₹599</div>
+                                                    </div>
+                                                    <i class="bi bi-x myCart-remove"></i>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <!-- FOOTER -->
+                                        <div class="myCart-footer mt-2">
+                                            <button class="btn myCart-btn w-100">Checkout</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--TopPannel-->
+    <div class="header-menu">
+        <div class="container">
+            <div class="menuToggle">
+                <i class="bi bi-list" id="menuOpen"></i>
+                <i class="bi bi-x-lg" id="menuClose"></i>
+            </div>
+            <div class="row">
+
+                <div class="col-md-8">
+                    <div class="menuRight">
+                        <ul>
+                            <li class="megaParent">
+                                <a href="#allDepartment" class="department">
+                                    <i class="bi bi-list"></i> All Department
+                                </a>
+                                <div class="megaMenu allDeep">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <ul>
+
+                                                <li class="megaParent">
+                                                    <a href="#">
+                                                        <span>
+                                                            <img src="images/icon_menu4.png" alt="" class="Fashion">
+                                                            Fashion
+                                                        </span>
+                                                    </a>
+                                                    <!-- RIGHT SIDE SUB MENU -->
+                                                    <div class="subMegaMenu">
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <ul>
+                                                                    <li><a href="#">Men Clothing</a></li>
+                                                                    <li><a href="#">Women Clothing</a></li>
+                                                                    <li><a href="#">Kids Wear</a></li>
+                                                                    <li><a href="#">Shoes</a></li>
+                                                                    <li><a href="#">Bags</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <ul>
+                                                                    <li><a href="#">Men Clothing</a></li>
+                                                                    <li><a href="#">Women Clothing</a></li>
+                                                                    <li><a href="#">Kids Wear</a></li>
+                                                                    <li><a href="#">Shoes</a></li>
+                                                                    <li><a href="#">Bags</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <ul>
+                                                                    <li><a href="#">Men Clothing</a></li>
+                                                                    <li><a href="#">Women Clothing</a></li>
+                                                                    <li><a href="#">Kids Wear</a></li>
+                                                                    <li><a href="#">Shoes</a></li>
+                                                                    <li><a href="#">Bags</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <ul>
+                                                                    <li><a href="#">Men Clothing</a></li>
+                                                                    <li><a href="#">Women Clothing</a></li>
+                                                                    <li><a href="#">Kids Wear</a></li>
+                                                                    <li><a href="#">Shoes</a></li>
+                                                                    <li><a href="#">Bags</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">
+                                                        <span>
+                                                            <img src="images/icon_menu13.png" alt="" class="Fashion">
+                                                            Furniture
+                                                        </span>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">
+                                                        <span>
+                                                            <img src="images/icon_menu4.png" alt="" class="Fashion">
+                                                            Electronics
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li><a href="#"> <span><img src="images/icon_menu5.png" alt=""
+                                                                class="Fashion"> Health & Beauty Beauty</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li><a href="index.html">Home</a></li>
+
+                            <!-- MEGA MENU -->
+                            <li class="megaParent">
+                                <a href=""><i class="bi bi-building"></i> Shop</a>
+                                <div class="megaMenu">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6>Product Shop</h6>
+                                            <ul>
+                                                <li><a href="#">Star Mart </a></li>
+                                                <li><a href="#">Fresh Choice Store </a></li>
+                                                <li><a href="#">Lucky Corner Shop </a></li>
+                                                <li><a href="#">yal Market </a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h6> Service Shop</h6>
+                                            <ul>
+                                                <li><a href="#">Daily Needs Store </a></li>
+                                                <li><a href="#">Sunrise Mart </a></li>
+                                                <li><a href="#">Green Leaf Market </a></li>
+                                                <li><a href="#">Family Choice Shop </a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <img src="images/service.jpg" alt="" class="img-fluid">
+                                            <p>Ac Repair</p>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href=""><i class="bi bi-layers-half"></i> Products</a></li>
+                            <li><a href=""><i class="bi bi-layers-half"></i> Services</a></li>
+                            <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-fork-knife" viewBox="0 0 16 16">
+                                        <path
+                                            d="M13 .5c0-.276-.226-.506-.498-.465-1.703.257-2.94 2.012-3 8.462a.5.5 0 0 0 .498.5c.56.01 1 .13 1 1.003v5.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5zM4.25 0a.25.25 0 0 1 .25.25v5.122a.128.128 0 0 0 .256.006l.233-5.14A.25.25 0 0 1 5.24 0h.522a.25.25 0 0 1 .25.238l.233 5.14a.128.128 0 0 0 .256-.006V.25A.25.25 0 0 1 6.75 0h.29a.5.5 0 0 1 .498.458l.423 5.07a1.69 1.69 0 0 1-1.059 1.711l-.053.022a.92.92 0 0 0-.58.884L6.47 15a.971.971 0 1 1-1.942 0l.202-6.855a.92.92 0 0 0-.58-.884l-.053-.022a1.69 1.69 0 0 1-1.059-1.712L3.462.458A.5.5 0 0 1 3.96 0z" />
+                                    </svg> Food</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <!-- <div class="menuLeft">
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div> -->
+                    <div class="language-wrapper">
+                        <div class="selected-lang" onclick="toggleLang()">
+                            <span id="currentLang"><i class="bi bi-translate"></i> Your Language</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </div>
+
+                        <ul class="lang-dropdown" id="langDropdown">
+                            <li onclick="changeLang('en','English')">English</li>
+                            <li onclick="changeLang('hi','हिन्दी')">हिन्दी</li>
+                            <li onclick="changeLang('bn','বাংলা')">বাংলা</li>
+                            <li onclick="changeLang('ta','தமிழ்')">தமிழ்</li>
+                            <li onclick="changeLang('te','తెలుగు')">తెలుగు</li>
+                            <li onclick="changeLang('mr','मराठी')">मराठी</li>
+                            <li onclick="changeLang('gu','ગુજરાતી')">ગુજરાતી</li>
+                            <li onclick="changeLang('kn','ಕನ್ನಡ')">ಕನ್ನಡ</li>
+                            <li onclick="changeLang('ml','മലയാളം')">മലയാളം</li>
+                            <li onclick="changeLang('pa','ਪੰਜਾਬੀ')">ਪੰਜਾਬੀ</li>
+                            <li onclick="changeLang('ur','اردو')">اردو</li>
+                        </ul>
+                    </div>
+
+                    <div id="google_translate_element" style="display:none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- <div class="foodBanner">
+            <img src="images/foodBanner1.png" alt="" class="img-fluid">
+        </div> -->
+
+        <div class="foodSliderBanner">
+
+            <div class="foodSlider active">
+                <img src="images/foodBanner1.png" alt="" class="img-fluid">
+            </div>
+
+            <div class="foodSlider">
+                <img src="images/foodBanner2.png" alt="" class="img-fluid">
+            </div>
+
+            <div class="foodSlider">
+                <img src="images/foodBanner3.png" alt="" class="img-fluid">
+            </div>
+
+        </div>
+
+        <!-- marQuee Food -->
+        <div class="marqueeFood">
+            <div class="marqueeFood-track">
+                <span>POPULAR DISHES •</span>
+                <span>POPULAR DISHES •</span>
+                <span>POPULAR DISHES •</span>
+                <span>POPULAR DISHES •</span>
+                <span>POPULAR DISHES •</span>
+
+                <!-- duplicate for smooth loop -->
+                <span>POPULAR DISHES •</span>
+                <span>POPULAR DISHES •</span>
+                <span>POPULAR DISHES •</span>
+                <span>POPULAR DISHES •</span>
+                <span>POPULAR DISHES •</span>
+            </div>
+        </div>
+        <!-- marQuee Food -->
+          <!-- Up down -->
+     <div class="upDown1">
+        <img src="images/upDown.png" alt="">
+     </div>
+     <!--  -->
+       <div class="upDown2">
+        <img src="images/red_chili_2.png" alt="">
+     </div>
+     <!--  -->
+        <div class="container">
+            <div class="food-section">
+
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="food-title">Order Our Best Food Options</div>
+
+                    <div class="arrow-box">
+                        <button onclick="slideLeft()">&#8592;</button>
+                        <button onclick="slideRight()">&#8594;</button>
+                    </div>
+                </div>
+
+                <!-- SLIDER -->
+                <div class="slider-container" id="slider">
+                    <div class="food-grid">
+
+                        <!-- ITEMS -->
+                        <div class="food-item"><img src="images/NorthIndian.png">
+                            <p>North Indian</p>
+                        </div>
+                        <div class="food-item"><img src="images/SouthIndian.png">
+                            <p>South Indian</p>
+                        </div>
+
+                        <div class="food-item"><img src="images/Biryani.png">
+                            <p>Biryani</p>
+                        </div>
+                        <div class="food-item"><img src="images/Desserts.png">
+                            <p>Desserts</p>
+                        </div>
+
+                        <div class="food-item"><img src="images/Burger.png">
+                            <p>Burger</p>
+                        </div>
+                        <div class="food-item"><img src="images/Rolls.png">
+                            <p>Rolls</p>
+                        </div>
+
+                        <div class="food-item"><img src="images/Cake.png">
+                            <p>Cake</p>
+                        </div>
+                        <div class="food-item"><img src="images/Coffee.png">
+                            <p>Coffee</p>
+                        </div>
+
+                        <!-- ITEMS -->
+                        <div class="food-item"><img src="images/NorthIndian.png">
+                            <p>North Indian</p>
+                        </div>
+                        <div class="food-item"><img src="images/SouthIndian.png">
+                            <p>South Indian</p>
+                        </div>
+
+                        <div class="food-item"><img src="images/Biryani.png">
+                            <p>Biryani</p>
+                        </div>
+                        <div class="food-item"><img src="images/Desserts.png">
+                            <p>Desserts</p>
+                        </div>
+
+                        <div class="food-item"><img src="images/Burger.png">
+                            <p>Burger</p>
+                        </div>
+                        <div class="food-item"><img src="images/Rolls.png">
+                            <p>Rolls</p>
+                        </div>
+
+                        <div class="food-item"><img src="images/Cake.png">
+                            <p>Cake</p>
+                        </div>
+                        <div class="food-item"><img src="images/Coffee.png">
+                            <p>Coffee</p>
+                        </div>
+                        <!-- ITEMS -->
+                        <div class="food-item"><img src="images/NorthIndian.png">
+                            <p>North Indian</p>
+                        </div>
+                        <div class="food-item"><img src="images/SouthIndian.png">
+                            <p>South Indian</p>
+                        </div>
+
+                        <div class="food-item"><img src="images/Biryani.png">
+                            <p>Biryani</p>
+                        </div>
+                        <div class="food-item"><img src="images/Desserts.png">
+                            <p>Desserts</p>
+                        </div>
+
+                        <div class="food-item"><img src="images/Burger.png">
+                            <p>Burger</p>
+                        </div>
+                        <div class="food-item"><img src="images/Rolls.png">
+                            <p>Rolls</p>
+                        </div>
+
+                        <div class="food-item"><img src="images/Cake.png">
+                            <p>Cake</p>
+                        </div>
+                        <div class="food-item"><img src="images/Coffee.png">
+                            <p>Coffee</p>
+                        </div>
+                        <!-- ITEMS -->
+                        <div class="food-item"><img src="images/NorthIndian.png">
+                            <p>North Indian</p>
+                        </div>
+                        <div class="food-item"><img src="images/SouthIndian.png">
+                            <p>South Indian</p>
+                        </div>
+
+                        <div class="food-item"><img src="images/Biryani.png">
+                            <p>Biryani</p>
+                        </div>
+                        <div class="food-item"><img src="images/Desserts.png">
+                            <p>Desserts</p>
+                        </div>
+
+                        <div class="food-item"><img src="images/Burger.png">
+                            <p>Burger</p>
+                        </div>
+                        <div class="food-item"><img src="images/Rolls.png">
+                            <p>Rolls</p>
+                        </div>
+
+                        <div class="food-item"><img src="images/Cake.png">
+                            <p>Cake</p>
+                        </div>
+                        <div class="food-item"><img src="images/Coffee.png">
+                            <p>Coffee</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
+   <!--  -->
+    <div class="foodBox-section py-5">
+    <div class="container">
+        <div class="row g-4">
+
+            <!-- CARD -->
+            <div class="col-lg-3 col-md-6">
+                <div class="foodBox-card">
+                    <i class="fa fa-heart foodBox-heart"></i>
+
+                    <img src="images/upDown.png" class="foodBox-img">
+
+                    <h6 class="foodBox-title">BIG MAC</h6>
+
+                    <div class="foodBox-rating mb-1">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                        <span class="text-muted small">(5)</span>
+                    </div>
+
+                    <p class="foodBox-desc">
+                        Juicy crispy chicken burger with cheese & fresh veggies...
+                    </p>
+
+                    <div class="foodBox-price">₹500</div>
+<button class="foodBox-cart" onclick="addToCartToast()">
+                        <i class="fa fa-shopping-basket"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- CARD -->
+            <div class="col-lg-3 col-md-6">
+                <div class="foodBox-card">
+                    <i class="fa fa-heart foodBox-heart"></i>
+
+                    <img src="images/upDown.png" class="foodBox-img">
+
+                    <h6 class="foodBox-title">BIG MAC</h6>
+
+                    <div class="foodBox-rating mb-1">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                        <span class="text-muted small">(5)</span>
+                    </div>
+
+                    <p class="foodBox-desc">
+                        Juicy crispy chicken burger with cheese & fresh veggies...
+                    </p>
+
+                    <div class="foodBox-price">₹500</div>
+
+                   <button class="foodBox-cart" onclick="addToCartToast()">
+                        <i class="fa fa-shopping-basket"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- CARD -->
+            <div class="col-lg-3 col-md-6">
+                <div class="foodBox-card">
+                    <i class="fa fa-heart foodBox-heart"></i>
+
+                    <img src="images/upDown.png" class="foodBox-img">
+
+                    <h6 class="foodBox-title">BIG MAC</h6>
+
+                    <div class="foodBox-rating mb-1">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                        <span class="text-muted small">(5)</span>
+                    </div>
+
+                    <p class="foodBox-desc">
+                        Juicy crispy chicken burger with cheese & fresh veggies...
+                    </p>
+
+                    <div class="foodBox-price">₹500</div>
+
+                   <button class="foodBox-cart" onclick="addToCartToast()">
+                        <i class="fa fa-shopping-basket"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- CARD -->
+            <div class="col-lg-3 col-md-6">
+                <div class="foodBox-card">
+                    <i class="fa fa-heart foodBox-heart"></i>
+
+                    <img src="images/upDown.png" class="foodBox-img">
+
+                    <h6 class="foodBox-title">BIG MAC</h6>
+
+                    <div class="foodBox-rating mb-1">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                        <span class="text-muted small">(5)</span>
+                    </div>
+
+                    <p class="foodBox-desc">
+                        Juicy crispy chicken burger with cheese & fresh veggies...
+                    </p>
+
+                    <div class="foodBox-price">₹500</div>
+<button class="foodBox-cart" onclick="addToCartToast()">
+                        <i class="fa fa-shopping-basket"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- CARD -->
+            <div class="col-lg-3 col-md-6">
+                <div class="foodBox-card">
+                    <i class="fa fa-heart foodBox-heart"></i>
+
+                    <img src="images/upDown.png" class="foodBox-img">
+
+                    <h6 class="foodBox-title">BIG MAC</h6>
+
+                    <div class="foodBox-rating mb-1">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                        <span class="text-muted small">(5)</span>
+                    </div>
+
+                    <p class="foodBox-desc">
+                        Juicy crispy chicken burger with cheese & fresh veggies...
+                    </p>
+
+                    <div class="foodBox-price">₹500</div>
+<button class="foodBox-cart" onclick="addToCartToast()">
+                        <i class="fa fa-shopping-basket"></i>
+                    </button>
+                </div>
+            </div>
+
+<!-- CARD -->
+            <div class="col-lg-3 col-md-6">
+                <div class="foodBox-card">
+                    <i class="fa fa-heart foodBox-heart"></i>
+
+                    <img src="images/upDown.png" class="foodBox-img">
+
+                    <h6 class="foodBox-title">BIG MAC</h6>
+
+                    <div class="foodBox-rating mb-1">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                        <span class="text-muted small">(5)</span>
+                    </div>
+
+                    <p class="foodBox-desc">
+                        Juicy crispy chicken burger with cheese & fresh veggies...
+                    </p>
+
+                    <div class="foodBox-price">₹500</div>
+
+                  <button class="foodBox-cart" onclick="addToCartToast()">
+                        <i class="fa fa-shopping-basket"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="col-lg-3 col-md-6">
+                <div class="foodBox-card">
+                    <i class="fa fa-heart foodBox-heart"></i>
+
+                    <img src="images/upDown.png" class="foodBox-img">
+
+                    <h6 class="foodBox-title">BIG MAC</h6>
+
+                    <div class="foodBox-rating mb-1">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                        <span class="text-muted small">(5)</span>
+                    </div>
+
+                    <p class="foodBox-desc">
+                        Juicy crispy chicken burger with cheese & fresh veggies...
+                    </p>
+
+                    <div class="foodBox-price">₹500</div>
+
+                  <button class="foodBox-cart" onclick="addToCartToast()">
+                        <i class="fa fa-shopping-basket"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="col-lg-3 col-md-6">
+                <div class="foodBox-card">
+                    <i class="fa fa-heart foodBox-heart"></i>
+
+                    <img src="images/upDown.png" class="foodBox-img">
+
+                    <h6 class="foodBox-title">BIG MAC</h6>
+
+                    <div class="foodBox-rating mb-1">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                        <span class="text-muted small">(5)</span>
+                    </div>
+
+                    <p class="foodBox-desc">
+                        Juicy crispy chicken burger with cheese & fresh veggies...
+                    </p>
+
+                    <div class="foodBox-price">₹500</div>
+
+                    <button class="foodBox-cart" onclick="addToCartToast()">
+                        <i class="fa fa-shopping-basket"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- COPY SAME CARD FOR MORE ITEMS -->
+
+        </div>
+    </div>
+</div>
+</main>
+ <div class="foodBox-marquee">
+    <div class="foodBox-track">
+
+        <!-- ORIGINAL -->
+        <div class="foodBox"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd"></div>
+        <div class="foodBox"><img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086"></div>
+        <div class="foodBox"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349"></div>
+        <div class="foodBox"><img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092"></div>
+
+
+        <!-- DUPLICATE (important for smooth loop) -->
+        <div class="foodBox"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd"></div>
+        <div class="foodBox"><img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086"></div>
+        <div class="foodBox"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349"></div>
+        <div class="foodBox"><img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092"></div>
+         <div class="foodBox"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd"></div>
+        <div class="foodBox"><img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086"></div>
+        <div class="foodBox"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349"></div>
+        <div class="foodBox"><img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092"></div>
+         <div class="foodBox"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd"></div>
+        <div class="foodBox"><img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086"></div>
+        <div class="foodBox"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349"></div>
+        <div class="foodBox"><img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092"></div>
+    
+
+    </div>
+</div>
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logoFooter">
+                        <img src="images/logo.png" alt="">
+                        <p>We are a trusted company dedicated to providing high-quality products and professional
+                            services to meet the growing needs of our customers.
+                            Our goal is to deliver reliable solutions that make life easier, businesses stronger, and
+                            experiences better.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="companyFooter">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href=""><i class="bi bi-arrow-right"></i> About</a></li>
+                            <li><a href=""><i class="bi bi-arrow-right"></i> Terms & Conditions </a></li>
+                            <li><a href=""><i class="bi bi-arrow-right"></i> Privacy Policy </a></li>
+                            <li><a href=""><i class="bi bi-arrow-right"></i> Returns Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="companyFooter">
+                        <h3>For Customer</h3>
+                        <ul>
+                            <li><a href=""><i class="bi bi-arrow-right"></i> Products</a></li>
+                            <li><a href=""><i class="bi bi-arrow-right"></i> Services </a></li>
+                            <li><a href=""><i class="bi bi-arrow-right"></i> Categories</a></li>
+                            <li><a href=""><i class="bi bi-arrow-right"></i> Contact </a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="socialMediaIndex">
+                        <h3>Connect With Us</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+   
+    <!-- MODAL -->
+    <div class="modal fade locationModal" id="locationModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- HEADER -->
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h6 class="mb-0">Select delivery address</h6>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- SEARCH -->
+                <input type="text" class="form-control searchBox mb-3"
+                    placeholder="Search by area, street name, pin code">
+
+                <!-- USE LOCATION -->
+                <div class="d-flex align-items-center gap-2 useLocation mb-3" id="getLocationBtn">
+                    <i class="bi bi-crosshair"></i>
+                    <span id="locationText">Use my current location</span>
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- SAVED -->
+                <p class="fw-semibold mb-2">Saved addresses</p>
+
+                <div class="d-flex align-items-center gap-2 loginLink">
+                    <i class="bi bi-person-circle"></i>
+                    <span>Login to see saved addresses</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <!-- BUTTON -->
+<!-- <button onclick="addToCartToast()">Add to Cart</button> -->
+
+<!-- WRAP -->
+<div id="addToCartWrap" class="addToCart-wrap"></div>
+    <!--  JavaScript -->
+    <script src="js/jQueryv3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Owl -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        const slider = document.getElementById("slider");
+
+        function slideLeft() {
+            slider.scrollBy({ left: -400, behavior: "smooth" });
+        }
+
+        function slideRight() {
+            slider.scrollBy({ left: 400, behavior: "smooth" });
+        }
+    </script>
+    <script>
+        let i = 0;
+        const slides = document.querySelectorAll(".foodSlider");
+
+        function changeSlide() {
+            slides[i].classList.remove("active");
+            i = (i + 1) % slides.length;
+            slides[i].classList.add("active");
+        }
+
+        setInterval(changeSlide, 4000);
+    </script>
+    <script>
+function addToCartToast() {
+    const wrap = document.getElementById("addToCartWrap");
+
+    const toast = document.createElement("div");
+    toast.className = "addToCart-box";
+
+    toast.innerHTML = `
+        <i class="fa fa-check"></i>
+        <span class="addToCart-text">Added to cart</span>
+        <div class="addToCart-progress"></div>
+    `;
+
+    wrap.appendChild(toast);
+
+    // slide out
+    setTimeout(() => {
+        toast.style.animation = "addToCart-slideOut 0.4s ease forwards";
+    }, 2200);
+
+    // remove
+    setTimeout(() => {
+        toast.remove();
+    }, 2600);
+}
+</script>
+</body>
+
+</html>
