@@ -55,3 +55,8 @@ display: none !important;
         padding-right: 48px;
     }
 }
+@media (min-width: 1600px) {
+    .aboutBanner {
+         height: auto !important;
+    }
+}

@@ -28,8 +28,9 @@
 </head>
 
 <body>
+
     <!--TopPannel-->
-    <div class="discountTop">
+    <!-- <div class="discountTop">
         <div class="row align-items-center">
             <div class="col-md-4 infoIndexTop">
                 <a href=""><i class="bi bi-envelope-fill"></i> @InfoKiratt.com</a>
@@ -39,7 +40,7 @@
                 <a href="">🎉 Get 15% OFF your first order with code: WELCOME15</a>
             </div>
             <div class="col-md-4">
-                <!-- Language Dropdown -->
+             
                 <div class="language-wrapper">
                     <div class="selected-lang" onclick="toggleLang()">
                         <span id="currentLang"><i class="bi bi-translate"></i> Your Language</span>
@@ -60,11 +61,11 @@
                         <li onclick="changeLang('ur','اردو')">اردو</li>
                     </ul>
                 </div>
-                <!-- Google Translate Hidden -->
+            
                 <div id="google_translate_element" style="display:none;"></div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="container">
         <div class="topBar">
@@ -128,15 +129,17 @@
                                     <i class="bi bi-search"></i>
                                 </button>
                                 <!-- TRIGGER -->
-                                <div class="signInIndex" data-bs-toggle="collapse" data-bs-target="#signInBox">
-                                    <i class="bi bi-person-circle"></i>
-                                    <span>Login</span>
+                                <div class="signInIndex">
+                                    <div data-bs-toggle="collapse" data-bs-target="#signInBox">
+                                        <i class="bi bi-person-circle"></i>
+                                        <span>Login</span>
+                                    </div>
                                     <!-- PANEL -->
                                     <div class="collapse signInIndex-panel" id="signInBox">
                                         <!-- Header -->
                                         <div class="signInIndex-header">
                                             <span>New customer?</span>
-                                            <a href="#">Sign Up</a>
+                                            <a href="login.html" onclick="event.stopPropagation()">Sign Up</a>
                                         </div>
                                         <div class="signInIndex-divider"></div>
                                         <!-- MENU -->
@@ -152,7 +155,7 @@
 
                                         <div class="signInIndex-item">
                                             <i class="bi bi-heart"></i>
-                                            <span>Wishlist</span>
+                                            <a href="wishlist.html">Wishlist</span>
                                         </div>
                                         <div class="signInIndex-item">
                                             <i class="bi bi-basket2-fill"></i>
@@ -423,50 +426,70 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="menuLeft">
+                    <!-- <div class="menuLeft">
                         <ul>
                             <li><a href="about.html">About</a></li>
                             <li><a href="">Contact</a></li>
                         </ul>
+                    </div> -->
+                    <div class="language-wrapper">
+                        <div class="selected-lang" onclick="toggleLang()">
+                            <span id="currentLang"><i class="bi bi-translate"></i> Your Language</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </div>
+
+                        <ul class="lang-dropdown" id="langDropdown">
+                            <li onclick="changeLang('en','English')">English</li>
+                            <li onclick="changeLang('hi','हिन्दी')">हिन्दी</li>
+                            <li onclick="changeLang('bn','বাংলা')">বাংলা</li>
+                            <li onclick="changeLang('ta','தமிழ்')">தமிழ்</li>
+                            <li onclick="changeLang('te','తెలుగు')">తెలుగు</li>
+                            <li onclick="changeLang('mr','मराठी')">मराठी</li>
+                            <li onclick="changeLang('gu','ગુજરાતી')">ગુજરાતી</li>
+                            <li onclick="changeLang('kn','ಕನ್ನಡ')">ಕನ್ನಡ</li>
+                            <li onclick="changeLang('ml','മലയാളം')">മലയാളം</li>
+                            <li onclick="changeLang('pa','ਪੰਜਾਬੀ')">ਪੰਜਾਬੀ</li>
+                            <li onclick="changeLang('ur','اردو')">اردو</li>
+                        </ul>
                     </div>
+
+                    <div id="google_translate_element" style="display:none;"></div>
                 </div>
             </div>
         </div>
     </div>
-    <!--My Profile Panel -->
-    <div class="myProfilePanel">
-        <div class="container">
-            <div class="row g-3">
-                <!-- SIDEBAR -->
-                <div class="col-md-4">
-                    <div class="profileMenu">
-                        <!-- User -->
-                        <div class="profileUserBox">
-                            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
-                            <div>
-                                <small>Hello,</small>
-                                <h6 class="mb-0">Manjeet Srivastav</h6>
+    <main>
+        <div class="commonProfileTab">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="profileMenu">
+                            <!-- User -->
+                            <div class="profileUserBox">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+                                <div>
+                                    <small>Hello,</small>
+                                    <h6 class="mb-0">Manjeet Srivastav</h6>
+                                    <p data-bs-toggle="modal" data-bs-target="#editModal">
+                                        Edit
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-
-                        <!-- Nav Pills -->
-                        <div class="nav flex-column nav-pills">
-
                             <!-- ACCOUNT SETTINGS -->
                             <div class="profilemenuSection">
                                 <div class="profilemenuTitle">
                                     <i class="bi bi-person"></i> ACCOUNT SETTINGS
                                 </div>
 
-                                <button class="profilemenuItem " data-bs-toggle="pill" data-bs-target="#profile">
+                                <button class="profilemenuItem">
                                     Profile Information
                                 </button>
 
-                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#address">
+                                <button class="profilemenuItem ">
                                     Manage Addresses
                                 </button>
 
-                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#pan">
+                                <button class="profilemenuItem">
                                     PAN Card Information
                                 </button>
                             </div>
@@ -476,14 +499,13 @@
                                 <div class="profilemenuTitle">
                                     <i class="bi bi-wallet2"></i> PAYMENTS
                                 </div>
-                                <button class="profilemenuItem d-flex justify-content-between" data-bs-toggle="pill"
-                                    data-bs-target="#gift">
+                                <button class="profilemenuItem d-flex justify-content-between">
                                     Gift Cards <span class="text-success">₹0</span>
                                 </button>
-                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#upi">
+                                <button class="profilemenuItem">
                                     Saved UPI
                                 </button>
-                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#cards">
+                                <button class="profilemenuItem">
                                     Saved Cards
                                 </button>
                             </div>
@@ -492,193 +514,25 @@
                                 <div class="profilemenuTitle">
                                     <i class="bi bi-folder"></i> MY STUFF
                                 </div>
-                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#coupon">
+                                <button class="profilemenuItem">
                                     My Coupons
                                 </button>
-                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#reviews">
+                                <button class="profilemenuItem">
                                     My Reviews & Ratings
                                 </button>
-                                <button class="profilemenuItem" data-bs-toggle="pill" data-bs-target="#notifications">
+                                <button class="profilemenuItem">
                                     All Notifications
                                 </button>
-                                <button class="profilemenuItem active" data-bs-toggle="pill" data-bs-target="#wishlist">
+                                <button class="profilemenuItem active">
                                     My Wishlist
                                 </button>
                             </div>
+
                         </div>
                     </div>
-                </div>
-                <!-- CONTENT -->
-                <div class="col-md-8">
-                    <div class="profileContentBox">
-                        <div class="tab-content">
-                            <div class="tab-pane fade" id="profile">
-                                <div class="personalInformation">
-                                    <div class="topProfile">
-                                        <h3>My Profile</h3>
-                                        <button id=""><i class="bi bi-pencil-square"></i> Edit</button>
-                                    </div>
-                                    <div class="generalInformation">
-                                        <h3>General Information</h3>
-
-                                        <div class="row">
-                                            <div class="col-md-6 formGroup">
-                                                <label>Name</label>
-                                                <input type="text" placeholder="Enter name">
-                                            </div>
-
-                                            <div class="col-md-6 formGroup">
-                                                <label>Number</label>
-                                                <input type="text" placeholder="Enter number">
-                                            </div>
-
-                                            <div class="col-md-6 formGroup">
-                                                <label>Email</label>
-                                                <input type="email" placeholder="Enter email">
-                                            </div>
-
-                                            <!-- Gender Select -->
-                                            <div class="col-md-6 formGroup">
-                                                <label>Gender</label>
-                                                <select>
-                                                    <option value="">Select Gender</option>
-                                                    <option>Male</option>
-                                                    <option>Female</option>
-                                                    <option>Other</option>
-                                                </select>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="address">
-                                <div class="manageAddress">
-                                    <h3>Manage Address</h3>
-                                    <button type="button" data-bs-toggle="collapse" href="#addAddress" role="button"
-                                        aria-expanded="false" aria-controls="collapseExample"><i
-                                            class="bi bi-file-plus"></i> Add Address</button>
-                                </div>
-                                <div class="collapse" id="addAddress">
-                                    <div class="addAddress">
-                                        <h3>Add Address</h3>
-                                        <div class="row">
-                                            <div class="col-md-6 formGroup">
-                                                <label>Name</label>
-                                                <input type="text" placeholder="Enter name">
-                                            </div>
-
-                                            <div class="col-md-6 formGroup">
-                                                <label>Number</label>
-                                                <input type="text" placeholder="Enter number">
-                                            </div>
-
-                                            <div class="col-md-6 formGroup">
-                                                <label>Pincode</label>
-                                                <input type="number" placeholder="Enter Pincode">
-                                            </div>
-                                            <div class="col-md-6 formGroup">
-                                                <label>locality</label>
-                                                <input type="number" placeholder="Enter locality">
-                                            </div>
-                                            <div class="col-md-6 formGroup">
-                                                <label>City / District / Town</label>
-                                                <input type="number" placeholder="Enter locality">
-                                            </div>
-                                            <div class="col-md-6 formGroup">
-                                                <label>State</label>
-                                                <select>
-                                                    <option value="">Select State</option>
-                                                    <option>Delhi</option>
-                                                    <option>Bihar</option>
-                                                    <option>Punjab</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-6 formGroup">
-                                                <label>Landmark (optional)</label>
-                                                <input type="number" placeholder="Enter Landmark">
-                                            </div>
-                                            <div class="col-md-6 formGroup">
-                                                <label>Alternate number (optional)</label>
-                                                <input type="number" placeholder="Enter Alternate number">
-                                            </div>
-                                            <div class="col-md-6 formGroup">
-                                                <label>Adress type</label>
-                                                <select>
-                                                    <option value="">Select type</option>
-                                                    <option>Work</option>
-                                                    <option>Home</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-12 formGroup">
-                                                <label>Address</label>
-                                                <textarea name="" id="" placeholder="Enter Address"></textarea>
-                                            </div>
-                                            <div class="saveCancel">
-                                                <button><i class="bi bi-box2-heart"></i> Save</button>
-                                                <button data-bs-toggle="collapse" href="#addAddress"><i
-                                                        class="bi bi-x-square"></i> Cancel</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="profile-address">
-                                    <div class="row align-items-center">
-                                        <!-- Left -->
-                                        <div class="col-md-10">
-                                            <span class="badge">HOME</span>
-                                        </div>
-
-                                        <!-- Right -->
-                                        <div class="col-md-2 text-end">
-                                            <div class="editDeleteAdress">
-                                                <span><i class="bi bi-pencil-square"></i></span>
-                                                <span><i class="bi bi-trash"></i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="addressDetails">
-                                        <p> <i class="bi bi-person-circle"></i> Manjeet Raj <span>7004261702</span></p>
-                                        <p> <i class="bi bi-geo-alt-fill"></i> Ward no 05, Narainapur sukhwan road
-                                            mantri market bagaha 2, Bagaha, Bihar -
-                                            <b>845105</b>
-                                        </p>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div class="tab-pane fade" id="pan">
-                                <h5>PAN Card Info</h5>
-                            </div>
-
-                            <div class="tab-pane fade" id="gift">
-                                <h5>Gift Cards</h5>
-                            </div>
-
-                            <div class="tab-pane fade" id="upi">
-                                <h5>Saved UPI</h5>
-                            </div>
-
-                            <div class="tab-pane fade" id="cards">
-                                <h5>Saved Cards</h5>
-                            </div>
-
-                            <div class="tab-pane fade" id="coupon">
-                                <h5>My Coupons</h5>
-                            </div>
-
-                            <div class="tab-pane fade" id="reviews">
-                                <h5>Reviews & Ratings</h5>
-                            </div>
-
-                            <div class="tab-pane fade" id="notifications">
-                                <h5>Notifications</h5>
-                            </div>
-
-                            <div class="tab-pane fade show active" id="wishlist">
-                                <div class="wishlistPanel">
+                    <div class="col-md-8">
+                        <div class="personalInformationFile">
+                           <div class="wishlistPanel">
                                     <h4>My whislist (1)</h4>
                                     <div class="wishlist" id="wishlist">
                                         <!-- ITEM -->
@@ -719,16 +573,12 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--My Profile Panel -->
+    </main>
     <!--footer-->
     <footer>
         <div class="container">
@@ -738,8 +588,7 @@
                         <img src="images/logo.png" alt="">
                         <p>We are a trusted company dedicated to providing high-quality products and professional
                             services to meet the growing needs of our customers.
-                            Our goal is to deliver reliable solutions that make life easier, businesses stronger,
-                            and
+                            Our goal is to deliver reliable solutions that make life easier, businesses stronger, and
                             experiences better.</p>
                     </div>
                 </div>
@@ -781,11 +630,11 @@
             </div>
         </div>
     </footer>
-
     <!-- MODAL -->
     <div class="modal fade locationModal" id="locationModal">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
+
                 <!-- HEADER -->
                 <div class="d-flex justify-content-between align-items-center mb-3">
                     <h6 class="mb-0">Select delivery address</h6>
@@ -811,10 +660,10 @@
                     <i class="bi bi-person-circle"></i>
                     <span>Login to see saved addresses</span>
                 </div>
-
             </div>
         </div>
     </div>
+
     <!--footer-->
     <!--  JavaScript -->
     <script src="js/jQueryv3.6.0.min.js"></script>

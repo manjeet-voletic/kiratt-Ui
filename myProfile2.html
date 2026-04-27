@@ -28,8 +28,9 @@
 </head>
 
 <body>
+
     <!--TopPannel-->
-    <div class="discountTop">
+    <!-- <div class="discountTop">
         <div class="row align-items-center">
             <div class="col-md-4 infoIndexTop">
                 <a href=""><i class="bi bi-envelope-fill"></i> @InfoKiratt.com</a>
@@ -39,7 +40,7 @@
                 <a href="">🎉 Get 15% OFF your first order with code: WELCOME15</a>
             </div>
             <div class="col-md-4">
-                <!-- Language Dropdown -->
+             
                 <div class="language-wrapper">
                     <div class="selected-lang" onclick="toggleLang()">
                         <span id="currentLang"><i class="bi bi-translate"></i> Your Language</span>
@@ -60,11 +61,11 @@
                         <li onclick="changeLang('ur','اردو')">اردو</li>
                     </ul>
                 </div>
-                <!-- Google Translate Hidden -->
+            
                 <div id="google_translate_element" style="display:none;"></div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="container">
         <div class="topBar">
@@ -128,15 +129,17 @@
                                     <i class="bi bi-search"></i>
                                 </button>
                                 <!-- TRIGGER -->
-                                <div class="signInIndex" data-bs-toggle="collapse" data-bs-target="#signInBox">
-                                    <i class="bi bi-person-circle"></i>
-                                    <span>Login</span>
+                                <div class="signInIndex">
+                                    <div data-bs-toggle="collapse" data-bs-target="#signInBox">
+                                        <i class="bi bi-person-circle"></i>
+                                        <span>Login</span>
+                                    </div>
                                     <!-- PANEL -->
                                     <div class="collapse signInIndex-panel" id="signInBox">
                                         <!-- Header -->
                                         <div class="signInIndex-header">
                                             <span>New customer?</span>
-                                            <a href="#">Sign Up</a>
+                                            <a href="login.html" onclick="event.stopPropagation()">Sign Up</a>
                                         </div>
                                         <div class="signInIndex-divider"></div>
                                         <!-- MENU -->
@@ -152,7 +155,7 @@
 
                                         <div class="signInIndex-item">
                                             <i class="bi bi-heart"></i>
-                                            <span>Wishlist</span>
+                                            <a href="wishlist.html">Wishlist</span>
                                         </div>
                                         <div class="signInIndex-item">
                                             <i class="bi bi-basket2-fill"></i>
@@ -282,6 +285,7 @@
             </div>
         </div>
     </div>
+
     <!--TopPannel-->
     <div class="header-menu">
         <div class="container">
@@ -422,165 +426,154 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="menuLeft">
+                    <!-- <div class="menuLeft">
                         <ul>
                             <li><a href="about.html">About</a></li>
                             <li><a href="">Contact</a></li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- services  details pages -->
-    <div class="container my-4 detailsServicesPage">
-        <div class="topSelect">
-            <p>Home / category / AC repair</p>
-        </div>
-        <div class="row justify-content-center">
-
-            <div class="col-md-8">
-
-                <div class="detailsServicesBox">
-
-                    <!-- IMAGE -->
-                    <div class="detailsServicesBanner">
-                        <img src="images/Ac.jfif" class="detailsServicesMainImg">
-
-
-                    </div>
-
-                    <!-- TITLE + ADD BUTTON -->
-                    <div class="detailsServicesHeader d-flex justify-content-between align-items-start">
-
-                        <div>
-                            <h3>AC repair</h3>
-                            <p>Pre-service inspection includes a free gas level check via the Co-Pilot machine.</p>
-                            <p class="detailsServicesRating"><i class="bi bi-star-fill"></i> 4.80 (5.2M reviews)</p>
-                            <p class="detailsServicesPrice">
-                                ₹1077 <span>₹1196</span> • 2 hrs 20 mins
-                            </p>
+                    </div> -->
+                    <div class="language-wrapper">
+                        <div class="selected-lang" onclick="toggleLang()">
+                            <span id="currentLang"><i class="bi bi-translate"></i> Your Language</span>
+                            <i class="bi bi-chevron-down"></i>
                         </div>
 
-                        <!-- RIGHT SIDE ADD -->
-                        <button class="detailsServicesAddBtn"><i class="bi bi-cart-plus-fill"></i> Add</button>
-
-                    </div>
-
-                    <hr>
-                    <div class="detailsServicesThumbs">
-                        <img src="images/Ac.jfif" class="img-fluid">
-                        <img src="images/Ac.jfif" class="img-fluid">
-                        <img src="images/Ac.jfif" class="img-fluid">
-                    </div>
-                    <!-- WHAT IS COVERED -->
-                    <div class="detailsServicesSection">
-                        <h4>What is covered</h4>
-                        <ul class="detailsServicesList">
-                            <li>✔  Pre-service check</li>
-                            <li>✔ AC diagnosis  </li>
-                            <li>✔ Repair</li>
-                            <li>✔  Final clean-up</li>
+                        <ul class="lang-dropdown" id="langDropdown">
+                            <li onclick="changeLang('en','English')">English</li>
+                            <li onclick="changeLang('hi','हिन्दी')">हिन्दी</li>
+                            <li onclick="changeLang('bn','বাংলা')">বাংলা</li>
+                            <li onclick="changeLang('ta','தமிழ்')">தமிழ்</li>
+                            <li onclick="changeLang('te','తెలుగు')">తెలుగు</li>
+                            <li onclick="changeLang('mr','मराठी')">मराठी</li>
+                            <li onclick="changeLang('gu','ગુજરાતી')">ગુજરાતી</li>
+                            <li onclick="changeLang('kn','ಕನ್ನಡ')">ಕನ್ನಡ</li>
+                            <li onclick="changeLang('ml','മലയാളം')">മലയാളം</li>
+                            <li onclick="changeLang('pa','ਪੰਜਾਬੀ')">ਪੰਜਾਬੀ</li>
+                            <li onclick="changeLang('ur','اردو')">اردو</li>
                         </ul>
                     </div>
-                    <div class="detailsServicesReviews mt-4">
 
-
-
-                        <!-- ALL REVIEWS HEADER -->
-                        <div class="d-flex justify-content-between align-items-center mt-4 mb-3">
-                            <h3>All reviews</h3>
-                        </div>
-
-                        <!-- TOP RATING -->
-                        <div class="detailsServicesRatingBox">
-
-
-                            <!-- BARS -->
-                            <div class="detailsServicesBars">
-
-                                <div class="d-flex align-items-center mb-2">
-                                    <span><i class="bi bi-star-fill"></i> 5</span>
-                                    <div class="progress flex-grow-1 mx-2">
-                                        <div class="progress-bar" style="width:90%"></div>
-                                    </div>
-                                    <span>4.8M</span>
-                                </div>
-
-                                <div class="d-flex align-items-center mb-2">
-                                    <span><i class="bi bi-star-fill"></i> 4</span>
-                                    <div class="progress flex-grow-1 mx-2">
-                                        <div class="progress-bar" style="width:10%"></div>
-                                    </div>
-                                    <span>184K</span>
-                                </div>
-
-                                <div class="d-flex align-items-center mb-2">
-                                    <span><i class="bi bi-star-fill"></i> 3</span>
-                                    <div class="progress flex-grow-1 mx-2">
-                                        <div class="progress-bar" style="width:5%"></div>
-                                    </div>
-                                    <span>85K</span>
-                                </div>
-
-                                <div class="d-flex align-items-center mb-2">
-                                    <span><i class="bi bi-star-fill"></i> 2</span>
-                                    <div class="progress flex-grow-1 mx-2">
-                                        <div class="progress-bar" style="width:3%"></div>
-                                    </div>
-                                    <span>48K</span>
-                                </div>
-
-                                <div class="d-flex align-items-center mb-3">
-                                    <span><i class="bi bi-star-fill"></i> 1</span>
-                                    <div class="progress flex-grow-1 mx-2">
-                                        <div class="progress-bar" style="width:4%"></div>
-                                    </div>
-                                    <span>93K</span>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <!-- REVIEW ITEM -->
-                        <div class="detailsServicesReviewItem mt-4">
-                            <div class="d-flex justify-content-between">
-                                <h5>Vyshali</h5>
-                                <span class="detailsServicesReviewRating">★ 5</span>
-                            </div>
-
-                            <p class="text-muted">Apr 21, 2026 • For Intense bathroom cleaning</p>
-
-                            <p>
-                                Ali was punctual, polite & clearly skilled at what he does.
-                                Really appreciate the quality of service—would definitely recommend him.
-                            </p>
-                        </div>
-
-                        <hr>
-
-                        <!-- SECOND REVIEW -->
-                        <div class="detailsServicesReviewItem">
-                            <div class="d-flex justify-content-between">
-                                <h5>Neha Devendra</h5>
-                                <span class="detailsServicesReviewRating">★ 4.5</span>
-                            </div>
-                            <p class="text-muted">Apr 21, 2026 • For Intense bathroom cleaning</p>
-
-                            <p>
-                                Ali was punctual, polite & clearly skilled at what he does.
-                                Really appreciate the quality of service—would definitely recommend him.
-                            </p>
-                        </div>
-
-                    </div>
-
+                    <div id="google_translate_element" style="display:none;"></div>
                 </div>
             </div>
-
         </div>
     </div>
-    <!-- services details pages-->
+    <main>
+        <div class="commonProfileTab">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="profileMenu">
+                            <!-- User -->
+                            <div class="profileUserBox">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+                                <div>
+                                    <small>Hello,</small>
+                                    <h6 class="mb-0">Manjeet Srivastav</h6>
+                                    <p data-bs-toggle="modal" data-bs-target="#editModal">
+                                        Edit
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- ACCOUNT SETTINGS -->
+                            <div class="profilemenuSection">
+                                <div class="profilemenuTitle">
+                                    <i class="bi bi-person"></i> ACCOUNT SETTINGS
+                                </div>
+
+                                <button class="profilemenuItem active">
+                                    Profile Information
+                                </button>
+
+                                <button class="profilemenuItem">
+                                    Manage Addresses
+                                </button>
+
+                                <button class="profilemenuItem">
+                                    PAN Card Information
+                                </button>
+                            </div>
+
+                            <!-- PAYMENTS -->
+                            <div class="profilemenuSection">
+                                <div class="profilemenuTitle">
+                                    <i class="bi bi-wallet2"></i> PAYMENTS
+                                </div>
+                                <button class="profilemenuItem d-flex justify-content-between">
+                                    Gift Cards <span class="text-success">₹0</span>
+                                </button>
+                                <button class="profilemenuItem">
+                                    Saved UPI
+                                </button>
+                                <button class="profilemenuItem">
+                                    Saved Cards
+                                </button>
+                            </div>
+                            <!-- MY STUFF -->
+                            <div class="profilemenuSection">
+                                <div class="profilemenuTitle">
+                                    <i class="bi bi-folder"></i> MY STUFF
+                                </div>
+                                <button class="profilemenuItem">
+                                    My Coupons
+                                </button>
+                                <button class="profilemenuItem">
+                                    My Reviews & Ratings
+                                </button>
+                                <button class="profilemenuItem">
+                                    All Notifications
+                                </button>
+                                <button class="profilemenuItem">
+                                    My Wishlist
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="personalInformationFile">
+                            <div class="topProfile">
+                                <h3>My Profile</h3>
+                                <button id=""><i class="bi bi-pencil-square"></i> Edit</button>
+                            </div>
+                            <div class="generalInformation">
+                                <h3>General Information</h3>
+
+                                <div class="row">
+                                    <div class="col-md-6 formGroup">
+                                        <label>Name</label>
+                                        <input type="text" placeholder="Enter name">
+                                    </div>
+
+                                    <div class="col-md-6 formGroup">
+                                        <label>Number</label>
+                                        <input type="text" placeholder="Enter number">
+                                    </div>
+
+                                    <div class="col-md-6 formGroup">
+                                        <label>Email</label>
+                                        <input type="email" placeholder="Enter email">
+                                    </div>
+
+                                    <!-- Gender Select -->
+                                    <div class="col-md-6 formGroup">
+                                        <label>Gender</label>
+                                        <select>
+                                            <option value="">Select Gender</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <!--footer-->
     <footer>
         <div class="container">
@@ -632,8 +625,41 @@
             </div>
         </div>
     </footer>
-    <!--footer-->
+    <!-- MODAL -->
+    <div class="modal fade locationModal" id="locationModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
 
+                <!-- HEADER -->
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h6 class="mb-0">Select delivery address</h6>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- SEARCH -->
+                <input type="text" class="form-control searchBox mb-3"
+                    placeholder="Search by area, street name, pin code">
+
+                <!-- USE LOCATION -->
+                <div class="d-flex align-items-center gap-2 useLocation mb-3" id="getLocationBtn">
+                    <i class="bi bi-crosshair"></i>
+                    <span id="locationText">Use my current location</span>
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- SAVED -->
+                <p class="fw-semibold mb-2">Saved addresses</p>
+
+                <div class="d-flex align-items-center gap-2 loginLink">
+                    <i class="bi bi-person-circle"></i>
+                    <span>Login to see saved addresses</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
     <!--  JavaScript -->
     <script src="js/jQueryv3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -642,7 +668,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="js/custom.js"></script>
-
 </body>
 
 </html>

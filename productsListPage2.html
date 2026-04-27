@@ -4,7 +4,7 @@
 <head>
     <!-- Required meta tags -->
     <meta name="google-site-verification" content="rXMy9A8ZZU2oNKl1e-vwqx7j1yHQ5TV9wD1sro8pCQo">
-    <meta charset="utf-8">
+    <meta harset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <meta name="theme-color" content="#fff">
@@ -87,6 +87,11 @@
                                         <p id="userAddress">Bettiah 845438</p>
                                     </div>
                                 </div>
+                                <!-- Mobile Search Icon -->
+                                <button class="mobile-search-icon" id="mobileSearchBtn">
+                                    <i class="bi bi-search"></i>
+                                </button>
+
                                 <div class="search-container" id="searchContainer">
                                     <div class="search-bar">
                                         <!-- Category Dropdown -->
@@ -118,27 +123,27 @@
                                             <span class="close-suggestions">&times;</span>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-5">
                             <div class="TopLeft">
-                                <!-- Mobile Search Icon -->
-                                <button class="mobile-search-icon" id="mobileSearchBtn">
-                                    <i class="bi bi-search"></i>
-                                </button>
                                 <!-- TRIGGER -->
                                 <div class="signInIndex" data-bs-toggle="collapse" data-bs-target="#signInBox">
                                     <i class="bi bi-person-circle"></i>
                                     <span>Login</span>
                                     <!-- PANEL -->
                                     <div class="collapse signInIndex-panel" id="signInBox">
+
                                         <!-- Header -->
                                         <div class="signInIndex-header">
                                             <span>New customer?</span>
                                             <a href="#">Sign Up</a>
                                         </div>
+
                                         <div class="signInIndex-divider"></div>
+
                                         <!-- MENU -->
                                         <div class="signInIndex-item">
                                             <i class="bi bi-person"></i>
@@ -290,7 +295,6 @@
                 <i class="bi bi-x-lg" id="menuClose"></i>
             </div>
             <div class="row">
-
                 <div class="col-md-8">
                     <div class="menuRight">
                         <ul>
@@ -420,7 +424,6 @@
                         </ul>
                     </div>
                 </div>
-
                 <div class="col-md-4">
                     <div class="menuLeft">
                         <ul>
@@ -429,158 +432,282 @@
                         </ul>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
-    <!-- services  details pages -->
-    <div class="container my-4 detailsServicesPage">
-        <div class="topSelect">
-            <p>Home / category / AC repair</p>
-        </div>
-        <div class="row justify-content-center">
+    <!--collection Panel-->
+    <section class="collectionPannel">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="filterSidebar">
+                        <div class="filterTitle">
+                            Filters
+                        </div>
+                        <!-- CATEGORY -->
+                        <div class="filterBlock">
+                            <div class="filterHead" data-bs-toggle="collapse" data-bs-target="#categoryFilter">
+                                <span>CATEGORIES</span>
+                                <i class="bi bi-chevron-up arrow"></i>
+                            </div>
 
-            <div class="col-md-8">
+                            <div class="collapse show filterBody" id="categoryFilter">
 
-                <div class="detailsServicesBox">
+                                <ul class="categoryList">
 
-                    <!-- IMAGE -->
-                    <div class="detailsServicesBanner">
-                        <img src="images/Ac.jfif" class="detailsServicesMainImg">
+                                    <li><i class="bi bi-chevron-left"></i> Clothing and Accessories</li>
+                                    <li><i class="bi bi-chevron-left"></i> Bottomwear</li>
 
+                                </ul>
 
-                    </div>
+                            </div>
 
-                    <!-- TITLE + ADD BUTTON -->
-                    <div class="detailsServicesHeader d-flex justify-content-between align-items-start">
+                        </div>
+                        <!-- BRAND -->
+                        <div class="filterBlock">
 
-                        <div>
-                            <h3>AC repair</h3>
-                            <p>Pre-service inspection includes a free gas level check via the Co-Pilot machine.</p>
-                            <p class="detailsServicesRating"><i class="bi bi-star-fill"></i> 4.80 (5.2M reviews)</p>
-                            <p class="detailsServicesPrice">
-                                ₹1077 <span>₹1196</span> • 2 hrs 20 mins
-                            </p>
+                            <div class="filterHead collapsed" data-bs-toggle="collapse" data-bs-target="#brandFilter">
+                                <span>BRAND</span>
+                                <i class="bi bi-chevron-up arrow"></i>
+                            </div>
+
+                            <div class="collapse filterBody" id="brandFilter">
+
+                                <input type="text" class="brandSearch" placeholder="Search Brand">
+
+                                <div class="brandList">
+
+                                    <label class="checkItem">
+                                        <input type="checkbox"> AAKARTI FASHION
+                                    </label>
+
+                                    <label class="checkItem">
+                                        <input type="checkbox"> AARAV FASHION
+                                    </label>
+
+                                    <label class="checkItem">
+                                        <input type="checkbox"> AJCreations
+                                    </label>
+
+                                    <label class="checkItem">
+                                        <input type="checkbox"> AKKI
+                                    </label>
+
+                                    <label class="checkItem">
+                                        <input type="checkbox"> ALISHAH
+                                    </label>
+
+                                    <label class="checkItem">
+                                        <input type="checkbox"> AMKIDSFASHION
+                                    </label>
+
+                                </div>
+
+                                <div class="moreBrand">
+                                    806 MORE
+                                </div>
+                            </div>
+                        </div>
+                        <!-- GENDER -->
+
+                        <div class="filterBlock">
+
+                            <div class="filterHead collapsed" data-bs-toggle="collapse" data-bs-target="#genderFilter">
+                                <span>GENDER</span>
+                                <i class="bi bi-chevron-up arrow"></i>
+                            </div>
+
+                            <div class="collapse filterBody" id="genderFilter">
+
+                                <label class="checkItem">
+                                    <input type="checkbox"> Men
+                                </label>
+
+                                <label class="checkItem">
+                                    <input type="checkbox"> Women
+                                </label>
+
+                            </div>
+
                         </div>
 
-                        <!-- RIGHT SIDE ADD -->
-                        <button class="detailsServicesAddBtn"><i class="bi bi-cart-plus-fill"></i> Add</button>
 
-                    </div>
+                        <div class="priceFilter">
 
-                    <hr>
-                    <div class="detailsServicesThumbs">
-                        <img src="images/Ac.jfif" class="img-fluid">
-                        <img src="images/Ac.jfif" class="img-fluid">
-                        <img src="images/Ac.jfif" class="img-fluid">
-                    </div>
-                    <!-- WHAT IS COVERED -->
-                    <div class="detailsServicesSection">
-                        <h4>What is covered</h4>
-                        <ul class="detailsServicesList">
-                            <li>✔  Pre-service check</li>
-                            <li>✔ AC diagnosis  </li>
-                            <li>✔ Repair</li>
-                            <li>✔  Final clean-up</li>
-                        </ul>
-                    </div>
-                    <div class="detailsServicesReviews mt-4">
+                            <div class="priceTitle">
+                                PRICE
+                            </div>
 
+                            <div class="priceGraph">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
 
+                            <input type="range" class="priceSlider" min="0" max="5000">
 
-                        <!-- ALL REVIEWS HEADER -->
-                        <div class="d-flex justify-content-between align-items-center mt-4 mb-3">
-                            <h3>All reviews</h3>
+                            <div class="priceInputs">
+
+                                <select class="priceSelect">
+                                    <option>Min</option>
+                                    <option>₹100</option>
+                                    <option>₹500</option>
+                                    <option>₹1000</option>
+                                </select>
+
+                                <span class="priceText">to</span>
+
+                                <select class="priceSelect">
+                                    <option>₹1500+</option>
+                                    <option>₹2000</option>
+                                    <option>₹3000</option>
+                                    <option>₹5000+</option>
+                                </select>
+
+                            </div>
+
                         </div>
+                        <!-- SIZE -->
 
-                        <!-- TOP RATING -->
-                        <div class="detailsServicesRatingBox">
+                        <div class="filterBlock">
 
+                            <div class="filterHead collapsed" data-bs-toggle="collapse" data-bs-target="#sizeFilter">
+                                <span>SIZE</span>
+                                <i class="bi bi-chevron-up arrow"></i>
+                            </div>
 
-                            <!-- BARS -->
-                            <div class="detailsServicesBars">
+                            <div class="collapse filterBody" id="sizeFilter">
 
-                                <div class="d-flex align-items-center mb-2">
-                                    <span><i class="bi bi-star-fill"></i> 5</span>
-                                    <div class="progress flex-grow-1 mx-2">
-                                        <div class="progress-bar" style="width:90%"></div>
-                                    </div>
-                                    <span>4.8M</span>
+                                <label class="checkItem">
+                                    <input type="checkbox"> S
+                                </label>
+
+                                <label class="checkItem">
+                                    <input type="checkbox"> M
+                                </label>
+
+                                <label class="checkItem">
+                                    <input type="checkbox"> L
+                                </label>
+
+                            </div>
+
+                        </div>
+                        <!-- COLOR -->
+                        <div class="filterBlock">
+                            <div class="filterHead collapsed" data-bs-toggle="collapse" data-bs-target="#colorFilter">
+                                <span>COLOR</span>
+                                <i class="bi bi-chevron-up arrow"></i>
+                            </div>
+
+                            <div class="collapse filterBody" id="colorFilter">
+
+                                <label class="checkItem">
+                                    <input type="checkbox"> Black
+                                </label>
+
+                                <label class="checkItem">
+                                    <input type="checkbox"> Blue
+                                </label>
+
+                                <label class="checkItem">
+                                    <input type="checkbox"> Red
+                                </label>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="postBanner">
+                        <img src="images/banner-sidebar.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="collectionrightTop">
+                                <h3>Featured Electronics</h3>
+                                <p>22 items</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="featuresFilter">
+                                <label for="sort">Sort By:</label>
+                                <select id="sort" name="features">
+                                    <option value="Bestselling">Bestselling</option>
+                                    <option value="PriceLow">Price: Low to High</option>
+                                    <option value="PriceHigh">Price: High to Low</option>
+                                    <option value="Avg">Avg. Customer Review</option>
+                                    <option value="Newest">Newest Arrivals</option>
+                                    <option value="Sellers">Best Sellers</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="productDetailsSecond mainBox">
+
+                        <div class="row productDetailsSecond align-items-center">
+
+                            <!-- IMAGE -->
+                            <div class="col-md-3 productDetailsSecond">
+                                <img class="productDetailsSecond"
+                                    src="https://m.media-amazon.com/images/I/71d7rfSl0wL._SX679_.jpg">
+                            </div>
+
+                            <!-- CONTENT -->
+                            <div class="col-md-9 productDetailsSecond">
+
+                                <div class="productDetailsSecond brand">Apple</div>
+
+                                <div class="productDetailsSecond title">
+                                    iPhone 17 Pro 256 GB: 6.3” Display with Promotion up to 120Hz,
+                                    A19 Pro Chip, Breakthrough Battery Life
                                 </div>
 
-                                <div class="d-flex align-items-center mb-2">
-                                    <span><i class="bi bi-star-fill"></i> 4</span>
-                                    <div class="progress flex-grow-1 mx-2">
-                                        <div class="progress-bar" style="width:10%"></div>
-                                    </div>
-                                    <span>184K</span>
+                                <div class="productDetailsSecond rating">
+                                    ★★★★☆ (332)
                                 </div>
 
-                                <div class="d-flex align-items-center mb-2">
-                                    <span><i class="bi bi-star-fill"></i> 3</span>
-                                    <div class="progress flex-grow-1 mx-2">
-                                        <div class="progress-bar" style="width:5%"></div>
-                                    </div>
-                                    <span>85K</span>
+                                <div class="productDetailsSecond price">₹1,34,900</div>
+
+                                <div class="productDetailsSecond delivery">
+                                    FREE delivery Sat, 18 Apr <br>
+                                    Or fastest delivery Tomorrow 8am - 12pm
                                 </div>
 
-                                <div class="d-flex align-items-center mb-2">
-                                    <span><i class="bi bi-star-fill"></i> 2</span>
-                                    <div class="progress flex-grow-1 mx-2">
-                                        <div class="progress-bar" style="width:3%"></div>
-                                    </div>
-                                    <span>48K</span>
-                                </div>
+                            <div class="addBuyproduct">
+                                <button class="add-cartProduct">
+                                    <i class="bi bi-cart"></i> Add To Cart
+                                </button>
+                                <button class="buyNowIndexProduct">
+                                    <i class="bi bi-box-seam-fill"></i> Buy It Now
+                                </button>
+                            </div>
 
-                                <div class="d-flex align-items-center mb-3">
-                                    <span><i class="bi bi-star-fill"></i> 1</span>
-                                    <div class="progress flex-grow-1 mx-2">
-                                        <div class="progress-bar" style="width:4%"></div>
-                                    </div>
-                                    <span>93K</span>
+                                <!-- COLORS -->
+                                <div class="productDetailsSecond mt-3">
+                                    <span class="productDetailsSecond color white"></span>
+                                    <span class="productDetailsSecond color orange"></span>
+                                    <span class="productDetailsSecond color black"></span>
                                 </div>
 
                             </div>
-                        </div>
 
-                        <!-- REVIEW ITEM -->
-                        <div class="detailsServicesReviewItem mt-4">
-                            <div class="d-flex justify-content-between">
-                                <h5>Vyshali</h5>
-                                <span class="detailsServicesReviewRating">★ 5</span>
-                            </div>
-
-                            <p class="text-muted">Apr 21, 2026 • For Intense bathroom cleaning</p>
-
-                            <p>
-                                Ali was punctual, polite & clearly skilled at what he does.
-                                Really appreciate the quality of service—would definitely recommend him.
-                            </p>
-                        </div>
-
-                        <hr>
-
-                        <!-- SECOND REVIEW -->
-                        <div class="detailsServicesReviewItem">
-                            <div class="d-flex justify-content-between">
-                                <h5>Neha Devendra</h5>
-                                <span class="detailsServicesReviewRating">★ 4.5</span>
-                            </div>
-                            <p class="text-muted">Apr 21, 2026 • For Intense bathroom cleaning</p>
-
-                            <p>
-                                Ali was punctual, polite & clearly skilled at what he does.
-                                Really appreciate the quality of service—would definitely recommend him.
-                            </p>
                         </div>
 
                     </div>
 
                 </div>
             </div>
-
         </div>
-    </div>
-    <!-- services details pages-->
+    </section>
+    <!--collection Pannel-->
     <!--footer-->
     <footer>
         <div class="container">
@@ -632,8 +759,56 @@
             </div>
         </div>
     </footer>
-    <!--footer-->
 
+    <!-- Modal -->
+
+    <div class="modal fade" id="quickViewModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content p-4">
+                <button class="btn-close position-absolute end-0 top-0 m-3" data-bs-dismiss="modal"></button>
+                <div class="row">
+                    <!-- Image -->
+                    <div class="col-md-6">
+                        <img src="images/samsung-refrigerators.jpg" class="quickProductImg">
+                    </div>
+                    <!-- Product Details -->
+                    <div class="col-md-6">
+                        <div class="quickBrandmodal">
+                            <p>SAMSUNG</p>
+                            <h3> SAMSUNG RR23A2H3W9R 225L</h3>
+                            <p>Rs 75,100.00</p>
+                            <p> Double door is ideal for large families. </p>
+
+                        </div>
+                        <!-- Quantity -->
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="qtyBox">
+                                <button class="qtyBtn">-</button>
+                                <input type="text" value="1" class="qtyInput">
+                                <button class="qtyBtn">+</button>
+                            </div>
+                            <div class="wishlist">
+                                <i class="bi bi-heart"></i> Add to Wishlist
+                            </div>
+
+                        </div>
+                        <button class="addCartBtn">
+                            ADD TO CART
+                        </button>
+                        <a href="productDetails.html" class="viewDetails">
+                            View More Details →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!--footer-->
     <!--  JavaScript -->
     <script src="js/jQueryv3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -642,7 +817,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="js/custom.js"></script>
-
 </body>
 
 </html>
