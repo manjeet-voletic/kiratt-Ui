@@ -427,73 +427,259 @@
     </div>
     <main>
         <div class="foodpannelBack">
-              <div class="foodListright">
+            <div class="foodListright">
                 <img src="images/bakgroundfoodlist.png" alt="" class="img-fluid">
             </div>
             <div class="foodListimages">
                 <img src="images/landing-layer1.jpg" alt="" class="img-fluid">
             </div>
-           
+
             <div class="container">
                 <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="restaurantPage-header">
-                        <div>
-                            <h1>Apni Rasoi <img src="images/dish.png" alt=""></h1>
-                            <p><i class="bi bi-geo-alt-fill"></i> 2.5 km • Sector 12, Dwarka ▼</p>
-                            <p><i class="bi bi-lightning-fill"></i> 15–20 mins • Schedule for later ▼</p>
-                        </div>
-                        <div class="restaurantPage-rating">
-                          <i class="bi bi-star-fill"></i> 4.1
-                            <small>22K+</small>
-                        </div>
-                    </div>
-
-                    <div class="accordion restaurantPage-accordion">
-
-                        <div class="accordion-item">
-
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#thali">
-                                    Thali (10)
+                    <div class="col-md-8">
+                        <div class="restaurantPage-header">
+                            <div>
+                                <h1>Apni Rasoi <img src="images/dish.png" alt=""></h1>
+                                <!-- <p><i class="bi bi-geo-alt-fill"></i> 2.5 km • Sector 12, Dwarka ▼</p>  -->
+                                <button data-bs-toggle="modal" data-bs-target="#outletModal">
+                                    <i class="bi bi-geo-alt-fill"></i> 2.5 km • Sector 12, Dwarka ▼
                                 </button>
-                            </h2>
+                                <!-- <p><i class="bi bi-lightning-fill"></i> 15–20 mins • Schedule for later ▼</p> -->
+                                <button data-bs-toggle="modal" data-bs-target="#scheduleModal">
+                                    <i class="bi bi-lightning-fill"></i>15–20 mins • Schedule for later ▼
+                                </button>
+                            </div>
+                            <div class="restaurantPage-rating">
+                                <i class="bi bi-star-fill"></i> 4.1
+                                <small>22K+</small>
+                            </div>
+                        </div>
 
-                            <div id="thali" class="accordion-collapse collapse show">
-                                <div class="accordion-body p-0">
+                        <div class="accordion restaurantPage-accordion">
 
-                                    <!-- ITEM -->
-                                    <div class="restaurantPage-item">
+                            <div class="accordion-item">
 
-                                        <!-- LEFT -->
-                                        <div>
-                                            <div class="restaurantPage-veg mb-2"></div>
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#thali">
+                                        Thali (10)
+                                    </button>
+                                </h2>
 
-                                            <h5>Special Apni Rasoi Thali</h5>
-                                            <p>₹459</p>
-                                            <p><i class="bi bi-star-fill"></i> 4.0 (2)</p>
-                                            <p>
-                                                Dal Makhani, Kadhai Paneer, Mix Veg, Rice, Raita,
-                                                Salad, Papad, Sweet, 2 Naan
-                                            </p>
+                                <div id="thali" class="accordion-collapse collapse show">
+                                    <div class="accordion-body p-0">
+
+                                        <!-- ITEM -->
+                                        <div class="restaurantPage-item">
+
+                                            <!-- LEFT -->
+                                            <div>
+                                                <div class="restaurantPage-veg mb-2"></div>
+
+                                                <h5>Special Apni Rasoi Thali</h5>
+                                                <p>₹459</p>
+                                                <p><i class="bi bi-star-fill"></i> 4.0 (2)</p>
+                                                <p>
+                                                    Dal Makhani, Kadhai Paneer, Mix Veg, Rice, Raita,
+                                                    Salad, Papad, Sweet, 2 Naan
+                                                </p>
+                                            </div>
+
+                                            <!-- RIGHT -->
+                                            <div class="restaurantPage-img">
+                                                <img src="images/Special Apni Rasoi Thali.jfif">
+                                                <div class="restaurantPage-add">ADD</div>
+                                                <div class="restaurantPage-custom">Customisable</div>
+                                            </div>
+
                                         </div>
+                                        <!-- ITEM -->
+                                        <div class="restaurantPage-item">
 
-                                        <!-- RIGHT -->
-                                        <div class="restaurantPage-img">
-                                            <img src="images/Special Apni Rasoi Thali.jfif">
-                                            <div class="restaurantPage-add">ADD</div>
-                                            <div class="restaurantPage-custom">Customisable</div>
+                                            <!-- LEFT -->
+                                            <div>
+                                                <div class="restaurantPage-veg mb-2"></div>
+
+                                                <h5>Special Apni Rasoi Thali</h5>
+                                                <p>₹459</p>
+                                                <p><i class="bi bi-star-fill"></i> 4.0 (2)</p>
+                                                <p>
+                                                    Dal Makhani, Kadhai Paneer, Mix Veg, Rice, Raita,
+                                                    Salad, Papad, Sweet, 2 Naan
+                                                </p>
+                                            </div>
+
+                                            <!-- RIGHT -->
+                                            <div class="restaurantPage-img">
+                                                <img src="images/Special Apni Rasoi Thali.jfif">
+                                                <div class="restaurantPage-add">ADD</div>
+                                                <div class="restaurantPage-custom">Customisable</div>
+                                            </div>
+
+                                        </div>
+                                        <!-- ITEM -->
+                                        <div class="restaurantPage-item">
+
+                                            <!-- LEFT -->
+                                            <div>
+                                                <div class="restaurantPage-veg mb-2"></div>
+
+                                                <h5>Special Apni Rasoi Thali</h5>
+                                                <p>₹459</p>
+                                                <p><i class="bi bi-star-fill"></i> 4.0 (2)</p>
+                                                <p>
+                                                    Dal Makhani, Kadhai Paneer, Mix Veg, Rice, Raita,
+                                                    Salad, Papad, Sweet, 2 Naan
+                                                </p>
+                                            </div>
+
+                                            <!-- RIGHT -->
+                                            <div class="restaurantPage-img">
+                                                <img src="images/Special Apni Rasoi Thali.jfif">
+                                                <div class="restaurantPage-add">ADD</div>
+                                                <div class="restaurantPage-custom">Customisable</div>
+                                            </div>
+
+                                        </div>
+                                        <!-- ITEM -->
+                                        <div class="restaurantPage-item">
+
+                                            <!-- LEFT -->
+                                            <div>
+                                                <div class="restaurantPage-veg mb-2"></div>
+
+                                                <h5>Special Apni Rasoi Thali</h5>
+                                                <p>₹459</p>
+                                                <p><i class="bi bi-star-fill"></i> 4.0 (2)</p>
+                                                <p>
+                                                    Dal Makhani, Kadhai Paneer, Mix Veg, Rice, Raita,
+                                                    Salad, Papad, Sweet, 2 Naan
+                                                </p>
+                                            </div>
+
+                                            <!-- RIGHT -->
+                                            <div class="restaurantPage-img">
+                                                <img src="images/Special Apni Rasoi Thali.jfif">
+                                                <div class="restaurantPage-add">ADD</div>
+                                                <div class="restaurantPage-custom">Customisable</div>
+                                            </div>
+
                                         </div>
 
                                     </div>
+                                </div>
+                                <hr>
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#thali">
+                                        Tandoori Starters (11)
+                                    </button>
+                                </h2>
 
+                                <div id="thali" class="accordion-collapse collapse">
+                                    <div class="accordion-body p-0">
+
+                                        <!-- ITEM -->
+                                        <div class="restaurantPage-item">
+
+                                            <!-- LEFT -->
+                                            <div>
+                                                <div class="restaurantPage-veg mb-2"></div>
+
+                                                <h5>Special Apni Rasoi Thali</h5>
+                                                <p>₹459</p>
+                                                <p><i class="bi bi-star-fill"></i> 4.0 (2)</p>
+                                                <p>
+                                                    Dal Makhani, Kadhai Paneer, Mix Veg, Rice, Raita,
+                                                    Salad, Papad, Sweet, 2 Naan
+                                                </p>
+                                            </div>
+
+                                            <!-- RIGHT -->
+                                            <div class="restaurantPage-img">
+                                                <img src="images/Tandoori.png" class="img-fluid">
+                                                <div class="restaurantPage-add">ADD</div>
+                                                <div class="restaurantPage-custom">Customisable</div>
+                                            </div>
+
+                                        </div>
+                                        <!-- ITEM -->
+                                        <div class="restaurantPage-item">
+
+                                            <!-- LEFT -->
+                                            <div>
+                                                <div class="restaurantPage-veg mb-2"></div>
+
+                                                <h5>Special Apni Rasoi Thali</h5>
+                                                <p>₹459</p>
+                                                <p><i class="bi bi-star-fill"></i> 4.0 (2)</p>
+                                                <p>
+                                                    Dal Makhani, Kadhai Paneer, Mix Veg, Rice, Raita,
+                                                    Salad, Papad, Sweet, 2 Naan
+                                                </p>
+                                            </div>
+
+                                            <!-- RIGHT -->
+                                            <div class="restaurantPage-img">
+                                                <img src="images/Tandoori.png" class="img-fluid">
+                                                <div class="restaurantPage-add">ADD</div>
+                                                <div class="restaurantPage-custom">Customisable</div>
+                                            </div>
+
+                                        </div>
+                                        <!-- ITEM -->
+                                        <div class="restaurantPage-item">
+
+                                            <!-- LEFT -->
+                                            <div>
+                                                <div class="restaurantPage-veg mb-2"></div>
+
+                                                <h5>Special Apni Rasoi Thali</h5>
+                                                <p>₹459</p>
+                                                <p><i class="bi bi-star-fill"></i> 4.0 (2)</p>
+                                                <p>
+                                                    Dal Makhani, Kadhai Paneer, Mix Veg, Rice, Raita,
+                                                    Salad, Papad, Sweet, 2 Naan
+                                                </p>
+                                            </div>
+
+                                            <!-- RIGHT -->
+                                            <div class="restaurantPage-img">
+                                                <img src="images/Tandoori.png" class="img-fluid">
+                                                <div class="restaurantPage-add">ADD</div>
+                                                <div class="restaurantPage-custom">Customisable</div>
+                                            </div>
+
+                                        </div>
+                                        <!-- ITEM -->
+                                        <div class="restaurantPage-item">
+
+                                            <!-- LEFT -->
+                                            <div>
+                                                <div class="restaurantPage-veg mb-2"></div>
+
+                                                <h5>Special Apni Rasoi Thali</h5>
+                                                <p>₹459</p>
+                                                <p><i class="bi bi-star-fill"></i> 4.0 (2)</p>
+                                                <p>
+                                                    Dal Makhani, Kadhai Paneer, Mix Veg, Rice, Raita,
+                                                    Salad, Papad, Sweet, 2 Naan
+                                                </p>
+                                            </div>
+
+                                            <!-- RIGHT -->
+                                            <div class="restaurantPage-img">
+                                                <img src="images/Tandoori.png" class="img-fluid">
+                                                <div class="restaurantPage-add">ADD</div>
+                                                <div class="restaurantPage-custom">Customisable</div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
 
                         </div>
-
                     </div>
-                </div>
                 </div>
             </div>
         </div>
@@ -579,6 +765,164 @@
                     <i class="bi bi-person-circle"></i>
                     <span>Login to see saved addresses</span>
                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Ouylet-->
+    <div class="modal fade outletModal" id="outletModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Header -->
+                <div class="modal-header-custom">
+                    <h5 class="modal-title">Choose Outlet</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Current -->
+                <div class="section-title">Current Outlet</div>
+                <div class="outlet-card active">
+                    <div>
+                        <div class="outlet-title">Old Rajinder Nagar, Karol Bagh</div>
+                        <div class="outlet-info">
+                            <span class="rating">
+                                <i class="bi bi-star-fill"></i> 4.1
+                            </span>
+                            • 45-55 mins • 4.7 km
+                        </div>
+                    </div>
+                    <i class="bi bi-check-circle-fill tick"></i>
+                </div>
+
+                <!-- Other -->
+                <div class="section-title mt-3">Other Outlets Around You</div>
+
+                <div class="outlet-card">
+                    <div>
+                        <div class="outlet-title">Shakti Nagar, Tis Hazari</div>
+                        <div class="outlet-info">
+                            <span class="rating">
+                                <i class="bi bi-star-fill"></i> 4.4
+                            </span>
+                            • 45-50 mins • 7.9 km
+                        </div>
+                    </div>
+                    <i class="bi bi-chevron-right icon-right"></i>
+                </div>
+
+                <div class="outlet-card">
+                    <div>
+                        <div class="outlet-title">Karkarduma</div>
+                        <div class="outlet-info">
+                            <span class="rating">
+                                <i class="bi bi-star-fill"></i> 4.3
+                            </span>
+                            • 45-50 mins • 9.9 km
+                        </div>
+                    </div>
+                    <i class="bi bi-chevron-right icon-right"></i>
+                </div>
+
+                <div class="outlet-card">
+                    <div>
+                        <div class="outlet-title">Vijay Nagar, Hudson Lane</div>
+                        <div class="outlet-info">
+                            <span class="rating">
+                                <i class="bi bi-star-fill"></i> 4.4
+                            </span>
+                            • 55-65 mins • 10.8 km
+                        </div>
+                    </div>
+                    <i class="bi bi-chevron-right icon-right"></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- schedule modal -->
+    <!-- 🔹 MODAL -->
+    <div class="modal fade schedule-modal" id="scheduleModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Header -->
+                <div class="schedule-header">
+                    <span>Select Slot</span>
+                    <i class="bi bi-x-lg" data-bs-dismiss="modal"></i>
+                </div>
+
+                <!-- Body -->
+                <div class="schedule-body">
+
+                    <!-- Date -->
+                    <div class="section-title">Select Date</div>
+
+                    <div class="date-scroll">
+
+                        <div class="date-box">
+                            <input type="radio" name="date" id="d1" checked>
+                            <label for="d1">Sat<br><b>25</b><br>Apr</label>
+                        </div>
+
+                        <div class="date-box">
+                            <input type="radio" name="date" id="d2">
+                            <label for="d2">Sun<br><b>26</b><br>Apr</label>
+                        </div>
+
+                        <div class="date-box">
+                            <input type="radio" name="date" id="d3">
+                            <label for="d3">Mon<br><b>27</b><br>Apr</label>
+                        </div>
+
+                        <div class="date-box">
+                            <input type="radio" name="date" id="d4">
+                            <label for="d4">Tue<br><b>28</b><br>Apr</label>
+                        </div>
+
+                    </div>
+
+                    <!-- Slots -->
+                    <div class="section-title">🌞 Morning Slots</div>
+
+                    <div class="slot-grid">
+
+                        <div class="slot">
+                            <input type="radio" name="slot" id="s1">
+                            <label for="s1">10:00 - 10:15</label>
+                        </div>
+
+                        <div class="slot">
+                            <input type="radio" name="slot" id="s2">
+                            <label for="s2">10:15 - 10:30</label>
+                        </div>
+
+                        <div class="slot">
+                            <input type="radio" name="slot" id="s3">
+                            <label for="s3">10:30 - 10:45</label>
+                        </div>
+
+                        <div class="slot">
+                            <input type="radio" name="slot" id="s4">
+                            <label for="s4">10:45 - 11:00</label>
+                        </div>
+
+                        <div class="slot">
+                            <input type="radio" name="slot" id="s5">
+                            <label for="s5">11:00 - 11:15</label>
+                        </div>
+
+                        <div class="slot">
+                            <input type="radio" name="slot" id="s6">
+                            <label for="s6">11:15 - 11:30</label>
+                        </div>
+
+                    </div>
+
+                    <!-- Button -->
+                    <button class="continue-btn mt-3">Continue</button>
+
+                </div>
+
             </div>
         </div>
     </div>

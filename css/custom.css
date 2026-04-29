@@ -6901,13 +6901,16 @@ border-right: 1px solid#ccc;
 .restaurantPage-header img {
      width: 50px;
 }
-.restaurantPage-header p{
+.restaurantPage-header button{
     margin:4px 0;
     font-size:14px;
     color:#3a3737;
+    border: none;
+   background: none;
+   display: block;
 }
 
-.restaurantPage-header p:nth-child(3){
+.restaurantPage-header button:nth-child(3){
     color:#2c2c2c;
 }
 
@@ -7020,4 +7023,178 @@ border-right: 1px solid#ccc;
     font-size:11px;
     color:#999;
     margin-top:14px;
+}
+/* modal Outlet */
+/* Modal */
+.outletModal.outletModal .modal-content {
+    border-radius: 20px;
+    padding: 20px;
+    border: none;
+}
+
+/* Heading */
+.outletModal.section-title {
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+/* Card */
+.outlet-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 16px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.outlet-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+/* Active */
+.outlet-card.active {
+    background: #fff4ed;
+    border: 1px solid #1f6f08;
+}
+
+/* Title */
+.outlet-title {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* Info */
+.outlet-info {
+    font-size: 13px;
+    color: #666;
+    margin-top: 3px;
+}
+
+/* Rating */
+.outlet-info .rating {
+    color: #0a8f3c;
+    font-weight: 500;
+}
+
+/* Right icons */
+.icon-right {
+    font-size: 18px;
+    color: #aaa;
+}
+
+/* Tick */
+.tick {
+    color: #1f6f08;
+    font-size: 18px;
+}
+
+/* Header */
+.modal-header-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.modal-title {
+    font-weight: 600;
+}
+/* Schedule date and slot */
+.schedule-modal .modal-content {
+    border-radius: 20px;
+    overflow: hidden;
+    border: none;
+}
+
+/* Header */
+.schedule-header {
+    background: #1f7a0a;
+    color: #fff;
+    padding: 15px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Body */
+.schedule-body {
+    padding: 18px;
+}
+
+/* Date Scroll */
+.date-scroll {
+    display: flex;
+    gap: 10px;
+}
+
+.date-box input {
+    display: none;
+}
+
+.date-box label {
+    width: 75px;
+    padding: 10px;
+    border-radius: 14px;
+    background: #f3f3f3;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+}
+
+/* Active Date */
+.date-box input:checked + label {
+    background:  #1f7a0a;
+    color: #fff;
+}
+
+/* Slots */
+.slot-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px;
+}
+
+.slot input {
+    display: none;
+}
+
+.slot label {
+    padding: 12px;
+    border-radius: 12px;
+    text-align: center;
+    background: #f8f8f8;
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+}
+
+/* Active Slot */
+.slot input:checked + label {
+    border: 2px solid #1f7a0a;
+    background:  #eaf7e6;
+    color: var(--green);
+    font-weight: 600;
+}
+
+/* Button */
+.continue-btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    background:#1f7a0a;
+    color: #fff;
+    font-weight: 600;
+}
+
+.section-title {
+    font-weight: 600;
+    margin: 15px 0 10px;
 }
