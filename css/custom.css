@@ -6881,6 +6881,26 @@ border-right: 1px solid#ccc;
     height: 407px;
     object-fit: cover;
 }
+.cartEmpty {
+    background: #fff;
+    padding: 25px;
+    border-radius: 14px;
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+    border: 1px solid#ccc;
+    margin-top: 20px;
+        text-align: center;
+}
+.cartEmpty img {
+  width: 100px;
+  text-align: center;
+}
+.cartEmpty p {
+     color: #757575;
+     font-size: 14px;
+     margin: 10px 0px;
+}
 .restaurantPage-header{
      background: linear-gradient(135deg, #e6fbcf, #e6fbcf);
     color: #fff;
@@ -7015,14 +7035,179 @@ border-right: 1px solid#ccc;
     border-radius:10px;
     font-weight:600;
     box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+/* After क्लिक */
+.restaurantPage-add.active {
+    background: #fff;
+    border: 2px solid #1f6f08;
+    color: #1f6f08;
+    padding: 4px 10px;
 }
 
+/* Qty Box */
+.qty-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Buttons */
+.qty-btn {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #1f6f08;
+    padding: 0 6px;
+}
+
+/* Count */
+.qty-count {
+    font-size: 16px;
+    font-weight: 600;
+}
 /* CUSTOM TEXT */
 .restaurantPage-custom{
     text-align:center;
     font-size:11px;
     color:#999;
     margin-top:14px;
+}
+
+/* Card */
+.carFood-card {
+    background: #fff;
+    padding: 18px;
+    border-radius: 16px;
+    max-width: 600px;
+    margin: auto;
+    position: sticky;
+    top: 20px;
+    margin-top: 30px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+/* Header */
+.carFood-header {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.carFood-header img {
+    width: 75px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.carFood-info h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.carFood-info p {
+    margin: 3px 0 0;
+    color: #777;
+    font-size: 14px;
+}
+
+/* Offer */
+.carFood-offer {
+    margin: 16px 0;
+    padding-left: 12px;
+    border-left: 4px solid #1f6f08;
+}
+
+.carFood-offer h4 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.carFood-offer p {
+    margin: 4px 0 0;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Item */
+.carFood-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+
+/* Left */
+.carFood-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.carFood-left h4 {
+    font-size: 20px;
+}
+
+.carFood-dot {
+    width: 10px;
+    height: 10px;
+    background: #1f6f08;
+    border-radius: 50%;
+}
+
+/* Right */
+.carFood-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.carFood-price .old {
+    text-decoration: line-through;
+    color: #aaa;
+    font-size: 13px;
+}
+
+.carFood-price .new {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+/* Qty Box */
+.carFood-qtyBox {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: #f8f8f8;
+    padding: 6px 12px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+.carFood-qtyBox span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f6f08;
+    cursor: pointer;
+}
+
+/* View Cart */
+.carFood-cart {
+    margin-top: 18px;
+    background: linear-gradient(90deg, #1f6f08, #2e8b0f);
+    color: #fff;
+       padding: 9px 18px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.carFood-cart:hover {
+    transform: scale(1.02);
 }
 /* modal Outlet */
 /* Modal */
@@ -7197,4 +7382,167 @@ border-right: 1px solid#ccc;
 .section-title {
     font-weight: 600;
     margin: 15px 0 10px;
+}
+
+.searchFood {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Search Input */
+.searchInput {
+    padding-left: 40px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.searchInput:focus {
+    box-shadow: none;
+    border-color: #1f6f08;
+}
+
+/* Search Icon */
+.searchIcon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+/* Veg / Non-Veg */
+.vegToggle {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.vegBtn {
+    background: #e9f7e7;
+    color: #1f6f08;
+    border: none;
+    padding: 8px 15px;
+}
+
+.nonVegBtn {
+    background: #fdeaea;
+    color: #c0392b;
+    border: none;
+    padding: 8px 15px;
+}
+
+.vegBtn.active {
+    background: #1f6f08;
+    color: #fff;
+}
+
+.nonVegBtn.active {
+    background: #c0392b;
+    color: #fff;
+}
+/* food Cart  */
+.foodCart__item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    margin-bottom: 15px;
+}
+
+.foodCart__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.foodCart__title {
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.foodCart__desc {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.foodCart__type {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.foodCart__type.veg {
+    color: green;
+}
+
+.foodCart__qty {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.foodCart__qty button {
+    border: none;
+    background: #f5f5f5;
+    padding: 4px 10px;
+    font-weight: bold;
+}
+
+.foodCart__qty span {
+    padding: 0 10px;
+}
+
+.foodCart__price {
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.foodCart__actions span {
+    font-size: 12px;
+    color: red;
+    cursor: pointer;
+}
+
+/* SUMMARY */
+.foodCart__summary {
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.summaryRow {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+
+.summaryRow.discount {
+    color: green;
+}
+
+.summaryRow.total {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.foodCart__checkout {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    background: #fc8019;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.foodCart__checkout:hover {
+    background: #e56f10;
 }

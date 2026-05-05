@@ -427,15 +427,15 @@
     </div>
     <main>
         <div class="foodpannelBack">
-            <div class="foodListright">
+            <!-- <div class="foodListright">
                 <img src="images/bakgroundfoodlist.png" alt="" class="img-fluid">
             </div>
             <div class="foodListimages">
                 <img src="images/landing-layer1.jpg" alt="" class="img-fluid">
-            </div>
+            </div> -->
 
             <div class="container">
-                <div class="row justify-content-center">
+                <div class="row">
                     <div class="col-md-8">
                         <div class="restaurantPage-header">
                             <div>
@@ -458,7 +458,22 @@
                         <div class="accordion restaurantPage-accordion">
 
                             <div class="accordion-item">
+                                <div class="searchFood d-flex align-items-center gap-3 p-3">
 
+                                    <!-- Search Field -->
+                                    <div class="flex-grow-1 position-relative">
+                                        <input type="text" class="form-control searchInput"
+                                            placeholder="Search food...">
+                                        <i class="bi bi-search searchIcon"></i>
+                                    </div>
+
+                                    <!-- Veg / Non-Veg Toggle -->
+                                    <div class="vegToggle d-flex">
+                                        <button class="btn vegBtn active">Veg</button>
+                                        <button class="btn nonVegBtn">Non-Veg</button>
+                                    </div>
+
+                                </div>
                                 <h2 class="accordion-header">
                                     <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#thali">
                                         Thali (10)
@@ -680,6 +695,60 @@
 
                         </div>
                     </div>
+                    <div class="col-md-4">
+                        <!-- <div class="cartEmpty">
+                        <img src="images/shopping_Bag.png" alt="" class="img-fluid">
+                        <p>Your Cart Is Empty</p>
+                      </div> -->
+
+                        <div class="carFood-card">
+
+                            <!-- Header -->
+                            <div class="carFood-header">
+                                <img src="images/upDown.png" alt="">
+                                <div class="carFood-info">
+                                    <h3>Apni Rasoi</h3>
+                                    <p>Chanakyapuri (Flagship Outlet)</p>
+                                </div>
+                            </div>
+
+                            <!-- Offer -->
+                            <div class="carFood-offer">
+                                <h4>MOMENTS eligible items</h4>
+                                <p>You just <b>saved ₹130</b> on these items!</p>
+                            </div>
+
+                            <!-- Item -->
+                            <div class="carFood-item">
+                                <div class="carFood-left">
+                                    <span class="carFood-dot"></span>
+                                    <h4>Chicken Kashmiri Shorba</h4>
+                                </div>
+
+                                <div class="carFood-right">
+                                    <div class="carFood-price">
+                                        <span class="old">₹1155</span>
+                                        <span class="new">₹975</span>
+                                    </div>
+
+                                    <!-- Qty -->
+                                    <div class="carFood-qtyBox">
+                                        <span>−</span>
+                                        <span>3</span>
+                                        <span>+</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- View Cart -->
+                            <div class="carFood-cart">
+                        
+                                <div>View Cart →</div>
+                            
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -847,7 +916,7 @@
 
                 <!-- Header -->
                 <div class="schedule-header">
-                    <span>Select Slot</span>
+                    <span>Select Your Delivery Time</span>
                     <i class="bi bi-x-lg" data-bs-dismiss="modal"></i>
                 </div>
 
@@ -934,6 +1003,58 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="js/custom.js"></script>
+    <script>
+        const vegBtn = document.querySelector('.vegBtn');
+        const nonVegBtn = document.querySelector('.nonVegBtn');
+
+        vegBtn.addEventListener('click', () => {
+            vegBtn.classList.add('active');
+            nonVegBtn.classList.remove('active');
+        });
+
+        nonVegBtn.addEventListener('click', () => {
+            nonVegBtn.classList.add('active');
+            vegBtn.classList.remove('active');
+        });
+    </script>
+    <script>
+        document.addEventListener("click", function (e) {
+
+            // ADD click
+            if (e.target.classList.contains("restaurantPage-add")) {
+                e.target.classList.add("active");
+                e.target.innerHTML = `
+            <div class="qty-box">
+                <span class="qty-btn minus">−</span>
+                <span class="qty-count">1</span>
+                <span class="qty-btn plus">+</span>
+            </div>
+        `;
+            }
+
+            // PLUS
+            if (e.target.classList.contains("plus")) {
+                let countEl = e.target.parentElement.querySelector(".qty-count");
+                countEl.innerText = parseInt(countEl.innerText) + 1;
+            }
+
+            // MINUS
+            if (e.target.classList.contains("minus")) {
+                let box = e.target.parentElement;
+                let countEl = box.querySelector(".qty-count");
+                let count = parseInt(countEl.innerText);
+
+                if (count > 1) {
+                    countEl.innerText = count - 1;
+                } else {
+                    let parent = box.closest(".restaurantPage-add");
+                    parent.classList.remove("active");
+                    parent.innerHTML = "ADD";
+                }
+            }
+
+        });
+    </script>
 
 </body>
 
