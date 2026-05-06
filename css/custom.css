@@ -276,7 +276,7 @@ main {
     /* gradient text */
 
     background: linear-gradient(319deg, rgb(255 255 255) 0%, rgb(186 166 48) 35%, rgb(31 111 8) 89%);
-    -webkit-background-clip0*- text;
+    -webkit-background-clip- text;
     -webkit-text-fill-color: transparent;
 
     animation: letterReveal .6s forwards,
@@ -7545,4 +7545,91 @@ border-right: 1px solid#ccc;
 
 .foodCart__checkout:hover {
     background: #e56f10;
+}
+
+/* All shop listing page  */
+.topShopTabs .nav-link {
+    border-radius: 10px;
+    padding: 10px 22px;
+    font-weight: 600;
+    color: #444;
+    background: #f5f5f5;
+    margin-right: 10px;
+    transition: 0.3s;
+    border: none;
+}
+
+.topShopTabs .nav-link.active {
+    background: #0d6efd;
+    color: #fff;
+}
+
+.topShopTabs .nav-link:hover {
+    background: #e9ecef;
+}
+
+.filterBtn button {
+    border-radius: 10px;
+    padding: 10px 18px;
+    font-weight: 500;
+    border: 1px solid #ddd;
+}
+/* food Shop */
+.foodcategoryShop{
+    padding:40px 0;
+    background:#fff;
+}
+
+.foodcategoryShopCard{
+    text-align:center;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.foodcategoryShopCard:hover{
+    transform:translateY(-5px);
+}
+
+.foodcategoryShopImage{
+    background:#f3f5f9;
+    border-radius:20px;
+    padding:18px;
+    height:160px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.foodcategoryShopImage img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    transition:0.3s;
+}
+
+.foodcategoryShopCard:hover .foodcategoryShopImage img{
+    transform:scale(1.05);
+}
+
+.foodcategoryShopTitle{
+    font-size:17px;
+    font-weight:600;
+    color:#333;
+    line-height:28px;
+    margin-top:15px;
+}
+
+@media(max-width:768px){
+
+    .foodcategoryShopImage{
+        height:120px;
+        padding:12px;
+    }
+
+    .foodcategoryShopTitle{
+        font-size:14px;
+        line-height:22px;
+    }
+
 }
