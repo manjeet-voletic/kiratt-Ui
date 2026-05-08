@@ -7702,46 +7702,13 @@ footer {
 .shopBanner img {
      width: 100%;
 }
-.topShopHead {
-    padding: 50px 0px 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 5px;
-}
-
-.topShopTabs .nav-link {
-    border-radius: 10px;
-    padding: 10px 22px;
-    font-weight: 500;
-    color: #020202;
-    background: #1f6f0845;
-    margin-right: 10px;
-    transition: 0.3s;
-    border: none;
-}
-
-.topShopTabs .nav-link.active {
-    background: #1f6f08;
-    color: #fff;
-}
-
-.topShopTabs .nav-link:hover {
-    background: #1f6f08;
-    color: #fff;
-}
-
-.filterBtn button {
-    border-radius: 10px;
-    padding: 10px 18px;
-    font-weight: 500;
-    border: 1px solid #ddd;
-}
-
-.filterBtn button:hover {
-    background: #1f6f08;
-    color: #fff;
+.shopPanelPage{
+    margin: 50px 0px 50px;
+        background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 /* food Shop */
