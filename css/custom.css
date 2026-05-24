@@ -7849,7 +7849,7 @@ footer {
 .foodSectionListImage p:nth-child(2){
     font-size: 12px;
     font-weight: 700;
-    color: #666;
+    color: #d4af38;
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -7867,11 +7867,7 @@ footer {
     margin-bottom: 15px;
 }
 
-.foodSectionListBottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 .foodSectionListBottom h4 {
      margin: 0;
@@ -7880,13 +7876,16 @@ footer {
 }
 
 .foodSectionListAddBtn {
-    border: 1px solid #2f8b1f;
+  border: 1px solid #2f8b1f;
     background: #eef9eb;
     color: #2f8b1f;
-    padding: 7px 24px;
+    padding: 7px 21px;
     border-radius: 8px;
-    font-weight: 700;
+    font-weight: 500;
     transition: 0.3s;
+    display: flex;
+    gap: 7px;
+    width: 100%;
 }
 
 .foodSectionListAddBtn:hover {
@@ -7912,11 +7911,11 @@ footer {
 }
 
 .foodSectionListLeftArrow {
-    left: -15px;
+       left: -42px;
 }
 
 .foodSectionListRightArrow {
-    right: -15px;
+    right: -42px;
 }
 
 @media(max-width:768px) {
